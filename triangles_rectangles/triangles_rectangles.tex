@@ -1,0 +1,954 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=8mm, right=8mm, top=7mm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+\title{\ul{\textbf{Triangles rectangles}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Rappels}
+
+
+\subsection{Médiatrice}
+
+\ul{Définition}: La médiatrice d'un segment est la droite qui coupe ce segment
+perpendiculairement en son milieu.
+
+\enskip
+
+\ul{Constructions}:
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+$1^{e}$ méthode: avec l'équerre et la règle graduée
+
+\end{minipage}
+&
+\begin{minipage}{9cm}
+$2^{e}$ méthode: au compas
+\end{minipage}
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\ul{Remarques}: La méthode au compas est plus précise. On utilisera
+cette méthode par la suite.
+
+Lorsque l'on veut trouver le milieu d'un segment, on peut le placer de façon
+exacte en construisant la médiatrice du segment au compas.
+
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{7cm}
+\ul{Propriété et définition}: Le cercle circonscrit à un triangle est le cercle
+qui passe par les 3 sommets de ce triangle. Son centre est le point
+d'intersection des médiatrices de ce triangle.
+\end{minipage}
+&
+\begin{minipage}{11cm}
+\begin{center}
+\includegraphics[width=5cm]{images/cercle_cir.png}
+\end{center}
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+
+
+\subsection{Médiane}
+
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+\ul{Définition}: Dans un triangle, une médiane est une droite qui passe par un
+sommet du triangle  et par le milieu du côté opposé à ce sommet.
+
+\enskip
+
+\ul{Propriété et définition}: Dans un triangle, les 3 médianes sont
+concourantes. Le point d'intersection s'appelle le centre de gravité du
+triangle.
+\end{minipage}
+&
+\begin{minipage}{9cm}
+\begin{center}
+\includegraphics[width=5cm]{images/mediane.png}
+\end{center}
+\end{minipage}
+\end{tabular}
+
+
+\subsection{Hypoténuse}
+
+\ul{Définition}: Dans un triangle rectangle, l'hypoténuse est le côté opposé à
+l'angle droit. C'est aussi le plus grand côté.
+
+
+
+\section{Cercle circonscrit et triangle rectangle}
+
+\subsection{Tracer le cercle circonscrit d'un triangle rectangle}
+
+\medskip
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Propriété 1}: Si un triangle est rectangle alors son cercle circonscrit a
+pour diamètre son hypoténuse.
+\end{minipage}
+}
+
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Autre formulation}: Si un triangle est rectangle alors le centre du cercle
+circonscrit à ce triangle est le milieu de l'hypoténuse.
+\end{minipage}
+}
+
+\bigskip
+
+\ul{Méthode pour obtenir le cerlce circonscrit à un triangle rectangle}: 
+
+\begin{tabular}{cc}
+\begin{minipage}{13cm}
+\begin{enumerate}
+  \item Tracer un triangle ABC rectangle en A. 
+  \item Tracer la médiatrice de l'hypoténuse [BC], elle est sécante en I avec
+  [BC].
+  \item Tracer le cercle de centre I et de rayon IB.
+\end{enumerate} 
+\end{minipage}
+&
+\begin{minipage}{5cm}
+\includegraphics[width=3cm]{images/cercle_circ2.png} 
+\end{minipage} 
+\end{tabular}
+
+
+
+\bigskip
+
+
+\ul{Méthode pour démontrer qu'un point est sur un cercle}:
+Soit EFG un triangle rectangle en F. Démontrons que le point F appartient au
+cercle de diamètre [EG].
+
+Figure:
+
+\enskip
+
+Donnée: le triangle EFG est rectangle en F.
+
+
+Propriété: Si un triangle est rectangle alors son cercle circonscrit a pour
+diamètre son hypoténuse.
+
+
+Conclusion: le point F appartient au cercle de diamètre [EG].
+
+
+
+
+\subsection{Démonter qu'un triangle est rectangle}
+ 
+ 
+ \bigskip
+ 
+ 
+\fbox{
+\begin{minipage}{18cm}
+\ul{Propriété 2}: Si un triangle est inscrit dans un cercle de diamètre l'un de
+ses côtés alors ce triangle est rectangle et admet ce diamètre pour hypoténuse.
+\end{minipage}}
+
+
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Autre formulation}: Si on joint un point d'un cercle aux extrémités d'un
+diamètre de ce cercle alors le triangle ainsi formé est rectangle en ce point.
+\end{minipage}}
+
+
+\bigskip
+
+\ul{Démonstration}: 
+
+\begin{center}
+\includegraphics[width=5cm]{images/prop2.png} 
+\end{center}
+
+\textit{Etape 1:} 
+
+Données: O centre du cercle, [AB] et [MP] diamètre du cercle
+
+Conclusion: AB=MP et [AB] et [MP] se coupent en leur milieu.
+
+
+
+\enskip
+
+\textit{Etape 2:}
+
+Données: AB=MP, [AB] et [MP] se coupent en leur milieu.
+
+Propriété: si un quadrilatère a ses diagonales qui se coupent en leur milieu et
+qui ont même longueur alors ce quadrilatère est un rectangle.
+
+
+Conlusion: AMBP est un rectangle.
+
+
+\enskip
+
+
+\textit{Etape 3:}
+
+
+Données: AMBP est un rectangle.
+
+Conclusion: AMB est un triangle rectangle en M.
+
+
+
+
+
+\bigskip
+
+\medskip
+
+
+\ul{Exemple}: Trace le cercle de diamètre [SR] tel que SR=7cm puis place sur ce
+cercle un point H tel que RH=4cm. Démontre que le triangle RHS est rectangle en
+H.
+
+
+
+\medskip
+
+Données: le point H appartient au cercle de diamètre [SR].
+
+Propriété: si un triangle est inscrit dans un cercle de diamètre l'un de ses
+côtés alors ce triangle est rectangle et admet ce diamètre pour hypoténuse.
+
+
+Conclusion: le triangle SHR est rectangle en H.
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Propriété 3}: Si dans un triangle, la longueur de la médiane relative à un
+côté est égale à la moitié de la longueur de ce côté alors le triangle est
+rectangle et admet ce côté pour hypoténuse.
+\end{minipage}
+}
+
+\bigskip
+
+\ul{Démonstration}: voir activité (cahier d'exercices)
+
+\bigskip
+
+\ul{Exemple}: Soit RST un triangle isocèle en T et soit U le symétrique du
+point R par rapport au point T. Démontre que le triangle RSU est rectangle en S. 
+
+
+\enskip
+
+ T est le milieu de [RU] (car U est le symétrique du point R par rapport à T).
+ Dans le triangle RSU, [ST] joint le sommet S et le milieu T de [RU] donc [ST]
+ est la médiane relative au côté [RU].
+ 
+ \enskip
+ 
+ Donnée: Dans le triangle RSU, [ST] est la médiane relative au côté [RU]
+ 
+ 
+\qquad  \qquad ST=RT=TU
+
+
+propriété: Si dans un triangle, la longueur de la médiane relative à un
+côté est égale à la moitié de la longueur de ce côté alors le triangle est
+rectangle et admet ce côté pour hypoténuse.
+
+conclusion: Le triangle RSU est rectangle en S.
+
+\subsection{Calculer la longueur d'une médiane}
+
+\bigskip
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Propriété 4 (admise)}: Si un  triangle est rectangle alors la médiane issue
+du sommet de l'angle droit a pour longueur la moitié de la longueur de
+l'hypoténuse.
+\end{minipage}
+}
+
+
+\bigskip
+
+\ul{Exemple}: Le triangle POT est un triangle rectangle en O tel que TP=8cm. Le
+point S est le milieu du segment [TP]. Quelle est la longueur du segment [SO]?
+
+
+\enskip
+
+Dans le triangle rectangle POT en O, [OS] joint le sommet O et le milieu S de
+[TP] donc [OS] est la médiane issue du sommet de l'angle droit.
+
+\enskip
+
+
+Données: Le triangle POT est rectangle en O
+
+
+\qquad \qquad [OS] est la médiane issue du sommet de l'angle droit O
+
+\qquad \qquad TP=8cm
+
+propriété: Si un  triangle est rectangle alors la médiane issue
+du sommet de l'angle droit a pour longueur la moitié de la longueur de
+l'hypoténuse.
+
+
+conclusion: $OS=\dfrac{1}{2}TP$
+
+\qquad \qquad $OS=\dfrac{1}{2}\times 8cm =4cm$
+
+
+
+\pagebreak
+
+\section{Triangles rectangles et Pythagore}
+
+\subsection{Calculer la longueur d'un côté}
+
+\subsubsection{Théorème de Pythagore}
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Théorème de Pythagore}: Si un triangle est rectangle alors le carré de
+l'hypoténuse est égal à la somme des carrés des longueurs des deux autres côtés.
+\end{minipage}
+
+}
+
+
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Autre énoncé}: Si $ABC$ est un triangle rectanlge en $A$ alors
+$BC^2=AB^2+AC^2$.
+\end{minipage}
+
+}
+
+
+\enskip
+
+
+\ul{Démonstration}: 
+
+
+\begin{center}
+\includegraphics[width=16cm]{images/activite_pyth.jpg}
+\end{center}
+
+
+\enskip
+
+\begin{enumerate}
+  \item Aire(AGFI)=$a^2$ et Aire(HFEC)=$b^2$
+  \item 
+  \begin{enumerate}
+    \item Démontrons que l'angle $\widehat{SMN}$ est un angle droit:
+  
+  
+  \enskip
+ \textit{Etape 1:} A'MS et B'MN sont des triangles rectangles en A' et B' qui sont superposables.
+ On en déduit:
+ 
+ $\widehat{A'SM}=\ldots \ldots$
+ 
+ $\widehat{A'MS}=\ldots \ldots$
+ 
+ \enskip
+ 
+ 
+ \textit{Etape 2:} La somme des angles d'un triangle vaut \ldots \ldots. 
+ 
+ On en déduit:
+ 
+ $\widehat{A'MS}+\widehat{MSA'}+\widehat{SA'M}=180$°.
+ 
+Comme $\widehat{SA'M}=90$° on a alors:  $\widehat{A'MS}+\widehat{MSA'}+\ldots
+\ldots=180$°
+
+
+Donc  $\widehat{A'MS}+\widehat{MSA'}=$ \ldots \ldots \ldots.
+
+
+\enskip
+
+D'après l'étape 1, on a $\widehat{MSA'}=\widehat{NMB'}$, en remplaçant dans
+l'égalité précédente nous trouvons: 
+
+$\widehat{A'MS}+\widehat{NMB'}=$ \ldots \ldots
+ 
+  
+\enskip
+
+
+\textit{Etape 3:} $\widehat{A'MB'}$ est un angle plat donc $\widehat{A'MB'}=$
+\ldots \ldots
+
+On sait que: $\widehat{A'MB'}=\widehat{A'MS}+\widehat{SMN}+\widehat{NMB'}$
+
+\enskip
+
+
+A l' étape 2, nous avons trouvé: $\widehat{A'MS}+\widehat{NMB'}=90$°. En
+remplaçant dans l'égalité précédente, nous avons:
+
+180°$=\ldots \ldots +\widehat{SMN}$
+
+On en déduit alors: $\widehat{SMN}$= 180°- \ldots= \ldots.
+
+
+
+
+
+\item De même, on peut montrer que:
+$\widehat{MNR}=\widehat{NRS}=\widehat{RSM}=90$°. Donc MNRS est un quadrilatère ayant 4 angles droits, c'est donc un carré.
+\item Aire(MNRS)= $c^2$.
+
+\end{enumerate}
+  \item Aire(ABCD)$=(a+b)^2$ et Aire(A'B'C'D')$=(a+b)^2$.
+  \item Les carrés ABCD et A'B'C'D' ont même aire et contiennent chacun 4 fois
+  le triangle rectangle initial. On en déduit que l'aire des 2 surfaces
+  blanches sont égales c'est-à-dire: Aire(AGFI)+Aire(HFEC)=Aire(MNRS).
+  
+  \enskip
+  On a donc:  \fbox{$a^2+b^2=c^2$.}
+\end{enumerate}
+
+
+\subsubsection{Racines carrées}
+
+$\bullet$ Le carré du nombre a, noté $a^2$ est le produit de  a par a: $a^2=a
+\times a$.
+
+
+\ul{exemples}: $5^2=5 \times 5 =25$ \qquad $3^2=3 \times 3 =9$
+
+\enskip
+
+La touche $x^2$ de la calculatrice permet d'obtenir directement le carré d'un
+nombre.
+
+\enskip
+
+$\bullet$ Problème: on connaît le carré d'un nombre positif et on cherche la
+valeur exacte ou une valeur approchée de ce nombre. 
+
+
+
+
+On utilise la touche $\sqrt{}$ de la calculatrice qui permet d'obtenir la
+valeur exacte ou une valeur approchée d'un nombre positif dont on connaît le
+carré.
+
+
+\enskip
+
+\ul{Définition}: La racine carré d'un nombre positf $a$ est l'unique nombre
+positif qui multiplié par lui-même donne $a$.
+
+\enskip
+
+\ul{exemples}: si $a$ est nombre positif dont le carré vaut 25 (c'est-à-dire
+$a^2=25$) alors $a=5$ car $5^2=25$. 
+
+si $a$ est un nombre positif vérifiant $a^2=16$ alors $a=4$ (car 4 est le seul
+nombre positif qui multiplié à lui-même donne 16).
+
+
+
+\subsubsection{Exemples}
+
+\ul{Exemple 1: Calcul de la longueur de l'hypoténuse}
+
+\enskip
+
+Soit DEF un triangle rectangle en E tel que DE=9cm et EF=6cm. Calculer la valeur
+exacte de DF puis donner la valeur arrondie au millimètre.
+
+\pagebreak
+
+
+Le triangle DEF est rectangle en E, son hypoténuse est le côté  [DF]. Donc
+d'après le théorème de Pythagore, on a:
+
+$DF^2=DE^2+EF^2$
+
+$DF^2=9^2+6^2$
+
+$DF^2=81+36$
+
+$DF^2=117$
+
+\enskip
+
+La longueur DF est positive donc $DF=\sqrt{117}$cm (c'est la valeur exacte).
+
+Donnons une valeur arrondie au millimètre: on utilise la touche $\sqrt{}$ de la
+calculatrice qui affiche: 10,81665383.
+
+Donc DF $\approx $ 10,8cm.
+
+
+\bigskip
+
+
+\bigskip
+
+\ul{Exemple 2: Calcul de la longueur d'un côté de l'angle droit}
+
+
+\enskip
+
+Soit RAS un triangle rectangle en A tel que RS=9,7cm et RA=7,2cm. Calculer AS.
+
+
+\bigskip
+
+\bigskip
+
+Le triangle RAS est rectangle en A, son hypoténuse est le côté [RS]. Donc,
+d'après le théorème de Pythagore, on a:
+
+$R^2=RA^2+AS^2$
+
+$9,7^2=7,2^2+AS^2$
+
+$94,09=51,84+AS^2$
+
+$AS^2=94,09-51,84$
+
+$AS^2=42,25$
+
+
+\enskip
+
+La longueur AS est positive donc $AS=\sqrt{42,25}$cm.
+
+Donc AS=6,5cm (c'est la valeur exacte car $6,5^2=42,25$). 
+
+
+
+\subsection{Propriété, réciproque et contraposée}
+
+\ul{Réciproque}
+
+\enskip
+
+
+\begin{center}
+\includegraphics[width=18cm]{images/reciproque.jpg}
+\end{center}
+
+\medskip
+
+
+\ul{Contraposée}
+
+\enskip
+
+Imaginons que l'on dispose de la propriété suivante: ``Si on A, alors on
+obtient B''.
+
+La contraposée de cette propriété est: ``Si on n'a pas B alors on n'obtient pas
+A''.
+
+\enskip
+
+
+\ul{Exemple}:
+
+
+propriété: ``Si j'ai soif alors je bois''.
+
+contraposée: ``Si je ne bois pas alors je n'ai pas soif''. 
+
+
+
+\enskip
+
+\ul{Remarque}: la contraposée d'une propriété vraie est toujours vraie.
+
+
+
+
+\subsection{Démontrer qu'un triangle est rectangle}
+
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Réciproque du théorème de Pythagore}: Si, dans un triangle, le carré de la
+longueur du plus grand côté est égal à la somme des carrés des
+longueurs des deux autres côtés alors ce triangle est rectangle et admet ce
+plus grand côté pour hypoténuse.
+\end{minipage}
+}
+
+
+
+\bigskip
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Autre formulation:} Si dans un triangle ABC on a $BC^2=AB^2+AC^2$ (où
+[BC] est le plus grand côté) alors le triangle ABC est rectangle est rectangle
+en A.
+
+
+\end{minipage}
+}
+
+
+\bigskip
+
+
+\ul{Exemple}: UVW est un triangle tel que UV=3cm, VW=4cm et WU=5cm. Démontrer
+que ce triangle est rectangle.
+
+
+
+\enskip
+
+Dans le triangle UVW, le plus long côté est [WU] donc on \textbf{calcule
+séparément} $WU^2$ et $UV^2+VW^2$:
+
+\enskip
+
+\begin{tabular}{c|c}
+\begin{minipage}{9cm}
+$WU^2=5^2$
+
+$WU^2=25$
+\end{minipage}
+&
+
+\begin{minipage}{9cm}
+$UV^2+VW^2=3^2+4^2$
+
+$UV^2+VW^2=9+16$
+
+$UV^2+VW^2=25$
+
+\end{minipage}
+
+\end{tabular}
+
+\enskip
+
+On constate que $WU^2=UV^2+VW^2$. Donc, d'après la réciproque du théorème de
+Pythagore, le triangle UVW est rectangle en V.
+
+
+
+\subsection{Démontrer qu'un triangle n'est pas rectangle}
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Propriété (contraposée du théorème de Pythagore)}:  Si, dans un triangle, le carré de la
+longueur du plus grand côté n' est pas égal à la somme des carrés des
+longueurs des deux autres côtés alors ce triangle n'est pas rectangle.
+
+\end{minipage}
+}
+
+\bigskip
+
+
+\ul{Exemple}: NUL est un triangle tel que NU=42cm, LU=46cm et LN=62cm.
+Démontrer que NUL n'est pas un triangle rectangle.
+
+\enskip
+
+Dans le triangle NUL, le plus long côté est [LN] donc on \textbf{calcule
+séparément} $LN^2$ et $LU^2+NU^2$:
+
+\enskip
+
+\begin{tabular}{c|c}
+\begin{minipage}{9cm}
+$LN^2=62^2$
+
+$LN^2=3844$
+\end{minipage}
+&
+
+\begin{minipage}{9cm}
+$LU^2+NU^2=46^2+42^2$
+
+$LU^2+NU^2=2116+1764$
+
+$LU^2+NU^2=3880$
+
+\end{minipage}
+
+\end{tabular}
+
+\enskip
+
+On constate que $LN^2 \neq LU^2+NU^2$, donc d'après la contraposée du théorème
+de Pythagore, le triangle NUL n'est pas rectangle.
+
+
+
+
+\pagebreak
+
+
+\section*{Triangles rectangles et Pythagore}
+
+
+
+\subsection*{Théorème de Pythagore}
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Théorème de Pythagore}: Si un triangle est rectangle alors le carré de
+l'hypoténuse est égal à la somme des carrés des longueurs des deux autres côtés.
+\end{minipage}
+
+}
+
+
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Autre énoncé}: Si $ABC$ est un triangle rectanlge en $A$ alors
+$BC^2=AB^2+AC^2$.
+\end{minipage}
+
+}
+
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\subsection*{Racines carrées}
+
+$\bullet$ Le carré du nombre a, noté $a^2$ est le produit de  a par a: $a^2=a
+\times a$.
+
+
+\ul{exemples}: $5^2=5 \times 5 =25$ \qquad $3^2=3 \times 3 =9$
+
+\enskip
+
+La touche $x^2$ de la calculatrice permet d'obtenir directement le carré d'un
+nombre.
+
+\enskip
+
+$\bullet$ Problème: on connaît le carré d'un nombre positif et on cherche la
+valeur exacte ou une valeur approchée de ce nombre. 
+
+
+
+
+On utilise la touche $\sqrt{}$ de la calculatrice qui permet d'obtenir la
+valeur exacte ou une valeur approchée d'un nombre positif dont on connaît le
+carré.
+
+
+\enskip
+
+\ul{Définition}: La racine carré d'un nombre positf $a$ est l'unique nombre
+positif qui multiplié par lui-même donne $a$.
+
+\enskip
+
+\ul{exemples}: si $a$ est nombre positif dont le carré vaut 25 (c'est-à-dire
+$a^2=25$) alors $a=5$ car $5^2=25$. 
+
+si $a$ est un nombre positif vérifiant $a^2=16$ alors $a=4$ (car 4 est le seul
+nombre positif qui multiplié à lui-même donne 16).
+
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\subsection{Exemples}
+
+\ul{Exemple 1: Calcul de la longueur de l'hypoténuse}
+
+\enskip
+
+Soit DEF un triangle rectangle en E tel que DE=9cm et EF=6cm. Calculer la valeur
+exacte de DF puis donner la valeur arrondie au millimètre.
+
+\bigskip
+
+
+Le triangle DEF est rectangle en E, son hypoténuse est le côté  [DF]. Donc
+d'après le théorème de Pythagore, on a:
+
+$DF^2=DE^2+EF^2$
+
+$DF^2=9^2+6^2$
+
+$DF^2=81+36$
+
+$DF^2=117$
+
+\enskip
+
+La longueur DF est positive donc $DF=\sqrt{117}$cm (c'est la valeur exacte).
+
+Donnons une valeur arrondie au millimètre: on utilise la touche $\sqrt{}$ de la
+calculatrice qui affiche: 10,81665383.
+
+Donc DF $\approx $ 10,8cm.
+
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+
+\ul{Exemple 2: Calcul de la longueur d'un côté de l'angle droit}
+
+
+\enskip
+
+Soit RAS un triangle rectangle en A tel que RS=9,7cm et RA=7,2cm. Calculer AS.
+
+
+\bigskip
+
+\bigskip
+
+
+Le triangle RAS est rectangle en A, son hypoténuse est le côté [RS]. Donc,
+d'après le théorème de Pythagore, on a:
+
+$R^2=RA^2+AS^2$
+
+$9,7^2=7,2^2+AS^2$
+
+$94,09=51,84+AS^2$
+
+$AS^2=94,09-51,84$
+
+$AS^2=42,25$
+
+
+\enskip
+
+La longueur AS est positive donc $AS=\sqrt{42,25}$cm.
+
+Donc AS=6,5cm (c'est la valeur exacte car $6,5^2=42,25$).
+\end{document}

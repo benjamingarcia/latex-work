@@ -1,0 +1,146 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=6mm, right=6mm, top=6mm, bottom=6mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+
+\begin{document}
+
+
+\section*{\center{Devoir maison 11}}
+
+\textit{Devoir à rendre sur feuille double grand format \textbf{petits
+carreaux} pour le
+\ul{jeudi 4 juin 2009}. }
+
+\subsection*{Exercice 1}
+
+Lorsqu'on se promène ``au hasard'' sur un réseau (dans les rues d'une ville ou
+les chemins d'une forêt), il y a des endroits où l'on a plus de chances de se
+trouver qu'à d'autres.
+
+Au lieu de se promener réellement, on peut se contenter (pour étudier la
+situation) de se promener virtuellement, en effectuant des simulations.
+
+\enskip
+
+\ul{\textbf{Situation:}}
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{14cm}
+Un kangourou se trouve en A, sommet du carré, et doit se rendre en C, le sommet
+opposé. Chaque seconde, il saute d'un sommet à un autre en suivant un côté (et
+non une diagonale). Il décide de son déplacement de la façon suivante:
+
+\enskip
+
+Il jette un dé: s'il obtient un nombre PAIR (noté P) il tourne dans le sens
+direct, c'est-à-dire le sens inverse des aiguilles d'une montre et s'il obtient
+un nombre IMPAIR (noté I) il tourne dans l'autre sens, celui des aiguilles
+d'une montre.
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\includegraphics[width=4cm]{images/carre.jpg}
+\end{minipage}
+\end{tabular}
+
+
+\enskip
+
+Pour chaque trajet qui le conduit de A à C, on s'intéresse au temps mis par ce
+kangourou\ldots  
+
+
+\textit{Remarque: on appelle trajet un chemin allant de A à C.}
+
+\enskip
+
+\ul{\textbf{Analyse du problème:}}
+
+\enskip
+
+Voici un arbre résumant la situation, après quatre sauts:
+
+\begin{center}
+\includegraphics[width=13cm]{images/arbre.jpg}
+\end{center}
+
+\enskip
+
+Les trajets correspondant à PP et II sont des trajets de durée 2 secondes.
+
+Les trajets correspondant à PIPP, PIII, IPPP et IPII
+ sont des trajets de durée 4 secondes.
+ 
+ 
+ \begin{enumerate}
+   \item Trouver les 8 trajets de durée 8 secondes (Indication: on pourra faire
+   un autre arbre).
+   \item Peut-on trouver un trajet de durée 6 secondes? De durée 9 secondes? De
+   durée un nombre impair de secondes? (Chaque réponse sera commentée.)
+   \item Peut-on imaginer un trajet de durée 100 secondes? Expliquer.
+   
+   
+   \enskip
+   
+   \ul{\textbf{Simulation:}}
+   
+   
+   \enskip
+   
+   
+   \item Cette promenade aléatoire peut-être simulée avec un dé comme expliquée
+   précédemment. Proposer deux autres possibilités de simulation (on pourra
+   chercher dans le manuel).
+   \item Par la simulation de votre choix, faire faire au
+   kangourou 15 promenades de A à C: il se fatigue si la durée dépasse 20
+   secondes; dans ce cas , l'arrêter et le remettre en A.
+   
+   Vous noterez sur votre copie:
+   \begin{enumerate}
+     \item La simulation choisie
+     \item Le chemin de chaque promenade et le temps mis par le kangourou
+     \item Le nombre éventuel de promenades non terminées au bout de 20
+     secondes (dans ce dernier cas, on ne comptera pas cette promenade dans les
+     15 demandées).
+   
+   \end{enumerate}
+   
+   \item Etudier la fréquence de chaque durée et calculer la durée moyenne.
+   \item Regrouper les résultats de 4 autres élèves de la classe (vous
+   indiquerez le nom des élèves et leur tableau de fréquences sur votre copie)
+   et trouver la durée moyenne.
+   \item Commenter ce dernier résultat.
+ \end{enumerate}
+ 
+\subsection*{Exercice 2}
+
+\begin{enumerate}
+  \item Tracer un triangle ABC quelconque.
+  \item Construire les points D et E tels que:
+  
+  $\overrightarrow{AD}=\overrightarrow{AB} + \overrightarrow{CB}$ 
+  
+  et
+  $\overrightarrow{BE}=\overrightarrow{AB} + \overrightarrow{CA}$. 
+  
+  Laisser
+  apparents vos traits de construction.
+  \item Que conjecture-t-on?
+  \item En décomposant le vecteur $\overrightarrow{DE}$, montrer que
+  $\overrightarrow{DE}=\vec{0}$. Conclure.
+\end{enumerate}
+\end{document}

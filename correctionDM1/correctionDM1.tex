@@ -1,0 +1,105 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[12pt, twoside]{article}
+
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=2cm, right=2cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+
+\begin{document}
+
+
+\section*{\center{Correction devoir maison 1}}
+
+\subsection*{Exercice 2}
+
+Lorsqu'on a un triangle avec des parallèles, il faut impérativement pensé au
+théorème de Thalès. Voici une rédaction possible (il est important d'énoncer
+\textbf{toutes} les hypothèses):
+
+\bigskip
+ 
+$\bullet$ Les droites $(AI)$ et $(BC)$ sont parallèles.
+
+
+$\bullet$ $(OA)$ et $(OC)$ sont sécantes en $O$.
+
+
+$\bullet$ $O,A,B$ et $O,I,C$ sont alignés dans le même ordre.
+
+
+
+Donc d'après le théorème de Thalès: $\frac{OA}{OB}=\frac{OI}{OC}=\frac{AI}{BC}$
+
+
+$OA=7$, $OB=10$ (il suffit de savoir compter, les graduations étant
+régulières),$OI=1$ et $OC=x$.
+
+
+ D'où: $\frac{7}{10}=\frac{1}{x}$ et $x=\frac{10}{7}$.
+ 
+ On en déduit que $x$ est rationnel c'est à dire $x \in \mathbb{Q}$. Par
+contre, $x$ n'est pas décimal (vous pouvez le vérifier avec votre
+calculatrice).
+ 
+ \subsection*{Exercice 4}
+ 
+Soit $x=0,999 \dots$  .
+
+On calcule: $10x=9,999 \dots$ et $9+x=9+0,999 \dots=9,999 \dots$ 
+ 
+ 
+ On a donc $10x=9+x$ (tout le monde aurait du arriver jusque là, c'était une
+ simple vérification par le calcul). On résout l'équation.
+
+\begin{equation}
+10x=9+x
+\label{eq:ED1}
+\end{equation} 
+
+\begin{equation}
+9x=9
+\label{eq:ED2}
+\end{equation}
+
+\begin{equation}
+x=1
+\label{eq:ED3}
+\end{equation}
+
+
+\bigskip
+\textbf{Rappels}: On passe de ~\eqref{eq:ED1} à ~\eqref{eq:ED2} en soustrayant
+$x$ des 2 côtés. De ~\eqref{eq:ED2} à ~\eqref{eq:ED3} on divise par $9$.
+
+\bigskip
+On a donc $x=0,999 \dots=1$ et $x$ est un entier naturel.
+
+
+\subsection*{Exercice 5}
+
+\begin{enumerate}
+  \item $2,3,5,7,11,13$ (qui sont les nombres premiers inférieurs à $15$) ne
+  divisent pas $667$ (vérification à la calculatrice \ldots). 
+  \begin{align*}
+  667 & = 26^{2}-9 \\
+  & = 26^{2}-3^{2} \\
+  & = (26+3)*(26-3) \\
+  & = 29*23
+  \end{align*}
+La dernière égalité nous donne la décomposition en facteurs premiers de $667$.
+
+
+\textbf{Rappel:} On passe de la deuxième égalité à la troisième en utilisant
+l'identité remarquable: \\
+$a^{2}-b^{2}=(a+b)*(a-b)$
+\item A l'aide de la calculatrice, on trouve $440=21^{2}$ d'où $437=21^{2}-4$,
+et par le même procédé on en déduit: $437=19*23$. 
+\end{enumerate}
+\end{document}

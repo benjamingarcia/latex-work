@@ -1,0 +1,144 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=8mm, right=8mm, top=1cm, bottom=1cm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+
+\pagestyle{empty}
+\begin{document}
+
+\begin{flushright}  
+$2^{de}5$
+\end{flushright}
+\begin{center}
+\textbf{\large{Devoir Maison 2}}
+\end{center}
+
+
+\bigskip
+\textbf{Exercice 1:}
+
+\bigskip
+\begin{tabular}{|m{35mm}|c|m{35mm}|m{35mm}|m{35mm}|}
+\hline
+Texte & Intervalles & Représentation sur une droite graduée & Ensemble
+des réels $x$ vérifiant: & L'ensemble est-il borné? (oui ou non)\\
+\hline
+l'ensemble des réels supérieurs ou égaux à $-3$ et strictement inférieurs à $0$
+& $[-3;0[$ & \includegraphics[width=3cm]{images/ex11.jpg} & $-3 \leqslant x < 0$
+& oui
+\\[7mm]
+\hline
+l' ensemble des réels compris entre $\dfrac{-5}{3}$ et $\dfrac{-10}{7}$ inclus
+& $[\dfrac{-5}{3};\dfrac{-10}{7}]$ & & $\dfrac{-5}{3}\leqslant x \leqslant
+\dfrac{-10}{7}$ & oui
+\\[7mm]
+\hline
+l'ensemble des réels strictement inférieurs à $10$ & $]-\infty;10[$ &
+\includegraphics[width=3cm]{images/ex12.jpg} & $x<10$ & non
+\\[7mm]
+\hline
+l'ensemble des réels positifs ou nuls & $[0; +\infty[$ &  & $x \geqslant 0$ &
+non
+\\[7mm]
+\hline
+l'ensemble des réels inférieurs ou égaux à $7$ & $]-\infty;7]$ & & $x
+\leqslant 7$  & non
+\\[7mm]
+\hline
+l'ensemble des réels compris strictement entre $-10$ et $-2$ & $]-10;-2[$ &
+& $-10<x<-2$ & oui
+\\[7mm]
+\hline
+l'ensemble des réels strictement négatifs & $]-\infty;0[$ & & $x<0$ &  non
+\\[7mm]
+\hline
+l'ensemble des réels supérieurs ou égaux à -4 & $[-4;+\infty[$ & &
+$-4\leqslant x $ & non
+\\[7mm] 
+\hline
+l'ensemble des réels stricetement supérieurs à $7$ & $]7;+\infty[$ &  & $7<x$ &
+non
+\\[6mm]
+\hline 
+\end{tabular}
+
+\bigskip
+\bigskip
+
+
+\textbf{Exercice 3:}
+\begin{enumerate}
+  \item $AB=3\sqrt{2}-1$ donc $AB^{2}=(3\sqrt{2}-1)^{2}= 9 \times 2
+  -6\sqrt{2}+1=19-6\sqrt{2}$.\\
+  $AC=3-\sqrt{2}$ donc $AC^{2}=(3-\sqrt{2})^{2}=9-6\sqrt{2}+2=11-6\sqrt{2}$,
+  d'où $AB^{2}+AC^{2}=30-12\sqrt{2}$.
+  
+  
+  \medskip
+  \item \textbf{Méthode:} Pour déterminer l'encadrement du carré d'un nombre
+  positif, il suffit d'élever au carré les 2 côtés de l'inégalité sans changer
+  le sens du signe. 
+  
+  
+\medskip
+  Dans notre cas: $5- \sqrt{2} \leqslant BC \leqslant 4\sqrt{2}-2$ donc $(5-
+  \sqrt{2})^{2} \leqslant BC^{2} \leqslant (4\sqrt{2}-2)^{2}$. En développant
+  les identités remarquables et en simplifiant, on trouve finalement:
+  $27-10\sqrt{2} \leqslant BC^{2} \leqslant 36-16\sqrt{2}$.
+  \item D'après la réciproque du théorème de Pythagore, le triangle $ABC$ est
+  rectangle en $A$ si $AB^{2}+AC^{2}=BC^{2}$, il nous faut donc vérifier si
+  $BC^{2}$ peut prendre la valeur $30-12\sqrt{2}$. Or la question précédente
+  nous donne un encadrement de $BC^{2}$, qui s'écrit aussi: $BC^{2} \in
+  [27-10\sqrt{2};36-16\sqrt{2}]$. Déterminer si $BC^{2}$ peut prendre la valeur
+  $30-12\sqrt{2}$,c'est dire si $30-12\sqrt{2} \in
+  [27-10\sqrt{2};\ 36-16\sqrt{2}]$ ou non. La valeur arrondie de ces 3 nombres
+  (à la calculatrice) nous permet de conclure que $30-12\sqrt{2} \in
+  [27-10\sqrt{2};\ 36-16\sqrt{2}]$. Donc le triangle $ABC$ peut être rectangle
+  en $A$.
+\end{enumerate}
+
+
+\bigskip
+
+\textbf{Exercice 4:} Soit $x>3$.
+
+
+ \includegraphics[width=8cm]{images/rectangle-carré.png}
+ 
+ L'aire du rectangle noté $\mathcal{A}_{r}$ vaut
+ $\mathcal{A}_{r}=(x-3)(x+1)=x^{2}+x-3x-3=x^{2}-2x-3$.\\
+  L'aire du carré noté $\mathcal{A}_{c}$ vaut
+ $\mathcal{A}_{c}=(x-2)^{2}=x^{2}-4x+4$.
+ Par hypothèse, $\mathcal{A}_{r} < \mathcal{A}_{c}$. Donc:
+ \begin{align*}
+ x^{2}-2x-3 & < x^{2}-4x+4 \\
+ -2x-3 & < -4x+4 \\
+ 2x-3 & < 4 \\
+ 2x & <7 \\
+ x & < \dfrac{7}{2} 
+ \end{align*}
+
+On a donc: $3<x<\dfrac{7}{2}$, l'ensemble solution est l'intervalle
+$]-3;\dfrac{7}{2}[$.
+
+\bigskip
+\bigskip
+
+\textbf{Exercice 5:} 
+
+
+On a: $0<x<y$. Pour comparer $\dfrac{x-1}{x}$  et
+$\dfrac{y-1}{y}$, on regarde le signe de la différence
+$\dfrac{x-1}{x}-\dfrac{y-1}{y}$.\\
+$\dfrac{x-1}{x}-\dfrac{y-1}{y}=\dfrac{y(x-1)-(y-1)x}{xy}=\dfrac{xy-y-yx+x}{xy}=\dfrac{x-y}{xy}$.\\
+$x>0, \ y>0$ donc $xy>0$ et $x-y<0$ (car $x<y$). On en déduit
+$\dfrac{x-1}{x}-\dfrac{y-1}{y}= \dfrac{x-y}{xy}<0$, puis
+$\dfrac{x-1}{x}<\dfrac{y-1}{y}$.
+\end{document}

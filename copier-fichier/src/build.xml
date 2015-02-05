@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project basedir="." default="copy-file" name="ProjectBuild">
+	<!-- Copy un fichier sélectionné dans le répertoire demandé -->
+	<target name="copy-file">
+		<echo>${selected-file}</echo>
+		<input message="Où copier le fichier?" addproperty="path-to-copy" />
+		<echo>${path-to-copy}</echo>
+		<copy file="${selected-file}" todir="${path-to-copy}" overwrite="true"/>
+	</target>
+</project>

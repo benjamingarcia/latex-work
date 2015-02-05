@@ -1,0 +1,420 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=1cm, top=1cm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+
+\begin{document}
+
+
+\section*{\center{Aide individualisée: les fonctions}}
+
+\subsection*{Déterminer l'image d'un nombre par une fonction $f$}
+
+ 
+\subsubsection*{$f$ est définie par une formule}
+
+
+\ul{Méthode}: Soit $f$ une fonction définie sur $I$.
+
+\medskip
+
+\fbox{ \begin{minipage}{18cm}
+       Calculer l'image d'un élément $a$ ($a \in I$) revient à remplacer $x$ par $a$
+dans la formule: \textbf{c'est un calcul direct}.
+       \end{minipage}
+}
+
+
+\medskip
+
+\ul{Exemple}: Soit $f$ la fonction définie par: \quad  \begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  4-x^{2}
+\end{align*}
+\end{minipage}
+
+Calculer l'image de 1 c'est calculer $f(1)$: on remplace $x$ par 1.
+$f(1)=4-(1)^{2}=\ldots \ldots$.
+
+\ldots \ldots est l'image de 1 par $f$.
+
+1 a pour image \ldots \ldots
+
+\medskip
+
+\ul{Applications}:
+\begin{enumerate}
+  \item Soit \begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & [2;+ \infty[\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  \sqrt{x-2}
+ \end{align*}  
+\end{minipage}
+
+Calculer l'image de 2 et l'image de 11 par $f$.
+\item \begin{minipage}{3cm}
+
+\begin{align*}
+g: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  5-2x
+\end{align*}  
+\end{minipage}
+Calculer l'image de $\dfrac{1}{2}$.  	
+\end{enumerate}
+
+\subsubsection*{Représentation graphique de $f$}
+
+
+\ul{Méthode}: Soit $f$ une fonction définie sur $I$.
+
+\medskip
+
+\fbox{ \begin{minipage}{18cm}
+      Déterminer l'image
+d'un élément $a$ ($a \in I$) revient à déterminer \textbf{l'ordonnée} de
+l'\textbf{unique} point de la courbe dont l'abscisse est $a$.
+      
+      \medskip
+      
+ C'est le point d'intersection de la courbe et de la droite d'équation $x=a$
+(c'est-à-dire la droite verticale passant par le point de coordonnées $(a;0)$.)     
+       \end{minipage}
+}
+
+
+\medskip
+
+\ul{Exemple}: On considère la courbe représentative de la fonction $f$ définie
+sur $\mathbb{R}$.
+
+
+\begin{tabular}{cc}
+\begin{minipage}{5cm}
+\includegraphics [width=5cm]{images/courbe1.png}
+\end{minipage}
+
+&
+\begin{minipage}{12cm}
+Déterminons l'image de -1: on trace la droite verticale passant par (-1,0) (en
+rouge), puis on lit l'ordonnée du point d'intersection de cette droite et de la
+courbe. On a:
+
+\enskip
+
+$f(-1)=\ldots$
+
+\ldots \ldots est l'image de -1.
+
+-1 a pour image \ldots \ldots
+
+Le point de coordonnées (-1,\ldots) appartient à la courbe représentative de
+$f$.
+\end{minipage}
+\end{tabular}
+
+\medskip
+
+\ul{Applications}: 
+\begin{enumerate}
+  \item Soit $f$ la fonction de l'exemple précédent. Déterminer
+  graphiquement l'image de 0,75 et l'image de 0.
+  \item Soit $g$ la fonction suivante:  \begin{minipage}{3cm}
+
+\begin{align*}
+g: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  x^{5}-2x^{3}+1
+\end{align*}  
+\end{minipage} 
+
+
+La courbe ci-dessus est la courbe représentative de $g$.  
+
+
+  \begin{tabular}{cc}
+  
+ 
+\begin{minipage}{5cm}
+\includegraphics[width=5cm]{images/courbe2.png}
+\end{minipage}
+& 
+\begin{minipage}{10cm}
+Déterminer graphiquement puis par le calcul l'image de 0 et l'image de
+-1. Que constatez-vous?
+\end{minipage}
+\end{tabular}
+ 
+\end{enumerate}
+
+
+\subsection*{Déterminer le(s)antécédent(s) d'un nombre par une fonction $f$}
+
+\subsubsection*{$f$ est définie par une formule}
+
+\ul{Méthode}: Soit $f$ une fonction définie sur $I$.
+
+\medskip
+
+\fbox{ \begin{minipage}{18cm}
+       Déterminer les antécédents éventuels de $b$ revient à \textbf{résoudre
+       l'équation}: $f(x)=b$. Les solutions de cette équation qui sont dans
+       l'ensemble de définition de $f$ sont les antécédents de $b$. Il peut y
+       en avoir \textbf{zéro} ou \textbf{plusieurs}.
+       \end{minipage}
+}
+
+
+\medskip
+
+\ul{Exemple}: Soit $f$ la fonction définie par: \quad  \begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  4-x^{2}
+\end{align*}
+\end{minipage}
+
+Déterminer les antécédents de 0 par $f$ c'est résoudre l'équation $f(x)=0$
+c'est-à-dire $4-x^{2}=0$.
+
+$\Leftrightarrow$ $(\ldots \ldots \ldots)(\ldots \ldots \ldots)=0$
+
+
+$\Leftrightarrow$ $(\ldots -x)=0$ ou $(\ldots +x)=0$
+
+$\Leftrightarrow$ $x=2$ ou $x=-2$.
+
+
+On a: 2 et -2 sont les antécédents de 0. $f(\ldots)=\ldots$ et
+$f(\ldots)=\ldots$.
+
+\medskip
+
+\ul{Application}:  Déterminer le(s) antécédent(s) de 4 par  \begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  4-x^{2}
+\end{align*}
+\end{minipage}  
+   
+\bigskip
+
+\bigskip
+   
+
+\subsubsection*{Représentation graphique de $f$}
+
+\ul{Méthode}: Soit $f$ une fonction définie sur $I$.
+
+\medskip
+
+\fbox{ \begin{minipage}{18cm}
+      Déterminer le(s) antécédent(s) éventuels
+de $b$ ($a \in I$) revient à déterminer \textbf{l'abscisse} de(s)
+point(s) de la courbe dont l'ordonnée est $b$.
+      
+      \medskip
+      
+ C'est le point d'intersection de la courbe et de la droite d'équation $y=b$
+(c'est-à-dire la droite horizontale passant par le point de coordonnées
+$(0;b)$.)
+       \end{minipage}
+}
+
+
+\medskip
+
+\ul{Exemple}: On considère la courbe représentative de la fonction $f$ définie
+sur $[-2;5]$.  
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{6cm}
+\includegraphics[width=6cm]{images/courbe3.png}
+\end{minipage}
+&
+\begin{minipage}{12cm}
+Déterminons les antécédents éventuels de 2: on trace la droite horizontale
+passant par le point de coordonnée (0;2) (en rouge) et on lit les abscisses des
+points d'intersection de cette droite avec la courbe.
+
+Dans notre cas, il y a \ldots \ldots antécédents. On a:
+
+
+$f(\ldots)=f(\ldots)=f(\ldots)=f(\ldots)=f(\ldots)=2$.
+
+\ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots sont les
+antécédents de 2.
+
+\enskip
+
+$\dfrac{1}{2}$ a pour image \ldots, 1 a pour image \ldots, $\dfrac{3}{2}$ a
+pour image \ldots, 2 a pour image \ldots  et 5 a pour image \ldots
+
+\enskip
+
+Les points de coordonnées ($\dfrac{1}{2}$;2), (1;2), ($\dfrac{3}{2}$;2), (2;2)
+et (5;2) \ldots \ldots \ldots \ldots \ldots à la courbe représentative de $f$.
+\end{minipage}
+\end{tabular}
+
+\medskip
+
+\ul{Applications}:
+\begin{enumerate}
+  \item Dans l'exemple précédent, déterminer graphiquement les antécédents de
+  -2,5 et de 6.
+  \item Soit  \begin{minipage}{3cm}
+
+\begin{align*}
+h: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  5x-3
+\end{align*}
+\end{minipage}   
+
+
+La fonction (affine) $h$ a la courbe représentative ci-dessous:
+
+
+\begin{tabular}{cc}
+\begin{minipage}{5cm}
+\includegraphics[width=5cm]{images/courbe4.png}
+\end{minipage}
+&
+\begin{minipage}{13cm} 
+Déterminer par 2 méthodes différentes les antécédents de 7 et de 2. 
+\end{minipage}
+\end{tabular}
+\end{enumerate}
+
+\subsection*{Déterminer le domaine de définition d'une fonction}
+
+\subsubsection*{$f$ est définie par une formule}
+
+\ul{Méthode}:
+
+\enskip
+
+\fbox{ \begin{minipage}{18cm}
+ Déterminer l'ensemble de définition d'une fonction $f$ c'est
+trouver l'ensemble des $x$ pour lesquels on peut calculer $f(x)$ (c'est-à-dire
+les $x$ tels que $f(x)$ a du sens).
+\end{minipage}
+}
+
+\enskip
+
+On sait que: diviser par  \ldots \ldots n'est pas possible et la racine d'un
+nombre \ldots \ldots \ldots n'existe pas.
+
+\enskip
+
+\fbox{
+\begin{minipage}{12cm}
+
+\begin{itemize}
+ \item [$\bullet$] Le calcul de $\dfrac{A(x)}{B(x)}$ n'est possible que si $B(x)
+\ldots \ldots \ldots$.
+
+\enskip
+
+\item  [$\bullet$] Le calcul de $\sqrt{A(x)}$ n'est possible que si $A(x)
+\ldots \ldots \ldots$.
+\end{itemize}
+\end{minipage}
+}
+
+
+\medskip 
+ 
+\ul{Applications:} Déterminer l'ensemble de définition des fonctions suivantes:
+
+
+$f(x)=\dfrac{3}{2x-8}$ \qquad \qquad $g(x)=\sqrt{5-7x}$ \qquad \qquad
+$h(x)=x^{2}-7x+19$ \qquad \qquad $i(x)= \sqrt{\dfrac{5}{4-x}}$
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+$k(x)= \sqrt{(x+3)(6-x)}$: 
+
+L'ensemble de définition de $k$ est l'ensemble des
+réels $x$ tels que \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots.
+
+ On doit
+donc résoudre \ldots\ldots \ldots \ldots \ldots \ldots \ldots \ldots.
+
+ C'est une
+inéquation-\ldots \ldots \ldots \ldots; il faut donc faire un \ldots \ldots \ldots
+\ldots \ldots \ldots \ldots \ldots.
+
+\enskip
+
+On donne le tableau de signes de $k$, en déduire le domaine de définition de
+$k$:
+
+\includegraphics[width=9cm]{images/tab4.jpg} 
+
+
+ \subsubsection*{Représentation graphique de $f$}
+
+\ul{Méthode}: 
+
+\medskip
+
+
+\fbox{ 
+\begin{minipage}{18cm}
+Déterminer un ensemble de définition graphiquement c'est lire les
+abscisses des points de la courbe.
+\end{minipage}
+}
+
+\medskip
+
+\ul{Applications}: Pour chaque représentation graphique, déterminer l'ensemble
+de définition de la fonction $f$:
+
+\medskip
+
+\begin{tabular}{ccc}
+\begin{minipage}{6cm}
+\includegraphics[width=5cm]{images/DF1.png}
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\includegraphics[width=5cm]{images/DF2.png}
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\includegraphics[width=5cm]{images/DF3.png} 
+\end{minipage}
+\end{tabular}
+
+
+
+
+   
+\end{document}

@@ -1,0 +1,459 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=6mm, right=6mm, top=5mm, bottom=5mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+\title{\ul{\textbf{Calcul numérique}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Egalité de fractions}
+
+\subsection{Fractions égales}
+
+
+\ul{Propriété}: La valeur d'une écriture fractionnaire ne change pas si l'on
+\textbf{multiplie} ou si l'on \textbf{divise} son numérateur et son
+dénominateur par un \textbf{même nombre} non nul.
+
+
+
+\enskip
+
+a, b et k désignent des nombres avec b $\neq$ 0 et k $\neq$ 0.
+
+
+\begin{center}
+
+\fbox{
+
+$\dfrac{a}{b}=\dfrac{a\times k}{b \times k}$ \qquad et
+\qquad $\dfrac{a}{b}=\dfrac{a \div k}{b \div k}$
+}
+\end{center}
+
+
+\enskip
+
+
+\ul{Exemples}:
+$\dfrac{-4}{5}=\dfrac{-4 \times 3}{5 \times 3}=\dfrac{-12}{15}$ \qquad On a
+donc: $\dfrac{-4}{5}=\dfrac{-12}{15}$ .
+
+\medskip
+
+ $\dfrac{27}{36}=\dfrac{27 \div 9}{36 \div 9}=\dfrac{3}{4}$ \qquad On a donc:
+ $\dfrac{27}{36}=\dfrac{3}{4}$.
+
+\medskip
+
+Par contre, $\dfrac{3}{2} \neq \dfrac{15}{14}$
+
+\bigskip
+
+
+
+
+
+\ul{Propriété}: Quels que soient les nombres a et b (avec b $\neq$ 0), on a:
+
+
+\begin{center}
+\fbox{
+
+$\dfrac{-a}{-b}=\dfrac{a}{b}$ \qquad et \qquad
+$\dfrac{a}{-b}=\dfrac{-a}{b}=-\dfrac{a}{b}$
+}
+\end{center}
+
+\enskip
+
+
+\ul{Exemples}: $\dfrac{-2}{-3}=\dfrac{2}{3}$  \quad et \quad
+$\dfrac{-2}{3}=\dfrac{2}{-3}=-\dfrac{2}{3}$
+
+\subsection{Application}
+
+
+
+\ul{Définition}: \textbf{Simplifier} une fraction, c'est écrire une fraction
+qui a la même valeur mais dont le numérateur et le dénominateur sont des
+entiers plus petits.
+Lorsque la fraction trouvée n'admet plus de simplification, on dit que c'est
+une \textbf{fraction irréductible}.
+
+
+\enskip
+
+
+\ul{Exemple}: 
+ Simplifier la fraction $\dfrac{42}{-56}$.
+
+\enskip
+
+$\dfrac{42}{-56}=-\dfrac{42}{56}=$ \qquad \qquad \qquad \qquad \qquad \qquad
+\qquad \qquad \qquad La fraction \ldots \ldots
+trouvée est une fraction irréductible.
+
+\medskip
+
+\textbf{Attention:} $\dfrac{1 \times 6}{2 \times 6}=\dfrac{1}{2}$ mais
+$\dfrac{1 + 6}{2 + 6}\neq \dfrac{1}{2}$
+
+
+\subsection{Egalité des ``produits en croix''}
+
+
+\ul{Propriété}: Quels que soient les nombres a, b, c et d (avec b $\neq$ 0 et d
+$\neq$ 0):
+
+\enskip
+
+\begin{itemize}
+  \item [$\bullet$] si $\dfrac{a}{b}=\dfrac{c}{d}$ alors $a \times d=b \times c$
+  \item [$\bullet$] si $a \times d=b \times c$ alors
+  $\dfrac{a}{b}=\dfrac{c}{d}$.
+\end{itemize}
+
+
+\medskip
+
+\ul{Exemples}: Les fractions $\dfrac{26}{39}$ et $\dfrac{4}{6}$ sont-elles
+égales?
+
+\bigskip
+
+Les fractions $\dfrac{23}{45}$ et $\dfrac{1}{2}$ sont elles égales?
+
+
+\section{Additionner et soustraire}
+
+
+\ul{Propriété}: Pour calculer la somme ou la différence de deux nombres en
+écriture fractionnaire de \textbf{même dénominateur}:
+
+\begin{itemize}
+
+  \item [$\bullet$] on additionne ou soustrait les numérateurs,
+  \item [$\bullet$] on garde le dénominateur commun.
+\end{itemize}
+
+\enskip
+
+\ul{Propriété}: Quels que soient les nombres relatifs a, b et c (avec c $\neq$ 0), on a:
+
+\begin{center}
+\fbox{$\dfrac{a}{c}+\dfrac{b}{c}=\dfrac{a+b}{c}$  \quad et \quad
+$\dfrac{a}{c}-\dfrac{b}{c}=\dfrac{a-b}{c}$}
+\end{center}
+
+\enskip
+
+\ul{Exemples}: $\dfrac{4}{17}-\dfrac{11}{17}=$
+
+
+\enskip
+
+$\dfrac{-2}{7}+\dfrac{3}{14}=$
+    
+ \enskip
+ 
+ $\dfrac{3}{4}-\dfrac{-7}{5}=$
+ 
+ 
+ \section{Multiplier et diviser}
+
+
+
+\subsection{Multiplication de nombre en écriture fractionnaire}
+
+
+\ul{Propriété}: Pour calculer le produit de deux nombres en écriture
+fractionnaire:
+
+\begin{itemize}
+  \item [$\bullet$] on multiplie les numérateurs entre eux,
+ 
+  \item [$\bullet$] on multiplie les dénominateurs entre eux.
+\end{itemize}
+
+\enskip
+
+\ul{Propriété}: Quels que soient les nombres relatifs a, b, c et d (avec c
+$\neq$ 0 et d $\neq$ 0), on a:
+
+\begin{center}
+\fbox{$\dfrac{a}{c} \times \dfrac{b}{d}=\dfrac{a \times b}{c \times d}$}
+\end{center}
+
+\enskip
+
+\ul{Exemples}: $\dfrac{7}{4} \times \dfrac{-9}{5}=\dfrac {7 \times (-9)}{4
+\times 5}=-\dfrac{63}{20}$
+
+\enskip
+
+ Calculer $B=\dfrac{25}{42} \times \dfrac{-14}{45}$
+
+
+
+\subsection{Inverse d'un nombre}
+
+
+\ul{Définition}: Deux nombres non nuls sont inverses l'un de l'autre si leur
+produit est égal à 1.
+
+\enskip
+
+
+\ul{Propriété}: Quels que soient les nombres relatifs $a$ et $b$ avec $a \neq 0$
+et $b \neq 0$:
+
+$\bullet$ L'inverse de $a$ est $\dfrac{1}{a}$ (on le note aussi $a^{-1}$) car
+$a \times \dfrac{1}{a}=1$.
+
+$\bullet$ L'inverse de $\dfrac{a}{b}$  est $\dfrac{b}{a}$ car $\dfrac{a}{b} \times
+\dfrac{b}{a}=1$.
+
+\bigskip
+
+\ul{Exemples}: L'inverse de 2 est $\dfrac{1}{2}$ car $2 \times \dfrac{1}{2}=1$.
+L'inverse de $-\dfrac{3}{7}$ est  $-\dfrac{7}{3}$ car $-\dfrac{3}{7} \times
+(-\dfrac{7}{3})=1$.
+
+
+\subsection{Quotient de deux nombres en écriture fractionnaire}
+
+\ul{Propriété}: Diviser par un nombre non nul, c'est multiplier par l'inverse
+de ce nombre. 
+
+\enskip
+
+\ul{Propriété}: Quels que soient les nombres relatifs  $a$, $b$, $c$ et $d$
+(avec b $\neq$ 0, c $\neq$ 0 et d $\neq$ 0) on a:
+
+
+\begin{center}
+\fbox{$\dfrac{a}{b}= a \times \dfrac{1}{b}$ \qquad et \qquad $\dfrac{a}
+{b} \div \dfrac{c}{d}=\dfrac{a}{b} \times \dfrac{d}{c}$}
+\end{center}
+
+\bigskip
+
+\ul{Exemples}: 
+
+\begin{itemize}
+  \item [$\bullet$]$\dfrac{3}{4}=3 \times \dfrac{1}{4}$
+  
+  \medskip
+  
+  \item [$\bullet$] $\dfrac{-5}{6}= -5 \times \dfrac{1}{6}$
+  
+  \medskip
+  
+  \item [$\bullet$] $\dfrac{5}{3} \div \dfrac{7}{2}=$
+  
+  \medskip
+  
+  \item [$\bullet$] $\dfrac{\dfrac{2}{5}}{\dfrac{-7}{3}}= \dfrac{2}{5} \div
+  \dfrac{-7}{3}=$
+\end{itemize}
+ 
+ 
+ \pagebreak
+ 
+ 
+ \section{Puissances d'un nombre}
+
+\subsection{Vocabulaire et notation}
+
+
+\ul{Définition}: Pour tout nombre relatif $a$ non nul et tout nombre entier $n$
+positif non nul:
+
+\enskip
+
+
+\begin{center}
+\fbox{
+
+
+$a^n= \underbrace{a \times a \times  \ldots \times a}_{\text{n facteurs}} $
+\quad \quad et \quad \quad $a^{-n}=\underbrace{\dfrac{1}{a \times a \times 
+\ldots \times a}}_{\text{n facteurs}}=\dfrac{1}{a^n}$
+
+}
+ \end{center}
+
+\bigskip
+
+\ul{Remarques}:
+
+\begin{itemize}
+  \item [$\bullet$] Si a est différent de 0, $a^{-n}=\dfrac{1}{a^n}$ désigne
+  l'inverse de $a^n$.
+
+  
+  \item [$\bullet$] $a^1=a$ et $a^{-1}$ est l'inverse de $a$.
+  
+  \item [$\bullet$] \ul{Convention}: $a^0=1$.
+\end{itemize}
+
+
+\bigskip
+
+\ul{Exemples}:
+$3^1=\ldots \ldots$ \qquad \qquad \qquad 
+$2010^0=\ldots \ldots$    \qquad \qquad \qquad $8^{-1}=\ldots \ldots$
+\qquad \qquad \qquad  $10^{-3}=\ldots \ldots$
+
+
+
+ 
+\subsection{Calculer avec des puissances}
+
+
+\ul{Règles de priorité}: 
+
+$\bullet$ En l'absences de parenthèses, on calcule les puissances avant
+d'effectuer les autres opérations.
+
+$\bullet$ En présence de parenthèses, on effectue d'abord les calculs entre
+parenthèses.
+
+
+\medskip
+
+\ul{Exemples}:
+\quad $5 \times 3^2=5 \times 9 =45$ \qquad \qquad $(5+3)^2=8^2=64$ 
+
+
+\bigskip
+
+
+\ul{Propriété}: pour tous nombres entiers relatifs $m$ et $p$ et tous nombres
+relatifs $a$ et $b$ non nuls, on a:
+
+
+
+\begin{center}
+
+\fbox{
+
+
+ $a^m \times a^p=a^{m+p}$ 
+
+
+
+\qquad \quad $\dfrac{a^m}{a^p}=a^{m-p}$ 
+
+
+
+\qquad \quad  $\left( a^m \right) ^p =a^{m \times p}$ 
+
+
+
+\qquad \quad $a^m \times b^m=(a \times b) ^m$
+
+
+
+
+\qquad  \quad $\dfrac{a^m}{b^m}= \left( \dfrac{a}{b}\right)^m$
+}
+\end{center}
+
+\bigskip 
+
+
+\ul{Exemples}: 
+
+$7^3 \times 7^{-4}=7^{3+(-4)}=7^{-1}$; \quad \quad 
+$\dfrac{5^6}{5^2}=5^{6-2}=5^4$; \quad \quad $(7^4)^2=7^{4 \times 2}=7^8$; 
+\quad \quad
+$4^3 \times 5^3=20^3$; \quad \quad $\dfrac{10^3}{6^3}=\left ( \dfrac{10}{6}
+\right ) ^3$
+
+
+\section{Cas particulier: puissances de 10}
+
+\subsection{Multiplier par une puissance de 10}
+
+\ul{Propriétés}: Pour tout nombre entier positif $n$ (non nul):
+
+
+
+
+\begin{center}
+\fbox{
+\begin{minipage}{18cm}
+ 
+$10^n=\underbrace{10 \times 10 \times \ldots \times 10}_{\text{n
+facteurs}}=1 \underbrace{0 \ldots 0}_{\text{n zéros}}$
+\qquad  \qquad et \qquad \qquad 
+$10^{-n}=\underbrace{\dfrac{1}{10 \times 10 \times \ldots \times 10}}_{\text{n
+facteurs}}=\underbrace{0,0 \ldots 0}_{\text{n zéros}} 1$
+\end{minipage}
+}
+\end{center}
+
+\enskip
+
+\ul{Exemples}: $10^5=10000$ \qquad \qquad $10^{-5}=0,00001$
+
+\bigskip
+
+\ul{Propriétés}:
+
+
+\textbf{Multiplier} un nombre par $10^n$ revient à décaler la virgule de
+\textbf{n rangs vers la droite} (on complète par des zéros si nécéssaire).
+
+
+\textbf{Multiplier} un nombre par $10^{-n}$ revient à décaler la virgule de
+\textbf{n rangs vers la gauche} (on complète par des zéros si nécéssaire).
+
+
+\enskip
+
+
+\ul{Exemples}: $10^0=\ldots$ \qquad \qquad \qquad \qquad $208,564 \times
+10^2=\ldots \ldots$ \qquad \qquad \qquad \qquad $38,5 \times 10^{-3}=\ldots
+\ldots$
+
+
+
+
+
+\subsection{Ecriture scientifique}
+
+
+
+\ul{Définitions}: Tout nombre décimal non nul peut être écrit en
+\textbf{notation scientifique}, c'est-à-dire sous la forme $a \times 10^n$, où
+$a$ est un nombre décimal ayant un seul chiffre avant la virgule différent de
+zéro et $n$ un entier relatif.
+
+Le nombre $a$ est appelé \textbf{mantisse}.
+
+\enskip
+
+\ul{Exemple}: Ecrire le nombre $A=6430,2$ en notation scientifique.
+
+$A=6430,2= \ldots \ldots$.
+
+\end{document}

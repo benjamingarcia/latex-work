@@ -1,0 +1,100 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=5mm, bottom=20mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\pagestyle{empty}
+
+
+\begin{document}
+
+\section*{\center{Aide individualisée : équation-produits et équation-quotients}}
+
+\subsection*{Equation-produits}
+L'équation $A(x) \times B(x)=0$ est équivalente à $A(x)=0$ ou
+$B(x)=0$. 
+
+
+Un produit de facteurs est nul si et seulement si l'un ou l'autre des
+facteurs est nul.
+
+\enskip
+
+Cette équation est appelée \textbf{équation-produit}.
+
+\enskip
+
+\textit{Remarque}: Dès qu'une équation n'est pas d'un type simple ``$ax+b=0$'' ,
+on tente de se ramener à une équation produit.
+
+\ul{Exemple} : $(x-2)(x-4)=0$\\
+alors 
+$
+\begin{array}{cccc} 
+ & x-2=0 &ou& x-4=0\\
+& x=2 &ou& x=4\\
+\end{array}
+$
+
+
+\subsection*{Equation-quotients}
+ L'équation $\dfrac{A(x)}{B(x)}=0$ est équivalente à $A(x)=0$ et $B(x)\neq0$.\\
+ 
+ \ul{Exemples} : 
+ \begin{itemize}
+  \item  [$\bullet$]  $ \dfrac{4x-1}{x+3}=0$\bigskip\\
+  \ul{Méthode} : \begin{enumerate}
+  \item on résout $4x-1=0$ donc \ul{$x=1/4$}
+  \item on résout $x+3=0$ donc \ul{$x=-3$}
+  \item on vérifie que $-3\neq1/4$ (car $-3$ est une valeur interdite : on ne peut pas diviser par $0$).
+  \item on conclut : la solution est $1/4$
+\end{enumerate}
+\bigskip
+\item [$\bullet$] $\dfrac{x+1}{2x+2}=0$\bigskip\\ 
+\ul{Méthode} : \begin{enumerate}
+                                                   \item on résout $x+1=0$ donc \ul{$x=-1$}
+                                                   \item on résout $2x+2=0$ donc $2x=-2$ d'où \ul{$x=-1$}
+                                                   \item $-1=-1$
+                                                   \item on conclut : $-1$ est une valeur interdite (car $-1+1=0$ et
+                                                   on ne peut das diviser par 0).  Donc il n'y a pas de solution.
+                                                 \end{enumerate}
+\end{itemize}
+
+\pagebreak
+\subsection*{Exercice 1}
+Résoudre les équations suivantes : 
+\begin{enumerate}
+  \item $(2x+1)(x-3)=0$
+  \item $\dfrac{5x+3}{7x-2}=0$
+\end{enumerate}
+
+
+\subsection*{Exercice 2}
+Résoudre les équations suivantes : 
+\begin{enumerate}
+  \item  $(4-3x)(2+x)=0$
+  \item  $x²-9=0$
+  \item  $x²-4=0$
+  \item  $(x+1)(5+7x)-3\times(x+1)=0$
+\end{enumerate}
+
+
+\subsection*{Exercice 3}
+Résoudre les équations suivantes : 
+\begin{enumerate}
+  \item $\dfrac{4x-1}{x}=0$
+  \item $\dfrac{(2x-1)(x-3)}{x-2}=0$
+  \item $\dfrac{(x+6)(3x-5)}{2x+12}=0$
+  \item $\dfrac{1}{x+4}=-\dfrac{2}{x+1}$
+\end{enumerate}
+
+
+\end{document}

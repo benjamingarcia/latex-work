@@ -1,0 +1,650 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=7mm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+\title{\ul{\textbf{Triangles isométriques, triangles semblables}}}
+\date{}
+\begin{document}
+\maketitle
+ 
+\section{Rappels}
+
+\subsection{Construction d'un triangle}
+
+\ul{Exemples}:
+\medskip
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+Construire un triangle $ABC$ tel que 
+
+$AB=2$, $BC=3$ et $AC=4$. \
+\end{minipage}
+&
+\begin{minipage}{9cm}
+ Construire un triangle $GHI$ tel que 
+ 
+ $GH=2$, $HI=3$ et
+$GI=6$.
+\end{minipage}
+\end{tabular}
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\ul{Propriété}: \textbf{Inégalité triangulaire}
+
+
+Soient $A$, $B$ et $C$ trois points distincts. Alors $AB \leqslant AC+BC$.
+
+La longueur de chaque côté est inférieure ou égale à la somme des  longueurs
+des deux autres côtés.
+
+\bigskip
+
+
+\begin{tabular}{cc}
+\begin{minipage}{5cm}
+\includegraphics[width=5cm]{images/inegalite.png}
+\end{minipage}
+&
+\begin{minipage}{13cm}
+En particulier, la longueur du plus grand côté est inférieure ou égale à la
+somme des deux autres. Si cette condition n'est pas vérifiée, il n'est pas
+possible de construire le triangle.
+
+\enskip
+
+$ABC$ un triangle avec $AB=c$, $BC=a$ et $AC=b$. On suppose $a \geqslant b$ et
+$a \geqslant c$. On a alors:
+\fbox{$a \leqslant b+c$}
+
+
+\end{minipage}
+\end{tabular}
+
+\bigskip
+
+
+Lorsqu'il y a égalité, les trois points
+sont alignés (il s'agit d'un triangle aplati): \textit{``Le plus court chemin
+entre deux points est la ligne droite}''.
+
+\subsection{Transformations usuelles}
+
+Convention: Soit $M$ un point du plan, on notera $M'$ le transformé du point $M$
+par l'une des transformations ci-dessous.
+
+\medskip
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{7cm}|p{5cm}|}
+\hline
+\textbf{Transformation} & \textbf{Image d'un point} & \textbf{Construction} \\
+\hline
+\enskip
+
+La \textbf{symétrie axiale} par rapport à $(d)$ (appelée aussi \textbf{symétrie orthogonale} d'axe $(d)$):
+
+\enskip
+
+Elle est définie par la droite $(d)$.
+&
+\enskip
+
+Le symétrique du point $M$ par rapport à la droite $(d)$ est le point $M'$ tel
+que \textbf{$(d)$ soit la médiatrice de $[MM']$}.
+
+
+\enskip
+
+ Si $M \in \ (d)$, alors $M'=M$ (les
+points de la droite $(d)$ sont invariants) .
+& \\
+
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{7cm}|p{5cm}|}
+\hline
+\textbf{Transformation} & \textbf{Image d'un point} & \textbf{Construction} \\
+\hline
+ 
+\enskip
+
+La \textbf{symétrie centrale} de centre $I$:
+
+\enskip
+
+Elle est définie par un point $I$. 
+&
+\enskip
+
+$M$ est un point distinct de $I$. 
+
+Par la symétrie de centre $I$, le symétrique
+de $M$ est le point $M'$ tel que \textbf{$I$ soit le milieu de $[MM']$}.
+
+\enskip
+
+Le symétrique de $I$ par rapport à $I$ est le point $I$ lui-même.
+Le point $I$ est le seul point invariant.
+
+\enskip
+
+&
+\\
+\hline
+
+\enskip
+
+La \textbf{rotation} directe (ou anti-horaire) de centre $O$ et d'angle
+$\alpha$:
+
+\enskip
+
+Elle est définie par un point $O$ et un nombre $\alpha$. 
+&
+\enskip
+
+
+L'image de $M$ par la rotation directe de centre $O$ et d'angle $\alpha$ est le
+point $M'$ vérifiant: 
+
+ $OM=OM'$ et $\widehat{MOM'}= \alpha$.
+
+
+\enskip
+
+Le centre de la rotation est le seul point invariant.
+
+\enskip
+
+\textit{Remarque:} La rotation de centre $O$ et d'angle 180° est la symétrie de
+centre $O$.
+
+\enskip
+
+ &
+\\
+\hline
+
+\enskip
+
+La \textbf{translation} de vecteur $\overrightarrow{AB}$:
+
+\enskip
+
+Elle est définie par un vecteur $\overrightarrow{AB}$.
+ 
+&
+\enskip
+
+$M'$ est l'image de $M$ par la translation qui transforme $A$ en $B$ signifie
+que \textbf{$ABMM'$ est un parallélogramme}.
+
+
+On a alors: $\overrightarrow{MM'}=\overrightarrow{AB}$ 
+
+
+\enskip
+
+ Il n'y a pas de point invariant.
+ 
+ \enskip
+ 
+ &
+\\
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+
+
+
+\ul{Propriétés et définition}: Les tranformations usuelles ci-dessus conservent
+les \textbf{distances}, les \textbf{angles}, l'\textbf{alignement}
+et les \textbf{aires}. \textbf{On les nomme isométries}.
+\end{minipage}
+}
+
+\bigskip
+
+\ul{Conséquences}: Les isométries transforment une droite en une droite, un
+cercle en un cercle de même rayon, un triangle en un triangle isométrique
+(superposable). Les isométries conservent les parallélismes.
+
+
+\bigskip
+
+\textit{Remarque:} Il existe des transformations du plan qui ne conservent pas
+les distances:
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{13cm}
+Soit $O$ un point du plan et la transformation du plan qui à un point $M$
+associe le point $M'$ vérifant les conditions suivantes:
+
+$\bullet$ $O$, $M$ et $M'$ sont alignés dans le même ordre
+
+$\bullet$ $OM'=2OM$.
+
+
+\enskip
+
+On remarque que $AB \neq A'B'$. Les distances ne sont pas conservées, cette
+transformation n'est pas une isométrie.
+\end{minipage}
+&
+\begin{minipage}{5cm}
+\includegraphics[width=5cm]{images/homo.png}
+\end{minipage}
+\end{tabular}
+
+
+ 
+\section{Triangles isométriques}
+
+\subsection{Définitions}
+
+\ul{Définitions}: Deux triangles superposables sont dits isométriques. Deux
+triangles sont dits isométriques lorsque l'un est l'image de l'autre par une
+isométrie (symétrie axiale, symétrie centrale, rotation ou translation) ou une
+succession d'isométries. 
+
+\bigskip
+
+\ul{Exemples}:
+
+
+\begin{tabular}{cc}
+\begin{minipage}{10cm}
+\begin{itemize}
+  \item [$\bullet$] $A'B'C'$ est l'image de $ABC$ par:
+  
+
+  \item[]
+  
+  
+  \item [$\bullet$] $A''B''C''$ est l'image de $A'B'C'$ par:
+  
+  \item[]
+  
+  
+  
+  \item [$\bullet$] $A"B"C"$ est l'image de $ABC$ par:
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{8cm}
+\includegraphics[width=8cm]{images/iso.png} 
+\end{minipage}
+\end{tabular}
+
+\bigskip
+
+\ul{Remarques}: 
+
+\enskip
+
+\begin{itemize}
+  \item [$\bullet$]Les sommets de deux triangles isométriques sont appelés
+  sommets homologues.
+  
+  \medskip
+  
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Triangle $ABC$ & $A$   & $B$    & $C$    \\
+  \hline
+ Triangle $A'B'C'$ & $A'$   & $B'$    & $C'$    \\ 
+ \hline
+  \end{tabular}
+\end{center}
+ 
+\medskip
+
+
+  \item [$\bullet$]Deux triangles isométriques ont leurs côtés homologues de
+  même longueur et leurs trois angles homologues de même mesure.
+  
+\end{itemize}
+
+\subsection{Comment reconnaître des triangles isométriques? Cas d'isométries
+des triangles}
+
+\ul{Propriétés} (admises):
+
+
+\begin{enumerate}
+  \item Si deux triangles ont leurs trois côtés respectivement de même longueur
+  alors ils sont isométriques.
+  
+  \begin{center}
+ \includegraphics[width=5cm]{images/prop1.png} 
+  \end{center}
+  
+  \enskip
+  
+  \item Si deux triangles ont un angle de même mesure compris entre deux côtés
+  respectivement de même longueur alors ils sont isométriques.
+  
+  \begin{center} 
+  \includegraphics[width=5cm]{images/prop2.png}
+  \end{center}
+
+\enskip
+  
+  \item Si deux triangles ont un côté de même longueur adjacent à deux angles
+  respectivement de même mesure, alors ils sont isométriques.
+  
+  \begin{center}
+  \includegraphics[width=5cm]{images/prop3.png}
+  \end{center}
+\end{enumerate}
+
+\ul{Exemples}:
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{8cm}
+\begin{itemize}
+  \item [$\bullet$] Soit $ABC$ un triangle isocèle en $C$. $H$ est le milieu de
+  $[BC]$.
+  
+  Alors $CHA$ et $CHB$ sont isométriques.
+  
+  \enskip
+  
+  
+  \item [$\bullet$] Soit $EFGH$ un parallélogramme. Alors les triangles:
+  
+ \ldots \ldots et \ldots \ldots sont isométriques
+ 
+ \ldots \ldots et \ldots \ldots sont isométriques
+ 
+ \ldots \ldots et \ldots \ldots sont isométriques
+ 
+ 
+ \ldots \ldots et \ldots \ldots sont isométriques.
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{10cm}
+\includegraphics[width=3cm]{images/ex1.png} 
+\includegraphics[width=5cm]{images/ex2.png}
+\end{minipage}
+\end{tabular}
+
+\section{Triangles semblables (ou de mêmes formes)}
+
+\subsection{Définition}
+
+\ul{Définition}: Deux triangles sont \textbf{semblables} (on dit aussi qu'ils
+ont la \textbf{même forme}) si les angles de l'un sont égaux aux angles de
+l'autre.
+
+\begin{center}
+\includegraphics[width=8cm]{images/semb.png}
+\end{center}
+
+\ul{Conséquences}:
+\begin{itemize}
+  \item [$\bullet$] Deux triangles isométriques sont semblables car leusr angles
+  sont deux à deux égaux.
+  
+ATTENTION: La réciproque est fausse: deux triangles semblables
+  ne sont pas forcément isométriques.
+  
+
+  
+  \item [$\bullet$] Tous les triangles équilatéraux sont semblables.
+ 
+  \item [$\bullet$] Tous les triangles rectangles isocèles sont semblables.
+\end{itemize} 
+
+\subsection{Proportionnalité}
+
+\ul{\textbf{Théorème}}: Si $ABC$ et $A'B'C'$ sont deux triangles semblables
+(avec $\widehat{A}=\widehat{A'}$, $\widehat{B}=\widehat{B'}$ et
+$\widehat{C}=\widehat{C'}$), alors on peut construire un triangle $AMN$
+isométrique à $A'B'C'$ qui forme une configuration de Thalès avec $ABC$.
+
+\pagebreak
+
+\ul{Démonstration}:
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+On note $M$ l'un des points de la droite $(AB)$ tel que $AM=A'B'$. On note $N$
+l'un des points de la droite $(AC)$ tel que $AN=A'C'$. De plus,
+$\widehat{MAN}=\widehat{BAC}$ (pour la figure papillon, il s'agit d'angles
+opposés par le sommet).
+
+\enskip
+
+Les triangles $A'B'C'$ et $AMN$ ont un angle égaux compris entre deux côtés de
+mêmes longueurs; ils sont donc isométriques. 
+\enskip
+
+Les angles homologues $\widehat{ABC}$ et $\widehat{AMN}$ étant égaux, les
+droites $(MN)$ et $(BC)$ sont parallèles.
+
+\enskip
+
+On obtient donc une configuration de Thalès.
+\end{minipage}
+&
+\begin{minipage}{9cm}
+\includegraphics[width=9cm]{images/thales.png}
+\end{minipage}  
+\end{tabular}
+
+\bigskip
+
+\ul{\textbf{Théorème}}: Si deux triangles $ABC$ et $A'B'C'$ sont semblables
+(avec $\widehat{A}=\widehat{A'}$, $\widehat{B}=\widehat{B'}$ et
+$\widehat{C}=\widehat{C'}$) alors les longueurs des côtés homologues sont
+\textbf{proportionnelles}. Autrement dit: 
+
+\begin{center}
+\fbox{$\dfrac{A'B'}{AB}=\dfrac{A'C'}{AC}=\dfrac{B'C'}{BC}=k$}
+\end{center}
+
+\bigskip
+
+\ul{Démonstration}:
+
+\enskip
+
+On peut supposer $A'B'<AB$. D'après le théorème précédent, on peut appliquer le
+théorème de Thalès: 
+
+$\dfrac{AM}{AB}=\dfrac{AN}{AC}=\dfrac{MN}{BC}$. 
+
+Comme les triangles $A'B'C'$ et $AMN$ sont isométriques, on a: $AM=A'B'$,
+$AN=A'C'$ et $MN=B'C'$.
+
+On a donc $\dfrac{A'B'}{AB}=\dfrac{A'C'}{AC}=\dfrac{B'C'}{BC}=k$. 
+
+On dit que
+les côtés homologues de $ABC$ et $A'B'C'$ sont proportionnels.
+
+\bigskip
+
+
+
+\ul{Remarques}: 
+
+\enskip
+
+\begin{itemize}
+  \item [$\bullet$] Le rapport $k$ est appelé \textbf{coefficient
+  d'agrandissement} lorsque $k>1$ et \textbf{coefficient de réduction} lorsque $0<k<1$ (pour passer
+du triangle $ABC$ au triangle $A'B'C'$). 
+
+\enskip
+
+ \item [$\bullet$]  Pour déterminer $k$, il faut faire correspondre les sommets homologues:
+ 
+\enskip
+  
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Triangle $ABC$ & $A$   & $B$    & $C$    \\
+  \hline
+ Triangle $A'B'C'$ & $A'$   & $B'$    & $C'$    \\ 
+ \hline
+  \end{tabular}
+\end{center}
+ 
+\end{itemize}
+
+
+
+\bigskip 
+
+\ul{Application}: $ABC$ et $A'B'C'$ sont semblables (avec
+$\widehat{A}=\widehat{A'}$, $\widehat{B}=\widehat{B'}$ et
+$\widehat{C}=\widehat{C'}$), déterminer $A'C'$ et $B'C'$.
+
+\medskip
+
+\includegraphics[width=4cm]{images/app1.png} 
+
+\pagebreak
+
+\ul{\textbf{Théorème}}: (admis) Si $ABC$ et $A'B'C'$ sont des triangles
+semblables et $k$ le coefficient d'agrandissement/réduction qui transforme le triangle $ABC$ au triangle
+$A'B'C'$, alors:
+
+\begin{center}
+\fbox{$\dfrac{Aire(A'B'C')}{Aire (ABC)}=k^{2}$}
+\end{center} 
+
+\bigskip
+
+\ul{Exemple}: Soit $ABC$ un triangle tel que $AB=28mm$, $BC=39mm$ et $AC=42mm$.
+$I$ est le milieu du segment $[AB]$ et $D$ le point du segment $[AC]$ tel que
+$\widehat{AID}=\widehat{ACB}$.
+\begin{enumerate}
+  \item Calculer $AD$ et $ID$.
+  \item Montrer que $\dfrac{Aire(AID)}{Aire(ABC)}=\dfrac{1}{9}$.
+\end{enumerate}
+ 
+
+\includegraphics[width=4cm]{images/ex3.png} 
+
+
+\subsection{Comment reconnaître deux triangles semblables?}
+
+\ul{Propriétés}: (admises)
+ 
+\begin{enumerate}
+  \item \ul{\textbf{Théorème réciproque}}: Si deux triangles ont les longueurs
+  de leurs côtés proportionnels deux à deux alors les triangles sont semblables.
+  
+  \begin{center}
+  \includegraphics[width=7cm]{images/th1.png}
+  \end{center}
+  \item Si deux triangles ont deux angles égaux alors ils sont semblables
+  (c'est la définition de triangles semblables).
+  
+  \begin{center}
+  \includegraphics[width=7cm]{images/semb.png}
+  \end{center}
+  \item Si deux triangles ont un angle égal compris entre deux côtés de
+  longueurs proportionnels alors ils sont semblables.
+  
+  \begin{center}
+  \includegraphics[width=7cm]{images/th3.png}
+  \end{center}
+  \item Si deux triangles ont leurs côtés deux à deux parallèles alors ils sont
+  semblables (cela provient du théorème de Thalès).
+  
+  \begin{center}
+  \includegraphics[width=7cm]{images/th4.png} 
+  \end{center}
+\end{enumerate}
+
+\bigskip
+
+\ul{Remarques}: En pratique, on utilise surtout le cas 1 et 2.
+
+\bigskip
+
+\ul{Exemple}:
+
+\begin{tabular}{cc}
+\begin{minipage}{10cm}
+\begin{enumerate}
+  \item Montrer que les triangles $T$ et $T'$ sont semblables (écrire les
+  sommets homologues).
+  \item Quelles égalités d'angle peut-on en déduire?
+  \item Quel est le rapport d'agrandissement/réduction transformant $T$ en $T'$?
+  \item Quel est le rapport d'agrandissement/réduction transformant $T'$ en
+  $T$?
+\end{enumerate}
+\end{minipage}
+
+&
+\begin{minipage}{8cm}
+\includegraphics[width=7cm]{images/ex4.png} 
+\end{minipage}
+\end{tabular}
+\end{document} 
+
+s 

@@ -1,0 +1,389 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=5mm, right=5mm, top=3mm, bottom=3mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+\title{\ul{\textbf{Systèmes de deux équations du premier degré à deux
+inconnues}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Vocabulaire}
+
+
+\ul{Définition:}Un \textbf{ système} de deux équations du premier degré à deux
+inconnues $x$ et $y$ est de la forme:
+
+
+$
+\left \{
+\begin{aligned}
+ax+by=c & \text{ \quad équation (1)} & \quad \\
+a'x+b'y=c' & \text{ \quad équation (2)} & \qquad \text{ avec a, $b$, $c$, $a'$,
+$b'$ et $c'$ des nombres connus.}
+\end{aligned}
+\right. $
+
+
+
+\medskip
+
+\ul{Définition:} \textbf{Résoudre} un système c'est trouver tous les couples
+$(x;y)$ qui sont solutions des deux équations.
+
+
+\medskip
+
+\ul{Exemple:} 
+$
+\left \{
+\begin{aligned}
+2x-y=1 & \text{ \quad  (1)}  \\
+x+2y=4 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+\enskip
+
+
+(1,2 ; 1,4) est-il solution de ce système? \ldots \ldots \ldots \ldots \ldots
+\ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+
+\enskip
+
+
+(1 ; 1) est-il solution de ce système? \ldots \ldots \ldots \ldots \ldots
+\ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+
+\bigskip
+
+\textit{ex 11 p 175; ex 53 p 179}
+
+
+\section{Résolution algébrique}
+
+\subsection{Méthode par combinaison (ou addition)}
+
+
+\fbox{
+\begin{minipage}{18cm}
+Cette méthode consiste à multiplier une (ou les deux) équations par un nombre
+de façon à ce que, lorsqu'on additionne membre à membre les deux équations, une
+des deux inconnues disparaisse.
+\end{minipage}
+}
+
+\medskip
+
+\ul{Exemple:} Résoudre le système $
+\left \{
+\begin{aligned}
+3x+y=5 & \text{ \quad  (1)}  \\
+-6x+2y=-2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+\enskip
+
+\textbf{Etape 1:} Je multiplie l'équation (1) par 2 
+
+$
+\left \{
+\begin{aligned}
+3x+y & = & 5 & \text{ \quad  (1) $\times 2$}  \\
+-6x+2y & = & -2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+\qquad donne \qquad 
+$ \left \{
+\begin{aligned}
+\ldots \ldots \ldots \ldots  & \text{ \quad  (1') }  \\
+-6x+2y=-2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+
+\medskip
+
+\textbf{Etape 2:} J'additionne (ou soustrait) les deux équations membre à
+membre et je réduis. J'obtiens une équation à une seule inconnue  que je résous:
+
+
+$ \left 
+\begin{aligned}
+6x+2y & = & 10  & \text{ \quad  (1') }  \\
+-6x+2y & = & -2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+\rule{5cm}{0.5pt}
+
+
+\bigskip
+
+\textbf{Etape 3:} Pour trouver la deuxième inconnue, on remplace par la valeur
+obtenue dans une des deux équations. J'obtiens une équation à une inconnue que
+je résous:
+
+\enskip
+
+Equation (2): $-6x+2y=-2$
+
+$-6x+2 \times 2=-2$
+
+\bigskip
+
+
+\bigskip
+
+\bigskip
+
+Le couple (\ldots ; \ldots) est solution.
+\qquad \qquad \textbf{Vérification:} $3 \times 1+2=5$ et $-6 \times 1+2 \times
+2=-2$
+
+
+
+\subsection{Méthode par substitution}
+
+
+
+\fbox{
+\begin{minipage}{18cm}
+Cette méthode consiste à substituer (à remplacer) une inconnue par son
+expression de façon à obtenir une équation à une seule
+inconnue.
+\end{minipage}
+}
+
+
+
+
+
+\bigskip
+
+
+\ul{Exemple:} Résoudre le système $
+\left \{
+\begin{aligned}
+3x+y=5 & \text{ \quad  (1)}  \\
+-6x+2y=-2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+\bigskip
+
+\textbf{Etape 1:} Je choisis une équation et j'exprime $y$ en fonction de $x$
+(par exemple):
+
+\enskip
+
+Equation (1): $3x+y=5$ \qquad  donc \qquad $y=5-3x$ (1')
+
+
+\bigskip
+
+
+\textbf{Etape 2:} Je remplace l'expression trouvée dans la deuxième équation.
+J'obtiens une équation à une seule inconnue que je résous:
+
+\enskip
+
+Equation (2): $-6x+2y=-2$ \qquad devient \qquad $-6x+2(5-3x)=-2$
+
+
+$-6x+10-6x=-2$
+
+$-12x+10=-2$
+
+$-12x=-2-10$
+
+$-12x=-12$
+
+$x=1$
+
+
+\bigskip
+
+
+\textbf{Etape 3:} Je remplace $x$ par la valeur obtenue dans l'équation (1'):
+
+
+\enskip
+
+Equation (1'):  $y=5-3x$ \qquad donc \qquad $y=5-3 \times 1=2$
+
+
+\bigskip
+
+
+Le couple (\ldots ; \ldots) est solution.
+
+\bigskip
+
+\textbf{Vérification:} $3 \times 1+2=5$ et $-6 \times 1+2 \times
+2=-2$
+
+
+
+\section {Résolution graphique}
+
+
+\fbox{\begin{minipage}{18cm}
+ Cette méthode consiste à tracer dans un repère les droites représentant les
+équations. Les coordonnées (x;y) du point d'intersection des deux
+droites est le couple solution du système.
+      
+      \end{minipage}
+}
+
+
+\bigskip
+
+\ul{Exemple:} Résoudre graphiquement le système $
+\left \{
+\begin{aligned}
+3x+y=5 & \text{ \quad  (1)}  \\
+-6x+2y=-2 & \text{ \quad (2)} 
+\end{aligned}
+\right. $
+
+\enskip
+
+
+\textbf{Etape 1}: Dans chaque équation, on exprime $y$ en fonction de $x$:
+
+\enskip
+
+\begin{tabular}{l|l}
+
+\begin{minipage}{9cm}
+\begin{center}
+équation (1):
+
+$3x+y=5$
+
+$y=5-3x$
+
+\end{center}
+
+\enskip
+
+ Les
+couples-solutions sont les points appartenant à la représentation graphique
+$(d_1)$ de la fonction affine $f_1(x)=5-3x$.
+
+
+\end{minipage}
+&
+\begin{minipage}{9cm}
+
+\begin{center}
+équation (2):
+
+$-6x+2y=-2$
+
+$2y=-2+6x$
+
+$y=-1+3x$
+\end{center}
+
+\enskip
+
+
+ Les
+couples-solutions sont les points appartenant à la représentation graphique
+$(d_2)$ de la fonction affine $f_2(x)=-1+3x$.
+\end{minipage}
+\end{tabular}
+
+
+
+\bigskip
+
+\textbf{Etape 2:} On trace les droites $(d_1)$ et $(d_2)$ dans un reprère du
+plan:
+
+\enskip
+
+
+\begin{tabular}{l|l}
+
+\begin{minipage}{9cm}
+équation (1):
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|}
+\hline
+$x$ & 0 & 1 \\
+\hline
+$y=f_1(x)$ & \ldots & \ldots \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+$(d_1)$ passe par les points de coordonnées (\ldots; \ldots) et (\ldots ;
+\ldots).
+
+
+\end{minipage}
+&
+\begin{minipage}{9cm}
+
+équation (2):
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|}
+\hline
+$x$ & 0 & 1 \\
+\hline
+$y=f_2(x)$ & \ldots & \ldots \\
+\hline
+\end{tabular}
+\end{center}
+
+$(d_2)$ passe par les points de coordonnées (\ldots; \ldots) et (\ldots ;
+\ldots).
+\end{minipage}
+\end{tabular}
+
+
+\begin{center}
+\includegraphics[width=8cm]{images/graphique.png}
+\end{center}
+
+
+\bigskip
+
+
+
+\textit{Résolution par addition: ex 12 a) p 175; ex 14 a) p 175}
+
+\textit{Résolution par substitution: ex 19 p 175}
+
+\textit{Résolution graphique: ex 6 p 174}
+
+\textit{Problèmes: ex 32 p 176; ex 33 p 176; ex 34 p 176 et ex 48 p 178}
+
+
+
+\end{document}

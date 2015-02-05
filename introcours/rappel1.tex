@@ -1,0 +1,79 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=2cm, right=3cm, top=1cm, bottom=2cm]{geometry}
+
+\begin{document}
+
+
+\section*{Quelques rappels du collège}
+
+\textbf{Définition:} Soit $a$ et $b$ deux entiers naturels ; on dit que
+$b$ est un diviseur de $a$ s'il existe un entier naturel $c$ tel que : $a=b*c$  ($c$ est
+également un diviseur de $b$). On dit aussi que $a$ est un multiple de $b$ ( $a$
+est également un multiple de $c$). On peut dire aussi que $a$ est divisible par
+$b$ ( $a$ est également divisible par $c$). 
+
+\bigskip
+\textbf{Exemple:} $52=4*13$\\ 
+$4$ et $13$ sont des diviseurs de $52$.
+
+
+\bigskip
+
+\textbf{Comment trouver tous les diviseurs d'un entier?}
+
+
+\textbf{Méthode:} On teste chaque diviseur entier grâce aux critères de
+divisibilité rappelés ci-dessous. Les diviseurs vont par deux, sauf si le
+nombre est un carré.
+
+
+\textbf{Exemple:} $80=1*80=2*40=4*20=5*16=8*10$.\\
+On s'arrête puisque le prochain
+serait $10*8$  déjà écrit. L'ensemble des diviseurs de $80$ est donc :
+$\{1,2,4,5,8,10,16,20,40,80\}$.
+
+\bigskip
+\textbf{Propriétés:} Un nombre entier est divisible:
+\begin{itemize}
+  \item[$\star$] par $2$ si et seulement si son chiffre des unités est
+  $0,2,4,6,$ou $8$
+  \item[$\star$] par $3$ si et seulement si la somme des chiffres est
+  divisible par $3$
+  \item[$\star$] par $5$ si et seulement si le chiffre des unités ets $0$ ou
+  $5$
+  \item[$\star$] par $9$ si et seulement si la somme des chiffres est
+  divisible par $9$
+  \item[$\star$] par $10$ si et seulement si le chiffre des unités est $0$.
+\end{itemize}
+
+
+\section*{Applications}
+
+\subsection*{exercice 1:}
+Donner tous les diviseurs de $18, 50, 35, 19$.
+
+\subsection*{exercice 2:}
+Dire si les affirmations suivantes sont vraies ou fausses. Justifier la réponse.
+\begin{itemize}
+  \item[$\star$]$4347$ divisible par $3$ et $9$
+  \item[$\star$] $7482$ divisible par $2$ et $3$
+  \item[$\star$] $789100$ divisible par $100$ et $9$
+  \item[$\star$]si un nombre est divisible par $2$ et $4$ il l'est par $8$
+  \item[$\star$]$210= 2*3*5*7$
+  \item[$\star$]$28000= 2^{5}*5^{3}*7$
+\end{itemize}
+
+\subsection*{exercice 3:}
+\begin{enumerate}
+  \item Ecrire le nombre $60$ sous la forme d'un produit avec le
+  maximum de facteurs entiers différents de $1$.
+  \item Même question avec les nombres entiers: $48, 72$ et $525$.
+  \item Ecrire les nombres entiers inférieurs à $10$ divisibles
+  seulement par $1$.
+\end{enumerate}
+\end{document}

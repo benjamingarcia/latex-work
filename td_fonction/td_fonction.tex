@@ -1,0 +1,326 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=1cm, top=1cm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+\begin{document}
+
+\section*{\center{TD: Les fonctions}}
+
+La courbe ci-dessous donne les températures relevées à Brest le $1^{\text{er}}$
+janvier 2004.
+
+\enskip
+
+\includegraphics[width=19cm]{images/fct1.jpg}
+
+\enskip
+
+
+\begin{enumerate}
+  \item Compléter la phrase:
+  La courbe ci-dessus représente \ldots \ldots \ldots \ldots \ldots \ldots
+  \ldots \ldots \ldots \ldots \ldots \ldots en fonction de \ldots \ldots \ldots
+  \ldots \ldots \ldots \ldots 
+  
+  \enskip
+  
+  A chaque heure comprise entre 0 et 24, on associe une \ul{unique}
+  température. On peut noter $x$ l'heure et $f(x)$ la température associée.
+  
+ \begin{center} 
+\fbox{  
+  \begin{minipage}{11cm}
+  $f$ est la \textbf{fonction} qui à une heure $x$ associe la température
+  $f(x)$. \\
+  On note: $f:x \mapsto f(x)$ et on lit: ``à $x$ j'associe $f$ de $x$''.
+  \end{minipage}
+}
+\end{center}
+
+\enskip
+
+\item
+\begin{enumerate}
+  \item Quelles sont les températures relevées à 10h? 13h? 17h? (On notera les
+  résultats dans le tableau ci-dessous)
+  
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  $x$ (temps en h) & 10 \ \ & 13 \ \ & 17 \ \ \\
+  \hline
+  $f(x)$ (température en °C) & \ \ & \ \ \ & \ \ \ \\
+  \hline 
+  \end{tabular}
+  \end{center}
+
+\bigskip
+
+On appelle ce tableau: \textbf{tableau de valeurs} de la fonction $f$
+
+\item  D'après la question précédente: pour $x=10$, $f(x)$ vaut 2. 
+
+
+\enskip
+
+
+\fbox{On note
+alors: $f(10)=2$.
+
+ 
+On dit que 2 est l'\textbf{image} du nombre 10 par $f$.}
+
+\enskip
+
+Compléter les phrases (utiliser le tableau de valeurs):
+\begin{itemize}
+  \item [$\bullet$] 3,5 est l'image du nombre \ldots \ldots par $f$. On a:
+  $f(\ldots)=3,5$.
+  \item [$\bullet$] \ldots \ldots est l'image du nombre 17 par $f$. On a:
+  $f(17)=\ldots$
+\end{itemize}
+
+\enskip
+
+
+\item Quelle est l'image du nombre 6 par $f$? (la déterminer graphiquement)
+\ldots \ldots 
+\enskip
+
+
+Compléter:
+
+ 
+   A 6h, on a une température de \ldots \ldots °C à Brest.
+ 
+   \medskip
+   
+   
+   VERSION MATHEMATIQUE: \ldots \ldots est l' \ldots \ldots \ldots \ldots du
+   nombre 6 par \ldots \ldots On a: $f(\ldots)=\ldots$.
+
+
+
+\end{enumerate}
+
+\enskip
+
+
+\item 
+\begin{enumerate}
+  \item Donner les heures où la température est de -2°C, 0°C et 3°C?
+  
+  
+  \rule{17cm}{1pt}
+  \item Que remarque t'on pour -2°C et 3°C?
+ 
+ 
+  \rule{17cm}{1pt}
+  
+  \rule{17cm}{1pt}
+  
+  \item Il fait -2°C à 1h et à 5h.
+ \begin{center} 
+ \fbox{
+ \begin{minipage}{10cm}
+ On dit que 1 et 5 sont les \textbf{antécédents} de -2
+  par $f$. 
+  
+  On a: $f(1)=-2$ et $f(5)=-2$.
+ \end{minipage}} 
+ \end{center} 
+  \enskip
+  
+  Compléter:
+  
+  \begin{itemize}
+    \item [$\bullet$] Il fait 0°C à \ldots \ldots h. 
+    
+    \ldots \ldots est l'antécédent de 0 par $f$. On a: $f(\ldots)=0$.
+    \item [$\bullet$] Il fait 3°C à \ldots \ldots h et à \ldots \ldots h.
+    
+    \ldots \ldots et \ldots \ldots sont les antécédents de 3 par $f$. On a:
+    $f(\ldots)=3$ et $f(\ldots)=3$.
+
+  \end{itemize}
+  
+  \enskip
+  
+  \item Donner le(s) antécédent(s) de 6 par $f$? \ldots\ldots \ldots \ldots
+  \ldots \ldots  \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+  \ldots
+
+\end {enumerate}
+
+\medskip
+
+\item Peut-on avoir $x=-2$? (où $x$ est le temps en heure)
+
+Quelles sont les valeurs possibles pour $x$? On donnera la solution sous
+forme d'intervalle.
+
+\rule{18cm}{1pt}
+ 
+\enskip
+
+\fbox{
+\begin{minipage}{18cm}
+On dit que cet intervalle  est le \textbf{domaine de définition} de la fonction
+$f$ c'est-à-dire l'ensemble de tous les réels pour lesquels on peut appliquer
+$f$ (ou encore l'ensemble des réels $x$ qui ont une image par $f$). On le note
+$D_{f}$ ($D$ pour domaine et $f$ pour indiquer le nom de la fonction). On dit que $f$ est \textbf{définie} sur $D_{f}$.
+\end{minipage}}
+
+\enskip
+
+On a: $D_{f}=[\ldots ; \ldots]$ 
+
+\medskip
+
+\item 
+ \begin{enumerate}
+   \item Donner les tranches horaires où la température est négative, nulle et
+   positive.
+   
+   \rule{17cm}{1pt}
+   
+   \rule{17cm}{1pt}
+   
+   \item Compléter:
+   
+   Entre \ldots \ldots h et \ldots \ldots h, la température est négative.
+   
+   A 8h, la température est \ldots \ldots \ldots \ldots
+   
+   Entre \ldots \ldots h et \ldots \ldots h, la température est positive.
+   
+   \medskip
+   
+   On va représenter ces résultats dans un tableau:
+  \begin{center}
+  $\begin{array}{|c|ccccc|}
+\hline
+ x \ \text{(temps en h)}& 0 & \ \ \ \ \ \ \ \ \ \ \ & 8 &\ \ \ \ \  \ \ \ \ \ &
+ 24
+ \\
+ \hline
+f(x)\ \text{(température en °C)} & \ \ & - & \ \ \ \ 0 \ \ \ \ & + & \ \ \\
+ \hline
+ \end{array}$
+  \end{center} 
+   
+ \enskip
+ 
+ Ce tableau s'appelle \textbf{tableau de signes} de $f$.  
+ 
+ \item A 11h, la température est-elle positive ou négative?
+ 
+ 
+ \enskip
+ 
+ 
+ Méthode 1: par lecture graphique \ldots \ldots \ldots \ldots \ldots \ldots
+ \ldots \ldots \ldots \ldots 
+ 
+ Méthode 2: par lecture du tableau de signes \ldots \ldots \ldots \ldots \ldots
+ \ldots \ldots \ldots 
+ \end{enumerate} 
+ 
+ 
+ \medskip
+ 
+ 
+ \item 
+ \begin{enumerate}
+   \item Donner les tranches horaires où la température croît et décroît.
+   
+   
+   \rule{17cm}{1pt}
+   
+   \rule{17cm}{1pt}
+   
+   \item Compléter:
+   
+   Entre \ldots \ldots h et \ldots \ldots h, la température décroît.
+   
+   Entre \ldots \ldots h et \ldots \ldots h, la température croît.
+  
+   
+   Entre 1 h et 24 h, la température \ldots \ldots \ldots \ldots \ldots
+   
+   \medskip
+   
+   On va représenter ces résultats dans un tableau:
+  
+   
+ La flèche $\nearrow$ signifie ``croît''. La flèche $\searrow$ signifie
+ ``décroît''.
+
+ 
+\[\begin{tabvar}{|C|CCCCCCC|} \hline
+  x\text{ en h} &0 & &4 & &16 & & 24
+  \\ \hline
+  \niveau{2}{2}f(x)\text{ en °C}
+  & &\decroit
+  & &\croit
+  & &\decroit
+  &  \\ \hline
+  \end{tabvar}\]
+\enskip
+
+Ce tableau est appelé \textbf{tableau de variations} de la fonction $f$.
+
+\item Compléter:
+
+A 0h, il fait \ldots \ldots °C. $f(0)=\ldots$.
+
+A 4h, il fait \ldots \ldots °C. $f(4)=\ldots$.
+
+A 16h, il fait \ldots \ldots °C. $f(16)=\ldots$.
+
+A 24h (à minuit), il fait \ldots \ldots °C. $f(24)=\ldots$.
+
+
+Noter ces valeurs dans le tableau de variations (en haut ou en bas des flèches
+selon le cas).
+ 
+ \end{enumerate}
+ 
+ \medskip
+ 
+ 
+ \item Quelle est la température maximale? A quelle heure est-elle atteinte? Où
+ peut-on lire cette information dans le tableau de variations?
+
+
+ \rule{17cm}{1pt}
+ 
+ 
+ \rule{17cm}{1pt}
+   
+  
+Mêmes questions pour la température minimale.  
+
+ 
+   \rule{17cm}{1pt} 
+ 
+   
+   \rule{17cm}{1pt}
+   
+ 
+ 
+\end{enumerate}
+\end{document}

@@ -1,0 +1,469 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=7mm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty} 
+
+\begin{document}
+
+\begin{center}
+\LARGE{\ul{\textbf{Statistiques}}}
+\end{center}
+
+\section{Introduction}
+
+\ul{But}: Obtenir des informations numériques à partir de données recueillies
+du point de vue de certains caractères.
+
+\bigskip
+
+\ul{Méthodes}:
+
+\begin{itemize}
+  \item [$\bullet$] Statistique descriptive: enquête, classification des
+  résultats (tableaux, graphiques), calcul de certaines caractéristiques de la
+  série statistique
+  \item [$\bullet$] Analyse statistique: à partir d'échantillons, extension des
+  résultats à la population, détermination d'une loi statistique,
+  interprétation et prévision.
+  
+\end{itemize}
+
+\bigskip
+
+\ul{Vocabulaire}:
+
+\enskip
+
+Les statistiques s'intéressent à des \textbf{populations} composées
+d'\textbf{individus} ou à des \textbf{échantillons} (c'est-à-dire des parties)
+de ces populations. Elles étudient certaines de leurs propriétés que l'on
+appelle des \textbf{caractères} à l'aide de leurs \textbf{effectifs} et de leurs
+\textbf{fréquences} d'apparition.
+
+
+\enskip
+
+Ces caractères peuvent être \textbf{qualitatifs} (ils concernent des
+propriétés qui ne sont pas des nombres, exemples: couleurs des yeux, plats
+préférés\ldots) ou \textbf{quantitatifs} (cela se traduit par des nombres).
+
+\enskip
+
+S'agissant des caractères quantitatifs, on les classe en 2 groupes:
+
+\begin{enumerate}
+  \item les caractères quantitatifs \textbf{discrets}: ils ne prennent que
+  quelques valeurs remarquables dans un intervalle donné (cf exemple1)
+  \item les caractères quantitatifs \textbf{continus}: ils peuvent prendre
+  toutes les valeurs dans un intervalle donné (exemple: la taille de
+  personnes).
+\end{enumerate}
+
+
+\bigskip
+
+\ul{Exemple 1}: Lors d'une enquête, 25 élèves de seconde ont répondu à la
+question suivante: ``Combien d'heures par semaine regardez-vous la
+télévision?''. Voici leurs réponses:
+
+20; \quad 10; \quad 14; \quad 22; \quad 8; \quad 18; \quad 16; \quad 12;
+\quad 15; \quad 22; \quad 22; \quad 12; \quad 18; \quad 22; \quad 14;
+\quad 7; \quad 22; \quad 43; \quad 16; \quad 36; \quad 14; \quad 15;
+\quad 8; \quad 22; \quad 3
+
+\enskip
+
+population:                                   
+
+caractère:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+nombre d'heures & 3 & 7 & 8 & 10 & 12 & 14 & 15 & 16 & 18 & 20 & 22 & 36 & 43\\
+\hline
+effectifs &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+fréquences &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Résumé numérique d'une série statistique}
+\subsection{Définitions}
+
+\begin{itemize}
+  \item [$\bullet$] \textbf{moyenne}: On appelle moyenne d'une série statistique
+  et on note $\bar{x}$ le nombre $\bar{x}=\dfrac{n_1 x_1+n_2 x_2 +\ldots+ n_p
+  x_p}{N}$ où $n_i$ est le nombre d'individus présentant le caractère $x_i$ et
+  $N$ l'effectif total c'est-à-dire le nombre total d'individus dans la
+  population.
+  
+  \enskip
+  
+  on écrit: $\bar{x}=\dfrac{1}{N} \sum\limits_{i=1}^p n_i x_i$ (cela se lit
+  ``sommme des produits $n_i x_i$ pour $i$ allant de $1$ à $p$'').
+  
+  \enskip
+  
+  On peut également calculer la moyenne $\bar{x}$ avec les fréquences:
+  
+  $\bar{x}=f_1 x_1+f_2 x_2 +\ldots+ f_p x_p= \sum\limits_{i=1}^p f_i x_i$ où
+  $f_i$ est la fréquence du caractère $x_i$.
+  
+ \enskip
+ 
+ \ul{exemple 1}: 
+ 
+ moyenne (avec les effectifs):
+ 
+ moyenne (avec les fréquences):
+ 
+ \bigskip
+ 
+ \item [$\bullet$] \textbf{mode}: On appelle mode
+  d'une série statistique la valeur du
+ caractère dont l'effectif est maximum.
+ 
+ \enskip
+ 
+ \ul{exemple 1}:
+ 
+ \bigskip
+ 
+ \item [$\bullet$] \textbf{médiane}: Lorsqu'on range les individus d'une série
+ statistique par ordre croissant de leurs caractères, on appelle médiane la
+ valeur du caractère qui partage la population en deux groupes de mêmes
+ effectifs.
+ 
+ \enskip
+ 
+ \ul{exemple 1}:
+ 
+ \bigskip 
+ 
+ \item[$\bullet$] \textbf{étendue}: L'étendue d'une série statistique est la
+ différence entre les valeurs extrêmes du caractère: la plus grande moins la
+ plus petite.
+ 
+ \enskip
+ 
+ \ul{exemple 1}:
+ 
+ \bigskip 
+
+\item[$\bullet$] \textbf{moyenne élaguée}: On peut être amené à ne pas tenir
+compte de valeurs extrêmes dans le calcul de la moyenne. On parle alors de moyenne
+élaguée.
+
+\enskip
+ 
+ \ul{exemple 1}:
+ 
+
+\end{itemize}
+
+\subsection{Exemple 2: relevés de notes}
+
+(voir étude 1 partie exercice)
+
+\enskip
+
+\ul{But}: On étudie le relevé de notes en mathématiques de 10 classes de
+secondes. On cherche à comparer les résultats obtenus.
+
+\bigskip
+
+
+\ul{Remarques}:
+
+\begin{itemize}
+  \item [$\bullet$] Sur les histogrammes:
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  
+  \bigskip
+  
+
+  
+  
+  \item [$\bullet$] Résumés statistiques:
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  
+  \item [$\bullet$] Peut-on trouver la moyenne, l'étendue, le mode et la
+  médiane pour l'ensemble des classes à partir des résumés de chaque classe?
+\end{itemize}
+  
+  étendue:
+  
+  \bigskip
+  
+  mode:
+  
+  \bigskip
+  
+  médiane:
+
+
+  \bigskip
+  
+  moyenne:
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  
+\ul{Propriété}: Si une population est partagée en 2 groupes disjoints
+d'effectifs $N_1$ et $N_2$, de moyennes respectives $\overline{x_1}$ et
+$\overline{x_2}$ alors la moyenne sur la population toute entière est:
+$\bar{x}=\dfrac{N_1 \overline{x_1} + N_2 \overline{x_2}}{N_1+N_2}$.
+
+
+\subsection{Propriété de la moyenne}
+
+\ul{Exemple 3}: Un professeur a noté des devoirs sur 40, la moyenne est
+$\bar{x}=16$. Sur les copies, il a écrit les notes sur 20; quelle est la
+moyenne $\bar{m}$ des notes sur 20?
+
+\medskip
+
+
+Trouvant la moyenne trop faible, le professeur décide de rajouter 1 point sur
+20 à tous les élèves. Quelle est alors la moyenne $\bar{X}$?
+
+\medskip
+
+
+Ecrire $\bar{X}$ en fonction de $\bar{x}$.
+
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\ul{Propriété}: Si dans le calcul de la moyenne des $x_i$, on remplace chaque
+$x_i$ par $X_i=ax_i+b$ où $a$ et $b$ sont deux nombres réels, alors la moyenne
+des $X_i$ est $\bar{X}=a\bar{x}+b$.
+
+
+\bigskip
+
+\bigskip
+
+
+\ul{Exemple 4}: Les salaires dans une grande entrprise sont récapitulés dans
+les tableaux suivants:
+
+\bigskip
+
+Ouvriers: 
+\begin{tabular}{|c|c|c|c|}
+\hline
+Salaire en \euro & $[800;1000[$ & $[1000;1400[$ & $[1400;1800[$ \\
+\hline
+Fréquence en \% & 56 & 38 & 6\\
+\hline
+
+\end{tabular}
+
+\bigskip
+
+
+Cadres: 
+\begin{tabular}{|c|c|c|c|}
+\hline
+Salaire en \euro & $[1800;2300[$ & $[2300;3000[$ & $[3000;6000[$ \\
+\hline
+Fréquence en \% & 62 & 37 & 1\\
+\hline
+\end{tabular}
+
+\bigskip
+
+\begin{enumerate}
+  \item Calculer le salaire moyen d'un ouvrier, puis celui d'un cadre.
+\item  Calculer le salaire moyen de l'entreprise sachant qu'elle comprend 80\%
+\item L'entreprise décide d'accorder à l'ensemble des ouvriers une augmentation de
+2\% et à l'ensemble des cadres une prime de 50 \euro. Quel est le nouveau
+salaire moyen des ouvriers? Des cadres?
+\end{enumerate}
+
+
+
+\bigskip
+
+\bigskip
+
+
+\ul{Exemple 5}: On donne la série suivante qui correspond à des mesures degrés
+Celsius (°C):
+
+\medskip
+
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Mesure & 7893.2 & 7893.3 &7893.4 & 7893.5 & 7893.6 & 7893.7 & 7893.8 & 7893.9 \\
+\hline
+Effectif & 2 & 2 & 5 & 5 & 5& 2 & 2 & 1\\
+\hline 
+\end{tabular}
+
+\medskip
+
+\begin{enumerate}
+  \item Calculer sans calculatrice la moyenne de cette série.
+  \item Déterminer cette moyenne en degré Fahrenheit (F) sachant que la formule
+  de conversion est $F=1.8 \times C +32$ (où $C$ est la mesure en degré
+  Celsius).
+\end{enumerate}
+
+\pagebreak
+\section{Echantillonnage et simulation}
+
+\ul{Définition}: On appelle \textbf{fréquence} d'une valeur $x_i$ du caractère
+d'un valeur statistique le nombre $f_i=\dfrac{n_i}{N}$ où $n_i$ est l'effectif de la
+valeur et $N$ l'effectif total. \textbf{La distribution des fréquences d'un
+échantillon} est la donnée  des valeurs du caractère et des fréquences
+correspondantes de l'échantillon .
+\medskip
+
+
+\ul{Propriétés}: 
+\begin{enumerate}
+  \item La fréquence est un nombre compris entre 0 et 1.
+  \item La somme des fréquences d'une série statistique est 1.
+  \item Rappel: La moyenne de la série est donnée par
+  $\bar{x}=f_1 x_1+f_2 x_2 +\ldots+ f_p x_p= \sum\limits_{i=1}^p f_i x_i$.
+\end{enumerate}
+
+\medskip
+
+
+\ul{Etude 3} : Lancer de dés 
+
+
+Par groupe de deux élèves, un lance un dés 50 fois, l'autre note le résultat
+obtenu. L'experience est renouvelée en permutant les rôles. Chaques groupe
+obtient ainsi deux tableaux de 50 chiffres de 1 à 6 puis deux tableaux de
+fréquences.
+
+
+
+\begin{center}
+\begin{tabular}{cc}
+
+
+\begin{minipage}{12,7cm}
+\center{Tableau (50 résultats)}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+ \hline
+\qquad \qquad  & \qquad  \qquad &\qquad \qquad   & \qquad \qquad
+&\qquad \qquad &\qquad \qquad &\qquad \qquad  &\qquad \qquad 
+&\qquad \qquad  &\qquad \qquad   
+ \\
+ \hline
+ & & & & & & & & & \\
+ \hline
+ & & & & & & & & & \\
+ \hline
+ & & & & & & & & & \\
+ \hline
+ & & & & & & & & & \\
+ \hline
+\end{tabular}
+\end{minipage}
+&
+\begin{minipage}{6cm}
+
+\center{Tableau de fréquences}
+\begin{tabular}{|c|c|c|}
+\hline
+Face & Effectif & Fréquence \\
+\hline
+1 & &\\
+\hline
+2 & &\\
+\hline
+3 & &\\
+\hline
+4 & &\\
+\hline
+5 & &\\
+\hline
+6 & &\\
+\hline
+\end{tabular}
+\end{minipage}
+\end{tabular}
+\end{center}
+
+
+\medskip
+
+Représentation graphique: 
+On note en abscisses les numéros des faces du dé
+(unité 2cm) et en ordonnées les fréquences (1cm pour 0,05).
+
+\enskip
+
+\begin{enumerate}
+  \item Faire le diagramme des fréquences pour les tableaux 1 et 2 en
+  utilisant deux couleurs différentes sur un même graphique.
+  \item Faire les diagrammes des fréquences en regroupant les résultats de votre
+  groupe (100 résultats).
+  \item Faire les diagrammes des fréquences en regroupant les résultats de tous
+  les élèves présents.
+  \item Comparer vos deux diagrammes de la question 1 à ceux d'autre(s)
+  groupe(s). Vous devriez constater que, pour chacun des résultats, la
+  distribution des fréquences flutue (c'est à dire qu'elle n'est pas la même
+  pour tous). 
+  
+  \enskip
+  
+  \fbox{Ce phénomène s'appelle \textbf{fluctuation d'échantillonnage} sur
+  des séries de même taille.}
+  
+  \enskip
+  
+  \item Comparer les allures graphiques des questions 1,2 et 3.
+\end{enumerate}
+\end{document}

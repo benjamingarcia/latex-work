@@ -1,0 +1,137 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[10pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=2mm, bottom=2mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{fancyhdr}
+
+\usepackage{amsmath,amssymb,mathrsfs}
+\pagestyle{empty}
+
+\begin{document}
+
+
+
+Pour comparer deux nombres, on peut : 
+\begin{enumerate}
+  \item \textbf{Comparer leurs écritures décimales}\\
+  ex: $0,4<0,48<0,488$
+  \bigskip
+  
+  \item \textbf{Utiliser les propriétés}\\
+  ex: $\sqrt{8}<\sqrt{10}$ (car $0<8<10$) et $3<\pi$ donc
+  $\sqrt{8}+3<\sqrt{10}+\pi$
+  \bigskip
+  
+  
+  \item \textbf{Comparer leurs carrés}\\
+  ex: Comparons $\sqrt{4+2\sqrt{3}}$ et $\sqrt{3}+1$. 
+\enskip
+
+
+  $\sqrt{4+2\sqrt{3}}$ et $\sqrt{3}+1$
+  sont des nombres positifs, $(\sqrt{4+2\sqrt{3}})^{2}=4+2\sqrt{3}$ \thinspace
+  et $(\sqrt{3}+1)^{2}=3+2\sqrt{3}+1=4+2\sqrt{3}$, donc $\sqrt{4+2\sqrt{3}}=\sqrt{3}+1$
+  \bigskip
+   
+  
+  \item \textbf{Etudier le signe de la différence}\\
+  ex: Comparons   $\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}$  et 
+  $\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}$
+  \medskip
+  
+ 
+$\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}-\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}=\dfrac{(\sqrt{7}-\sqrt{5})\times(\sqrt{7}+\sqrt{5})}{\sqrt{2}
+\times (\sqrt{7}+\sqrt{5})}-\dfrac{\sqrt{2}\times
+\sqrt{2}}{(\sqrt{5}+\sqrt{7}) \times
+\sqrt{2}}=\dfrac{7-5-2}{\sqrt{2}(\sqrt{5}+\sqrt{7})}=0$ \thinspace
+donc $\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}=\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}$
+
+  \bigskip
+  
+  
+  \item \textbf{Les comparer à un troisième nombre} (Soit $a,b,c$ trois réels,
+  si $a<b$ et $b<c$ alors $a<c$):\\
+    ex: $\bullet \dfrac{1}{\sqrt{3}}<1$ et $1<\sqrt{5}$ donc
+  $\dfrac{1}{\sqrt{3}}<\sqrt{5}$  
+
+  \quad  \quad $\bullet-\sqrt{2}<0$ et $0<5,8$ donc $-\sqrt{2}<5,8$
+  \bigskip
+  
+  
+  \item \textbf{Etudier le quotient et comparer à $1$}\\
+  ex: Comparons $\dfrac{2}{1+\sqrt{5}}$ et $\dfrac{\sqrt{5}-1}{2}$
+  \enskip
+  
+  
+  $\dfrac{\dfrac{2}{1+\sqrt{5}}}{\dfrac{\sqrt{5}-1}{2}}=\dfrac{2}{1+\sqrt{5}}
+  \times \dfrac{\sqrt{5}-1}{2}=\dfrac{4}{5-1}=1$ donc
+  $\dfrac{2}{1+\sqrt{5}}=\dfrac{\sqrt{5}-1}{2}$
+\end{enumerate}
+\rule{\linewidth}{0.4pt}
+
+Pour comparer deux nombres, on peut : 
+\begin{enumerate}
+  \item \textbf{Comparer leurs écritures décimales}\\
+  ex: $0,4<0,48<0,488$
+  \bigskip
+  
+  \item \textbf{Utiliser les propriétés}\\
+  ex: $\sqrt{8}<\sqrt{10}$ (car $0<8<10$) et $3<\pi$ donc
+  $\sqrt{8}+3<\sqrt{10}+\pi$
+  \bigskip
+  
+  
+  \item \textbf{Comparer leurs carrés}\\
+  ex: Comparons $\sqrt{4+2\sqrt{3}}$ et $\sqrt{3}+1$. 
+\enskip
+
+
+  $\sqrt{4+2\sqrt{3}}$ et $\sqrt{3}+1$
+  sont des nombres positifs, $(\sqrt{4+2\sqrt{3}})^{2}=4+2\sqrt{3}$ \thinspace
+  et $(\sqrt{3}+1)^{2}=3+2\sqrt{3}+1=4+2\sqrt{3}$, donc $\sqrt{4+2\sqrt{3}}=\sqrt{3}+1$
+  \bigskip
+   
+  
+  \item \textbf{Etudier le signe de la différence}\\
+  ex: Comparons   $\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}$  et 
+  $\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}$
+  \medskip
+  
+ 
+$\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}-\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}=\dfrac{(\sqrt{7}-\sqrt{5})\times(\sqrt{7}+\sqrt{5})}{\sqrt{2}
+\times (\sqrt{7}+\sqrt{5})}-\dfrac{\sqrt{2}\times
+\sqrt{2}}{(\sqrt{5}+\sqrt{7}) \times
+\sqrt{2}}=\dfrac{7-5-2}{\sqrt{2}(\sqrt{5}+\sqrt{7})}=0$ \thinspace
+donc $\dfrac{\sqrt{7}-\sqrt{5}}{\sqrt{2}}=\dfrac{\sqrt{2}}{\sqrt{5}+\sqrt{7}}$
+
+  \bigskip
+  
+  
+  \item \textbf{Les comparer à un troisième nombre} (Soit $a,b,c$ trois réels,
+  si $a<b$ et $b<c$ alors $a<c$):\\
+    ex: $\bullet \dfrac{1}{\sqrt{3}}<1$ et $1<\sqrt{5}$ donc
+  $\dfrac{1}{\sqrt{3}}<\sqrt{5}$  
+
+  \quad  \quad $\bullet-\sqrt{2}<0$ et $0<5,8$ donc $-\sqrt{2}<5,8$
+  \bigskip
+  
+  
+  \item \textbf{Etudier le quotient et comparer à $1$}\\
+  ex: Comparons $\dfrac{2}{1+\sqrt{5}}$ et $\dfrac{\sqrt{5}-1}{2}$
+  \enskip
+  
+  
+  $\dfrac{\dfrac{2}{1+\sqrt{5}}}{\dfrac{\sqrt{5}-1}{2}}=\dfrac{2}{1+\sqrt{5}}
+  \times \dfrac{\sqrt{5}-1}{2}=\dfrac{4}{5-1}=1$ donc
+  $\dfrac{2}{1+\sqrt{5}}=\dfrac{\sqrt{5}-1}{2}$
+\end{enumerate}
+
+\end{document}

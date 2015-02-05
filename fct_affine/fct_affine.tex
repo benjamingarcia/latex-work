@@ -1,0 +1,398 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=7mm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+\title{\ul{\textbf{Fonctions affines, équations de droites}}}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Fonction affine}
+
+\subsection{Définition}
+
+\ul{Définition}: Une fonction affine est une fonction $f$, définie sur
+$\mathbb{R}$ telle que: $f(x)=ax+b$, $a$ et $b$ étant deux réels fixés.
+
+Si de plus $b=0$, la fonction définie par $f(x)=ax$ est une fonction linéaire.
+
+\medskip
+
+\ul{Exemples}: Parmi les fonctions ci-dessous, reconnaître les fonctions
+affines (on préciséra également si elles sont linéaires ou non):
+
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+\begin{itemize}
+  \item [$\bullet$] $f(x)=2x-1$
+  
+  \enskip
+  
+  \item [$\bullet$] $g(x)=3x$
+  
+  \enskip
+  
+  \item [$\bullet$] $h(x)=3+x\sqrt{2}-\dfrac{x}{3}$
+  
+  \enskip
+  
+  \item [$\bullet$] $i(x)=4$
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{9cm}
+\begin{itemize}
+  \item [$\bullet$] $j(x)=3x^{2}+1$
+  
+  \enskip
+  
+  \item [$\bullet$] $k(x)=\dfrac{x+3}{1-\sqrt{2}}$
+  
+  \enskip
+  
+  \item [$\bullet$] $l(x)=-4x+2$
+  
+  \enskip
+  
+  \item [$\bullet$] $m(x)=x(1+\sqrt{3})-\sqrt{2}(1-x)$
+  
+\end{itemize}
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+\subsection{Représentation graphique} 
+
+\begin{itemize}
+  \item [$\bullet$]La représentation graphique d'une fonction
+affine $f(x)=ax+b$ est une droite; $a$ est le \textbf{coefficient directeur} et
+$b$ est \textbf{l'ordonnée à l'origine}. 
+ \item[$\bullet$] Pour une fonction linéaire, cette droite passe par l'origine
+ du repère.
+\item[$\bullet$] Pour une fonction constante ($a=0$), cette droite est parallèle à
+l'axe des abscisses.
+\end{itemize}
+ 
+
+\enskip
+
+\begin{center}
+\fbox{\textbf{Les fonctions affines sont les seules à être représentées par des
+droites.}}
+\end{center}
+
+\begin{center}
+\includegraphics[width=6cm]{images/fct2.png}
+\end{center}
+
+\subsection{Caractérisation}
+
+
+\ul{Propriété}: Si une fonction est affine, l'accroissement de l'image est
+proportionnel à l'accroissement de la variable.
+Quelque
+soient les réels $x_A$ et $x_B$ (avec $x_A\neq x_B$), on a:
+
+\begin{center}
+\fbox{
+$\dfrac{f(x_B)-f(x_A)}{x_B-x_A}=\dfrac{\Delta_y}{\Delta_x}=\dfrac{\text{``ce
+dont je monte''}}{\text{''ce dont j'avance''}}=a$}
+\end{center}
+
+\bigskip
+
+\begin{center} 
+\includegraphics[width=12cm]{images/fct_affine.png}   
+\end{center}
+
+
+
+\subsection{Variation et signe}
+
+\ul{Propriété}: (rappels)
+
+\begin{itemize}
+  \item [$\bullet$] Si $a>0$, $f$ est une fonction croissante sur $\mathbb{R}$.
+  \item [$\bullet$] Si $a<0$, $f$ est une fonction décroissante sur
+  $\mathbb{R}$.
+  \item [$\bullet$] Si $a=0$, $f$ est une fonction constante sur $\mathbb{R}$.
+\end{itemize}
+
+\bigskip
+
+\ul{Propriété}: (rappels)
+
+
+\begin{center}
+\begin{tabular}{cc}
+
+\begin{minipage}{8,5cm}
+
+
+\textbf{Cas a>0}
+
+
+\enskip
+
+\renewcommand{\arraystretch}{2.5}
+$\begin{array}{|c|ccccc|}
+\hline
+ x & -\infty & \ \ \ \ \ \ \ \ \ & -\dfrac{b}{a} &\ \ \ \ \   \ \ &
+ +\infty
+ \\
+ \hline
+ ax+b & \ \ & \text{\textbf{-}} & \ \ \ \ 0 \ \ \ \ & \text{\textbf{+}} &
+ \ \
+ \\
+ \hline
+ \end{array}$
+
+\end{minipage}
+
+&
+
+\begin{minipage}{8,5cm}
+
+
+
+\textbf{Cas a<0}
+
+\enskip
+
+\renewcommand{\arraystretch}{2.5}
+$\begin{array}{|c|ccccc|}
+\hline
+ x & -\infty & \ \ \ \  \ \ \ \ & -\dfrac{b}{a} &\ \ \ \ \ \ \ \ &
+ +\infty
+ \\
+ \hline
+ ax+b & \ \ & \text{\textbf{+}} & \ \ \ \ 0 \ \ \ \ & \text{\textbf{-}} &
+ \ \
+ \\
+ \hline
+ \end{array}$
+\end{minipage}
+\end{tabular}
+\end{center}
+
+\pagebreak
+
+\section{Equations de droites}
+
+\subsection{Caractérisations}
+
+\ul{Définition et propriété}: 
+
+\begin{itemize}
+  \item [$\bullet$] Toute droite $D$ non parallèle à l'axe des ordonnées
+  représente graphiquement une fonction affine 
+  
+  $f:x \mapsto ax+b$.
+  \item [$\bullet$] Un point M(x;y) appartient à $D$ si et seulement si
+  $y=ax+b$.
+  
+  L'équation $y=ax+b$ est appelé \textbf{équation réduite} de $D$.
+\end{itemize}
+
+
+\bigskip
+
+\ul{Propriété}: Toute droite parallèle à l'axe des ordonnées admet une équation
+de la forme $x=k$, où $k$ est un réel.
+
+\medskip
+
+\ul{Remarques}:
+
+\begin{itemize}
+  \item [$\bullet$] Cette droite est donc ``verticale'' et passe par le point
+  de coordonnées $(k;0)$.
+  \item [$\bullet$] Une telle droite ne représente pas une fonction. 
+\end{itemize} 
+
+\medskip
+
+\begin{center}
+\includegraphics[width=10cm]{images/eqdte.png}
+\end{center}
+
+
+\medskip
+
+\ul{Propriété}: 2 droites non parallèles à l'axe des ordonnées sont parallèles
+entre elles si et seulement si elles ont même coefficent directeur.
+
+\medskip
+
+\ul{Exemples}:
+
+\begin{enumerate}
+  \item Déterminer l'équation de la droite passant par A(3;4) et B(3;-2).
+  
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \item Déterminer l'équation de la droite passant par C(2;1) et D(0;1).
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \item Déterminer l'équation de la droite passant par A(3;4) et D(0;1).
+  
+   \enskip
+  
+  \begin{tabular}{cc}
+  \begin{minipage}{9cm}
+  \textbf{Méthode 1:}
+  
+  \bigskip
+  
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \end{minipage}
+  &
+  \begin{minipage}{9cm}
+  \textbf{Méthode 2:}
+  
+  
+  \bigskip
+  
+  
+  \bigskip
+  
+  \bigskip
+  
+  \bigskip
+  
+  \end{minipage}
+  \end{tabular}
+\end{enumerate}
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\subsection{Systèmes linéaires}
+
+\ul{Définition}: Résoudre le système ($\mathscr{S}$):
+
+\[ (\mathscr{S}) \ 
+ \left \{
+ \begin{aligned}
+ ax+by & =c \\
+ a'x+b'y & =c' \ \ \ \ \ \ \text{où } a, \ b,\ c,\ a', \ b',\ \text{et } c' \ 
+ \text{sont des réels}
+ \end{aligned}
+\right. \]
+consiste à trouver tous les couples ($\alpha$; $\beta$) de nombres réels
+solution simultanément de chacune des 2 équations formant le système
+($\mathscr{S}$).
+\medskip
+
+\ul{Exemple}:  \[ (\mathscr{S}) \ 
+ \left \{
+ \begin{aligned}
+ 5x-4y & =7 \\
+ 7x+y & =23 
+ \end{aligned}
+\right. \]
+
+
+\textbf{Méthode 1: résolution graphique}
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{7cm}
+\includegraphics[width=7cm]{images/systeme.png}
+\end{minipage}
+&
+\begin{minipage}{11cm}
+\begin{itemize}
+  \item [$\bullet$] $5x-4y=7$ est l'équation d'une droite:
+  
+  \bigskip
+  
+  \bigskip
+  
+  \item [$\bullet$] $7x+y=23$ est l'équation d'une droite:
+  
+  \bigskip
+
+\bigskip
+
+ 
+ \fbox{
+\begin{minipage}{10cm}
+ Résoudre graphiquement le système c'est trouver l'éventuel
+ point d'intersection des 2 droites représentées.
+\end{minipage}
+}
+ 
+ \enskip
+ 
+ Ici la solution est unique, c'est: \ldots \ldots      
+\end{itemize}
+\end{minipage}
+\end{tabular}
+
+
+
+
+\bigskip
+
+
+\textbf{Méthode 2: résolution par substitution}
+
+\enskip
+
+Dans la première équation on écrit:
+
+et on remplace dans la deuxième:
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\textbf{Méthode 3: résolution par combinaison (ou élimination)} 
+
+\enskip
+
+
+\end{document}

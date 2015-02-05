@@ -1,0 +1,417 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=5mm, right=5mm, top=5mm, bottom=5mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{lscape}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+
+
+\begin{document}
+
+\begin{center}
+\LARGE{\ul{\textbf{Notion de fonction}}}
+\end{center}
+
+\bigskip
+
+\section{Notion de fonction et vocabulaire}
+
+\ul{Définition}: Une \textbf{fonction} est un procédé de calcul qui, à un
+nombre, fait correspondre un \textbf{seul} autre nombre.
+
+\medskip
+
+\begin{center}
+nombre de départ $\rightarrow$ \fbox{Fonction} $\rightarrow$ nombre
+correspondant
+
+\end{center}
+
+\medskip
+
+\ul{Notation}: La fonction $f$ associe au nombre $x$ un nombre unique noté
+$f(x)$. Le nombre $f(x)$ se lit ``\textit{f de x}''. 
+
+On note: $f:$ $x \mapsto f(x)$ 
+
+On dit que $f(x)$ est \textbf{l'image} de $x$ par la fonction $f$.
+
+On dit aussi que le nombre $x$ est un \textbf{antécédent} du nombre $f(x)$ par
+la fonction $f$.
+
+\medskip
+
+\begin{center}
+antécédent(s) $\rightarrow$ \fbox{Fonction} $\rightarrow$ image
+
+\end{center}
+
+
+\medskip
+\ul{Exemple}: $g$ est la fonction qui, à un nombre fait correspondre son carré.
+
+
+On définit bien une fonction car il n'y a qu'un seul résultat possible pour le
+carré d'un nombre donné.
+
+
+On note $g:$ $x \mapsto x^2$ ou bien $g(x)=x^2$
+
+\enskip
+
+
+Le carré de 3 est 9, 
+on écrit $g(3)=9$.
+9 est
+l'image de 3 par $g$. 3 est un antécédent de 9 par $g$.
+
+\medskip
+
+\ul{Remarque}: Par une fonction, l'image d'uin nombre est unique, alors qu'un
+nombre peut avoir plusieurs antécédents ou aucun.
+
+\medskip
+
+\ul{Exemples}: 
+
+-3 et 3 sont deux antécédents de 9 par la fonction $g$ car $g(-3)=(-3)^2=9$ et
+$g(3)=3^2=9$
+
+
+-1 n'a pas d'antécédent par la fonction $g$ car un carré est toujours positif.
+
+\bigskip
+
+\medskip
+
+
+\fbox{Une fonction peut être déterminée par une \textbf{formule}, par un
+\textbf{tableau de valeurs} ou par une \textbf{courbe}.}
+
+
+
+\section{Tableau de valeurs}
+
+
+
+\begin{tabular}{cc}
+
+\begin{minipage}{9cm}
+Voici un tableau de valeurs d'une fonction $h$:
+
+\enskip
+
+
+\begin{tabular}{|c|c|c|c|l}
+\hline
+$x$ & 5 & -8 & 12 & $\leftarrow$ antécédents \\
+\hline
+$h(x)$ & -7 & 11 & -7 & $\leftarrow$ images \\
+\hline
+\end{tabular}
+\end{minipage}
+&
+\begin{minipage}{10cm}
+D'après ce tableau:
+
+\enskip
+
+$\bullet$ 11 est l'image de -8 par la fonction $h$
+
+$\bullet$ 5 et 13 sont des antécédents de -7 par la fonction $h$
+
+$\bullet$ $h(-8)=11$ et $h(5)=h(12)=-7$
+\end{minipage} 
+\end{tabular}
+
+
+
+\section {Courbe représentative d'une fonction}
+
+\ul{Définition}: La \textbf{courbe représentative} d'une fonction $f$ est
+l'ensemble des points dont les coordonnées sont de la forme ($x;f(x)$).
+
+\enskip
+
+
+\begin{tabular}{cc} 
+
+\begin{minipage}{4cm}
+\includegraphics[width=4cm]{images/cf.jpg}
+
+
+\end{minipage}
+&
+\begin{minipage}{14cm}
+
+Par lecture graphique:
+
+$\bullet$ A(-2;1) et B(0;2) appartiennent à la courbe représentative de $f$.
+
+
+$\bullet$ 1 est l'image de -2 par la fonction $f$.
+
+$\bullet$ 0 est un  antécédent de 2 par la fonction $f$
+
+$\bullet$ $f(-2)=1$ et $f(0)=2$
+\end{minipage} 
+\end{tabular}
+
+\pagebreak
+
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\begin{tabular}{cccc}
+
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad &
+\includegraphics[width=4cm]{images/cf.jpg}\quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \quad \quad  &
+\includegraphics[width=4cm]{images/cf.jpg} \\
+
+\pagebreak
+
+\end{tabular}
+
+
+\begin{center}
+\LARGE{\ul{\textbf{Notion de fonction}}}
+\end{center}
+
+\bigskip
+
+\section*{I) Notion de fonction et vocabulaire}
+ 
+\ul{Définition}: Une \textbf{fonction} est un procédé de calcul qui, à un
+nombre, fait correspondre un \textbf{seul} autre nombre.
+
+\medskip
+
+\begin{center}
+\ldots \ldots \ldots \ldots \ldots \ldots $\rightarrow$ \fbox{Fonction}
+$\rightarrow$ \ldots \ldots \ldots \ldots \ldots \ldots
+
+\end{center}
+
+\medskip
+
+\ul{Notation}: La fonction $f$ associe au nombre \ldots un nombre unique noté
+\ldots \ldots. Le nombre \ldots \ldots se lit ``\textit{f de x}''. 
+
+On note: $f:$ $\ldots \mapsto \ldots$ 
+
+On dit que \ldots \ldots est \textbf{l'image} de \ldots par la fonction $f$.
+
+On dit aussi que le nombre \ldots est un \textbf{antécédent} du nombre \ldots\ldots
+par la fonction $f$.
+
+\medskip
+
+\begin{center}
+\ldots \ldots \ldots \ldots $\rightarrow$ \fbox{Fonction} $\rightarrow$ \ldots
+\ldots \ldots \ldots
+
+\end{center}
+
+
+\medskip
+\ul{Exemple}: $g$ est la fonction qui, à un nombre fait correspondre son carré.
+
+
+On définit bien une fonction car il n'y a qu'un seul résultat possible pour le
+carré d'un nombre donné.
+
+
+On note $g:$ $\ldots \mapsto \ldots$ ou bien $g(\ldots)=\ldots$
+
+\enskip
+
+
+Le carré de \ldots est \ldots, 
+on écrit $g(\ldots)=\ldots$.
+\ldots est
+l'\ldots\ldots\ldots de \ldots par $g$. \ldots est un \ldots \ldots \ldots de \ldots
+par $g$.
+
+\medskip
+
+\ul{Remarque}: Par une fonction, l'image d'un nombre est unique, alors qu'un
+nombre peut avoir plusieurs antécédents ou aucun.
+
+\medskip
+
+\ul{Exemples}: 
+
+\ldots et \ldots sont deux \ldots \ldots \ldots \ldots de \ldots par la fonction $g$
+car $g(\ldots)=(-3)^2=\ldots$ et $g(\ldots)=3^2=\ldots
+$
+
+
+-1 n'a pas d'antécédent par la fonction $g$ car un carré est toujours positif.
+
+\bigskip
+
+\medskip
+
+
+\fbox{Une fonction peut être déterminée par une \textbf{formule}, par un
+\textbf{tableau de valeurs} ou par une \textbf{courbe}.}
+
+
+
+\section*{II) Tableau de valeurs}
+
+
+
+\begin{tabular}{cc}
+
+\begin{minipage}{9cm}
+Voici un tableau de valeurs d'une fonction $h$:
+
+\enskip
+
+
+\begin{tabular}{|c|c|c|c|l}
+\hline
+\ldots & \ldots & \ldots & \ldots & $\leftarrow$ \ldots \ldots \ldots \ldots \\
+\hline
+\ldots & \ldots & \ldots & \ldots & $\leftarrow$ \ldots \ldots \ldots \ldots \\
+\hline
+\end{tabular}
+\end{minipage}
+&
+\begin{minipage}{10cm}
+D'après ce tableau:
+
+\enskip
+
+$\bullet$ \ldots est \ldots \ldots \ldots de \ldots par la fonction $h$
+
+$\bullet$ \ldots et \ldots sont des \ldots \ldots \ldots\ldots de \ldots par la
+fonction $h$
+
+$\bullet$ $h(\ldots)=\ldots$ et $h(\ldots)=h(\ldots)=\ldots$
+\end{minipage} 
+\end{tabular}
+
+
+
+\section* {III) Courbe représentative d'une fonction}
+
+\ul{Définition}: La \textbf{courbe représentative} d'une fonction $f$ est
+l'ensemble des points dont les coordonnées sont de la forme (\ldots\ldots\ldots).
+
+\enskip
+
+
+\begin{tabular}{cc} 
+
+\begin{minipage}{4cm}
+\includegraphics[width=4cm]{images/cf.jpg}
+
+
+\end{minipage}
+&
+\begin{minipage}{14cm}
+
+Par lecture graphique:
+
+$\bullet$ A(\ldots\ldots) et B(\ldots\ldots) appartiennent à la courbe
+représentative de $f$.
+
+
+$\bullet$ \ldots est l'\ldots\ldots\ldots de \ldots par la fonction $f$.
+
+$\bullet$ \ldots est un  \ldots \ldots \ldots \ldots de \ldots par la fonction $f$
+
+$\bullet$ $f(\ldots)=\ldots$ et $f(\ldots)=\ldots$
+\end{minipage} 
+\end{tabular}
+
+
+
+
+
+\end{document}

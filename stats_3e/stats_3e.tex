@@ -1,0 +1,246 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=6mm, right=6mm, top=3mm, bottom=5mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+\title{\ul{\textbf{Statistiques}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+ On étudie les notes de deux élèves de $3^{e}$.
+
+\enskip
+
+notes d'Alan: 9 \quad 11 \quad 18 \quad 7 \quad 17 \quad 11 \quad 12
+\quad 18
+
+
+notes de Barbara: 13 \quad 13 \quad 12 \quad 10 \quad 8 \quad 14 \quad
+12 \quad 10 \quad 11
+
+
+
+\section{Déterminer la médiane d'une série statistique}
+
+\ul{Définition}: Une série statistique étant rangée dans l'ordre croissant, on
+appelle \textbf{médiane} la valeur qui partage cette série ordonnée en deux
+séries de même effectif. Autrement dit, il y a autant de valeurs inférieures ou
+égales à la médiane qu'il y a de valeurs supérieures ou égales à la médiane.
+
+
+\bigskip
+
+
+\bigskip
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Méthodes:} 
+
+$\bullet$ Dans le cas où l'effectif total est impair, la médiane est la valeur
+centrale de la série.
+
+$\bullet$ Dans le cas où l'effectif total est impair, on prend comme médiane la
+moyenne des deux valeurs centrales de la série (mais tous les nombres compris
+entre ces deux valeurs peuvent convenir).
+
+
+\end{minipage}
+}
+
+
+\bigskip
+
+\ul{Exemple:}
+
+\begin{enumerate}
+  \item [$\bullet$] Pour Barbara, le nombre de notes est impair. Il y a 9 notes
+  que l'on range dans l'ordre croissant: 
+  
+  \begin{center}
+  8 \quad 10 \quad 10 \quad 11 \quad 12 \quad 12 \quad 13 \quad 13 \quad 14
+  \end{center}
+
+
+  \bigskip
+  
+  La note médiane de Barbara est la $5^{e}$ note: 12. Barbara a autant de notes
+  inférieures ou égales à 12 que de notes supérieures ou égales à 12.
+  
+  \enskip
+  
+  \item[$\bullet$] Pour Alan, le nombre de notes est pair. Il y a 8 notes que
+  l'on range dans l'ordre croissant:
+  
+  
+    \begin{center}
+  7 \quad 9 \quad 11 \quad 11 \quad 12 \quad 17 \quad 18 \quad 18 
+  \end{center}
+
+
+  \bigskip
+  
+  La note médiane d'Alan est la moyenne des deux valeurs centrales 11 et
+  12: $\dfrac{11+12}{2}=11,5$. Alan a autant de notes inférieures ou égales à
+  11,5 que de notes supérieures ou égales à 11,5.
+\end{enumerate}
+
+
+
+\section{Déterminer l'étendue d'une série statistique}
+
+\ul{Définition}: \textbf{L'étendue} d'une série statistique est la différence
+entre la plus grande valeur et la plus petite valeur de la série.
+
+\bigskip
+
+\ul{Exemple}: 
+
+\begin{enumerate}
+  \item [$\bullet$] La note maximale d'Alan est 18. Sa note minimale est 7.
+  L'étendue de sa série de notes est: 18-7=11.
+  \item [$\bullet$] La note maximale de Barbara est 14. Sa note minimale est 8.
+  L'étendue de sa série de notes est: 14-8=6.  
+\end{enumerate}
+
+
+Les notes de Barbara sont moins dispersées que celles d'Alan.
+
+
+
+
+
+\section{Déterminer le premier quartile et le troisième quartile d'une série
+statistique}
+
+
+\ul{Définitions:} 
+
+$\bullet $ Le \textbf{premier quartile} d'une série, noté $Q_1$, est la
+plus petite valeur de la série pour laquelle au moins 25 \% (ou un quart) des
+valeurs de la série sont inférieures ou égales à $Q_1$.
+
+$\bullet$ Le \textbf{troisième quartile} d'une série, noté $Q_3$, est la
+plus petite valeur de la série pour laquelle au moins 75\% (ou trois quarts) des
+valeurs de la série sont inférieures ou égales à $Q_3$.
+
+
+\bigskip
+
+\bigskip
+
+
+
+\fbox{
+\begin{minipage}{18cm}
+\ul{Méthode:} Pour calculer $Q_1$, on calcule 25\% de l'effectif total:
+
+\begin{enumerate}
+
+\item [$\bullet$] Si 25\% de l'effectif total est un nombre entier n, $Q_1$ se
+trouve à la $n^{ieme}$ position de la série de valeurs rangées dans l'ordre
+croissant.
+
+\item [$\bullet$] Si 25\% de l'effectif total est un nombre décimal d,
+$Q_1$ se trouve à la $n^{ieme}$ position de la série de valeurs rangées dans
+l'ordre croissant (où n est le plus petit entier supérieur à d).
+\end{enumerate}
+
+
+\enskip
+
+Pour déterminer $Q_3$, on applique la même méthode enn calculant 75\% de
+l'effectif total.
+\end{minipage}}
+
+
+
+\bigskip
+
+
+\ul{Exemple:} 
+
+\begin{enumerate}
+  \item [$\bullet$] Les 8 notes d'Alan sont rangées dans l'ordre croissant: 
+  
+   \begin{center}
+  7 \quad 9 \quad 11 \quad 11 \quad 12 \quad 17 \quad 18 \quad 18 
+  \end{center} 
+
+\bigskip
+ 
+
+25\% de 8: $\dfrac{25}{100} \times 8=2$. Le premier quartile de la série est la
+$2^{eme}$ donnée de la série ordonnée.
+
+\enskip
+
+
+75\% de 8: $\dfrac{75}{100} \times 8=6$. Le troisième quartile de la série est
+la $6^{eme}$ donnée de la série ordonnée.
+
+\enskip
+
+$Q_1=9$ et $Q_3=17$
+
+
+\enskip
+
+\ul{interprétation:} Au moins 25\% des notes d'Alan sont inférieures ou égales
+à 9. Au moins 75\% des notes d'Alan sont inférieures ou égales à 17.
+
+
+ \item [$\bullet$] Les 9 notes de Barbara sont rangées dans l'ordre croissant: 
+  
+    \begin{center}
+  8 \quad 10 \quad 10 \quad 11 \quad 12 \quad 12 \quad 13 \quad 13 \quad 14
+  \end{center}   
+
+
+\bigskip 
+
+25\% de 9: $\dfrac{25}{100} \times 9=2,25$. Le premier quartile de la série est
+la $3^{eme}$ donnée de la série ordonnée.
+
+\enskip
+
+
+75\% de 9: $\dfrac{75}{100} \times 9=6,75$. Le troisième quartile de la série
+est la $7^{eme}$ donnée de la série ordonnée.
+
+\enskip
+
+$Q_1=10$ et $Q_3=13$
+
+
+\enskip
+
+\ul{interprétation:} Au moins 25\% des notes de Barbara sont inférieures ou
+égales à 10. Au moins 75\% des notes de Barbara sont inférieures ou égales à 13.
+\end{enumerate}
+
+
+\bigskip
+
+\ul{Remarque}: La moyenne, la médiane et les quartiles sont des caractéristiques
+de position, elles renseignent sur la position des valeurs de la série.
+
+L'étendue est une caractéristique de dispersion, elle renseigne
+sur la dispersion des données de la série.
+\end{document}

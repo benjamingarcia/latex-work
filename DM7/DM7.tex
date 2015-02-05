@@ -1,0 +1,153 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=1cm, top=1cm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+
+\begin{document}
+
+
+\section*{\center{Devoir maison 7}}
+
+\textit{Devoir à rendre sur feuille double grand format petits carreaux pour le
+\ul{jeudi 26 février 2009}.}
+
+\subsection*{Exercice 1}
+
+Construire la courbe d'une fonction $f$ en tenant compte de toutes les
+informations suivantes:
+
+\enskip
+
+\begin{itemize}
+  \item [$\bullet$] $f$ est définie sur $[-8;+ \infty[$
+  \item [$\bullet$] $f$ est croissante sur $[-8;-1]$ et $[4;+ \infty[$
+  \item [$\bullet$] $f$ est décroissante sur $[-1;4]$
+  \item [$\bullet$] le minimum sur $[-8;+ \infty[$ est $-2$, il est atteint en
+  $4$
+  \item [$\bullet$] $f(-8)=1$ et $f(-1)=6$
+  \item [$\bullet$] l'équation $f(x)=3$ a pour solution l'ensemble
+  $\mathcal{S}=\{-5;\ 1;\ 9\}$
+  \item [$\bullet$] la courbe traverse l'axe des abscisses en $2$ et en $7$
+  \item [$\bullet$] $0$ et $-3$ sont des antécédents de $5$
+  \item [$\bullet$] la courbe passe par le point $A(10;6)$
+  \item [$\bullet$] pour tout réel $x>2$, on a $f(x)<7$.
+\end{itemize}
+
+\enskip
+
+\textit{Indication: On pourra commencer par dresser un tableau de valeurs et de
+variations de la fonction $f$.}
+
+ \subsection*{Exercice 2}
+
+\textbf{On répondra aux questions par des phrases correctes
+(sujet/verbe/complément(s)).}
+
+\medskip
+
+\begin{tabular}{cc}
+\begin{minipage}{10cm}
+Le paracétamol est un produit qui permet de combattre la douleur et la fièvre.
+Son action est proportionnelle à son taux de concentration dans le sang. Les
+deux courbes (à droite) donnent la concentration dans le sang (en mg/L) en
+fonction du temps (min) pour deux présentations différentes du produit:
+paracétamol sec (P.S) et paracétamol en comprimés effervescents (P.E).
+
+\enskip
+
+On peut, grâce au graphique, définir deux fonctions:
+
+$\bullet$ une fonction $s$ qui à l'instant $t$ associe la concentration dans le
+sang du paracétamol sec  
+
+
+$\bullet$ une fonction $e$ qui à l'instant $t$ associe la concentration du
+produit effervescent.
+\end{minipage}
+&
+\begin{minipage}{8cm}
+\includegraphics[width=8cm]{images/paracetamol3.PNG}
+\end{minipage}
+\end{tabular}
+
+\medskip
+
+\begin{enumerate}
+  \item Pour chaque produit, trouver la concentration dans le sang au bout de
+  50 min, au bout d'1h30 et au bout de 2h.
+  \item A quel moment chaque concentration est-elle maximum?
+  \item Quel produit utiliser pour calmer la douleur le plus rapidement
+  possible? Et si l'on souhaite une action maximale au bout d'1h30?
+  \item A quels instants a-t'-on une concentration de 9mg/L pour chacun des
+  produits?
+  \item A partir de quel moment, pour chaque produit, a-t'on une concentration
+  supérieure à 12mg/L et jusqu'à quand ?
+  \item A quel instant les deux concentrations sont-elles égales?
+  \item Ecrire chacune des réponses aux questions précédentes en langage
+  mathématique (exemple: $e(50)=16$ ou 50 a pour image 16 par $e$).
+\end{enumerate}
+
+\subsection*{Exercice 3}
+
+\textit{Remarque: il est fortement conseillé de faire la figure sur géogébra et
+de faire bouger $M$ pour vérifier ou conjecturer les résultats.}
+
+\enskip
+
+
+\begin{tabular}{cc}
+\begin{minipage}{12cm}
+Soit $ABC$ un triangle équilatéral de côté 12cm. $M$ est un point sur le
+segment $[AB]$. On pose $AM=x$. 
+
+\enskip
+
+On construit les points $N,\ P$ et $Q$ de la
+façon suivante: 
+
+$N$ est sur le segment $[AB]$ et $BN=x$, $P$ est sur le segment
+$[BC]$, $Q$ est sur le segment $[AC]$ et $MNPQ$ est un rectangle.
+
+\enskip
+
+On s'intéresse à l'aire du rectangle $MNPQ$.
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\includegraphics[width=6cm]{images/triangle.png}
+\end{minipage}
+\end{tabular}
+
+
+\enskip
+
+\begin{enumerate}
+  
+  \item  Exprimer les longueurs $AM$, $NM$ et $NB$ en fonction de $x$.
+  \item Montrer que $MQ=\sqrt{3} x$.
+  \item A quel intervalle appartient $x$? 
+  \item On note $A$ la fonction qui à toutes valeurs de $x$ associe l'aire du
+  rectangle $MNPQ$ $A(x)$. Démontrer que $A(x)=12 \sqrt{3}x-2 \sqrt{3}x^{2}$.
+  \item A l'aide de Géogébra et/ou de la calculatrice, conjecturer le sens de
+  variation de $A$ et conjecturer la valeur $c$ telle que $A(c)$ soit maximale.
+  Etablir le tableau de variation de $A$.
+  \item \textbf{BONUS}: Démontrer que l'aire est maximale pour la valeur $c$
+  conjecturée.
+  \item \textbf{BONUS}: Pour quelle valeur de $x$, $MNPQ$ est-il un carré? Le
+  démontrer. Calculer l'aire correspondante.
+\end{enumerate}
+
+
+
+\end{document} 

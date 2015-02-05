@@ -2,4 +2,6 @@
 *.synctex.gz
 tmp/
 
+.texlipse
+.project
 .metadata/

@@ -1,0 +1,343 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=5mm, right=5mm, top=3mm, bottom=3mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{lscape}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+
+\date{}
+
+\begin{document}
+
+\enskip
+
+
+\begin{center}
+\LARGE{\ul{\textbf{Plus Grand Diviseur Commun}}}
+\end{center}
+
+\vspace{8mm}
+
+
+\section{Diviseurs communs à deux nombres entiers}
+
+\subsection{Diviseurs communs}
+
+
+\ul{Définition}: $a$, $b$ et $k$ désignent des nombres entiers avec $k \neq 0$.
+Dire que $k$ est un \textbf{diviseur commun} à $a$ et $b$ signifie que $k$
+divise \textbf{à la fois} $a$ et $b$.
+
+\bigskip
+
+\ul{Exemples}: 
+
+$\bullet$ 2 est un diviseur commun à 12 et 38 car $2 \times 6=12$ et $2 \times
+19=39$.
+
+$\bullet$ 5 est un diviseur commun à 50 et 35 car $5 \times 10=50$ et $5 \times
+7 = 35$.
+\subsection{PGCD}
+
+
+\ul{Définition}: $a$ et $b$ désignent des nombres entiers non nuls. Le plus
+grand diviseur commun à $a$ et $b$ est appelé le \textbf{PGCD} de $a$ et $b$
+(Plus Grand Commun Diviseur). On le note \textbf{PGCD(a;b)}.
+
+
+\bigskip
+
+\ul{Exemple}:
+
+Les diviseurs de 24 sont: 1; 2; 3; 4; 6; 8; 12 et 24.
+
+
+Les diviseurs de 36 sont: 1; 2; 3; 4; 6; 9; 12; 18 et 36.
+
+
+Les diviseurs communs sont: 1; 2; 3; 4; 6; 12. Le plus grand est 12. Donc
+PGCD(36;24)=12.
+
+
+\bigskip
+
+A la calculatrice: 
+
+\subsection{Nombres premiers entre eux}
+
+
+\ul{Définition}: Dire que deux nombres entiers sont \textbf{premiers entre eux}
+signifie que \textbf{1  est leur seul diviseur commun}.
+
+
+\bigskip
+
+\ul{Exemple}: Les diviseurs de 16 sont 1; 2; 4; 8 et 16. Les diviseurs de 9
+sont 1; 3 et 9.
+
+1 est le seul diviseur commun à 16 et 9 donc 16 et 9 sont premiers entre eux.
+
+
+\bigskip
+
+\ul{Remarque}: Dire que deux nombres entiers sont premiers entre eux revient à
+dire que leur PGCD est égal à 1.
+
+
+\section{Application: fraction irréductible}
+
+
+\ul{Rappels}: Une fraction irréductible est une fraction qui ne peut plus être
+simplifiée.
+
+\enskip
+
+\textit{Méthode 1: En utilisant les critères de divisibilité}
+\qquad $\dfrac{36}{24}=\dfrac{18}{12}=\dfrac{3}{2}$
+
+
+\enskip
+
+\textit{Méthode 2: En utilisant la décomposition des nombres}
+\qquad $\dfrac{36}{24}=\dfrac{2 \times 3 \times 2 \times 3}{2 \times 2 \times 3
+\times 2}=\dfrac{3}{2}$
+
+ 
+\bigskip
+
+\ul{Définition}: Dire qu'une fraction est \textbf{irréductible} signifie que
+son numérateur et son dénominateur sont premiers entre eux. 
+
+
+\bigskip
+
+\ul{Exemple}: $\dfrac{16}{9}$ est une fraction irréductible car 16 et 9 sont
+premiers entre eux.
+
+\bigskip
+
+ \ul{Propriété}: Si l'on simplifie une fraction par le PGCD de son numérateur
+ et de son dénominateur alors on obtient la fraction irréductible qui lui est
+ égale.
+
+\bigskip
+
+\ul{Exemple}: PGCD(24;36)=12 donc $\dfrac{36}{24}=\dfrac{3 \times 12}{2 \times
+12}=\dfrac{3}{2}$
+
+\section{Algorithmes de calculs}
+
+
+\subsection{Algorithme des soustractions successsives}
+
+
+\ul{Propriété}: $a$ et $b$ désignent des nombres entiers non nuls avec $a>b$.
+\textbf{PGCD(a;b)=PGCD(b;a-b)}.
+
+\bigskip
+
+\begin{tabular}{cc}
+\begin{minipage}{8cm}
+\begin{center}
+\includegraphics[width=7cm]{images/soustraction.jpg}
+\end{center}
+\end{minipage}
+&
+\begin{minipage}{11cm}
+\ul{Exemple}: Calculer le PGCD de 312 et 546.
+ 
+ \enskip
+ 
+\begin{tabular}{ll}
+$546-312=234$ & \qquad  PGCD(546;312)=PGCD(312;234) \\
+
+$312-234=78$ & \qquad  PGCD(312;234)=PGCD(234;78) \\
+
+$234-78=156$ & \qquad  PGCD(234;78)=PGCD(156;78) \\
+
+$156-78=78$ & \qquad  PGCD(156;78)=PGCD(78;78) \\
+
+$78-78=0$ & \qquad  PGCD(78;78)=78 \\
+\end{tabular}
+
+\enskip
+
+Donc PGCD(312;546)=78
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+
+
+
+
+\subsection{Algorithme d'Euclide (ou des divisions successives)}
+
+
+\ul{Propriété}: $a$ et $b$ désignent des nombres entiers non nuls avec $a>b$.
+\textbf{PGCD(a;b)=PGCD(b;r)} où $r$ est le reste de la division euclidienne de
+$a$ par $b$.
+
+
+\bigskip
+
+
+
+\begin{tabular}{cc}
+\begin{minipage}{7cm}
+\begin{center}
+\includegraphics[width=6cm]{images/division.jpg}
+\end{center}
+\end{minipage}
+&
+\begin{minipage}{12cm}
+\ul{Exemple}: Calculer le PGCD de 312 et 546.
+
+
+\enskip
+
+\begin{tabular}{ll}
+$546=312 \times 1 + 234$ & \qquad PGCD(546;312)=PGCD(312;234) \\
+
+$312= 234 \times 1 + 78$ & \qquad PGCD(312;234)=PGCD(234;78) \\
+
+$234=78 \times 3 + 0$ & \qquad PGCD(234;78)=78 \\
+
+\end{tabular}
+
+\enskip
+
+Donc PGCD(312;546)=78
+\end{minipage}
+\end{tabular}
+
+
+\pagebreak
+
+\begin{center}
+\Large{\ul{\textbf{Plus Grand Diviseur Commun}}}
+\end{center}
+
+\vspace{6mm}
+
+
+\section*{Diviseurs communs à deux nombres entiers}
+
+\subsection*{Diviseurs communs}
+
+
+\ul{Définition}: $a$, $b$ et $k$ désignent des nombres entiers avec $k \neq 0$.
+Dire que $k$ est un \textbf{diviseur commun} à $a$ et $b$ signifie que $k$
+divise \textbf{à la fois} $a$ et $b$.
+
+\bigskip
+
+\ul{Exemples}: 
+
+$\bullet$ 2 est un diviseur commun à 12 et 38 car \ldots \ldots \ldots
+
+$\bullet$ 5 est un diviseur commun à 50 et 35 car \ldots \ldots \ldots
+
+\subsection*{PGCD}
+
+
+\ul{Définition}: $a$ et $b$ désignent des nombres entiers non nuls. Le plus
+grand diviseur commun à $a$ et $b$ est appelé le \textbf{PGCD} de $a$ et $b$
+(Plus Grand Commun Diviseur). On le note \textbf{PGCD(a;b)}.
+
+
+\bigskip
+
+\ul{Exemple}:
+
+Les diviseurs de 24 sont: \ldots \ldots \ldots 
+
+
+Les diviseurs de 36 sont: \ldots \ldots \ldots
+
+
+Les diviseurs communs sont: \ldots \ldots \ldots \ldots \ldots \ldots\ldots  Le
+plus grand est \ldots.
+Donc PGCD(36;24)=\ldots.
+
+
+\bigskip
+
+A la calculatrice: 
+
+\subsection*{Nombres premiers entre eux}
+
+
+\ul{Définition}: Dire que deux nombres entiers sont \textbf{premiers entre eux}
+signifie que \textbf{1  est leur seul diviseur commun}.
+
+
+\bigskip
+
+\ul{Exemple}: Les diviseurs de 16 sont \ldots \ldots \ldots \ldots \ldots \ldots
+\ldots Les diviseurs de 9 sont \ldots \ldots \ldots
+
+\ldots est le seul diviseur commun à 16 et 9 donc 16 et 9 sont premiers entre eux.
+
+
+\bigskip
+
+\ul{Remarque}: Dire que deux nombres entiers sont premiers entre eux revient à
+dire que leur PGCD est égal à 1.
+
+
+\section*{Application: fraction irréductible}
+
+
+\ul{Rappels}: Une fraction irréductible est une fraction qui ne peut plus être
+simplifiée.
+
+\enskip
+
+\textit{Méthode 1: En utilisant les critères de divisibilité}
+\qquad $\dfrac{36}{24}=$
+
+
+\enskip
+
+\textit{Méthode 2: En utilisant la décomposition des nombres}
+\qquad $\dfrac{36}{24}=$
+
+ 
+\bigskip
+
+\ul{Définition}: Dire qu'une fraction est \textbf{irréductible} signifie que
+son numérateur et son dénominateur sont premiers entre eux. 
+
+
+\bigskip
+
+\ul{Exemple}: $\dfrac{16}{9}$ est une fraction irréductible car 16 et 9 sont
+premiers entre eux.
+
+\bigskip
+
+ \ul{Propriété}: Si l'on simplifie une fraction par le PGCD de son numérateur
+ et de son dénominateur alors on obtient la fraction irréductible qui lui est
+ égale.
+
+\bigskip
+
+\ul{Exemple}: PGCD(24;36)=12 donc $\dfrac{36}{24}=$
+\end{document}

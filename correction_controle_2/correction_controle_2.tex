@@ -1,0 +1,267 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage[dvipsnames]{xcolor}
+\pagestyle{empty}
+\begin{document} 
+
+\section*{\center{Correction du contrôle $2$}}
+
+\subsection*{Exercice 4}
+
+$x$ et $y$ $2$ réels tels que : $2\leqslant x \leqslant4$ et
+$-1\leqslant y \leqslant5$
+
+
+$\bullet$ encadrons $x+y$: 
+\[ + 
+\left.
+\begin{aligned} 
+	2\leqslant \ x\  \leqslant 4\\
+	-1\leqslant \ y\  \leqslant 5\\
+	\hline
+\end{aligned}
+\right. \]
+\[
+\begin{aligned}
+	1\leqslant x+y \leqslant 9
+\end{aligned}
+\]
+
+
+\bigskip
+$\bullet$ encadrons $y-x$:\qquad $-1\leqslant y \leqslant5$
+\smallskip
+
+
+
+\fbox{Je ne peux pas faire la soustraction directement.} J'écris donc
+$y-x=y+(-x)$ et j'encadre $y$ puis $(-x)$ et je peux ensuite \fbox{additionner}
+les encadrements de $y$ et de $(-x)$.
+
+
+\begin{minipage}{7cm}
+\begin{align*}
+2 & \leqslant x \leqslant 4 \\
+-2 & \geqslant -x \geqslant -4 \\
+-4 & \leqslant -x \leqslant -2 \\
+\end{align*}
+\end{minipage}
+\begin{minipage}{7cm}
+\[ + 
+\left.
+\begin{aligned} 
+	-1\leqslant y\  \leqslant 5\\
+	-4\leqslant \ -x\  \leqslant -2\\
+	\hline
+\end{aligned}
+\right. \]
+\[
+\begin{aligned}
+	-5\leqslant y+(-x) \leqslant 3 \\
+	-5\leqslant y-x \leqslant 3 
+\end{aligned}
+\]
+\end{minipage}
+
+
+\bigskip
+$\bullet$ encadrons $\dfrac{x^2-y}{4}$ :\quad J'encadre $x^2$ (je peux car
+$2\leqslant x \leqslant4$ donc on a QUE des nombres positifs).
+
+
+$2^2 \leqslant x^2 \leqslant 4^2$ \textbf{car $0<2\leqslant x \leqslant 4$}
+
+
+$x^2-y = x^2+(-y)$ donc j'encadre $-y$
+
+
+\begin{minipage}{7cm}
+\begin{align*}
+-1 & \leqslant y \leqslant 5 \\
+1 & \geqslant -y \geqslant -5 \\
+-5 & \leqslant -y \leqslant 1 \\
+\end{align*}
+\end{minipage}
+\begin{minipage}{7cm}
+\[ + 
+\left.
+\begin{aligned} 
+	4\leqslant x^2\  \leqslant 16\\
+	-5\leqslant \ -y\  \leqslant 1\\
+	\hline
+\end{aligned}
+\right. \]
+\[
+\begin{aligned}
+	-1\leqslant x^2+(-y) \leqslant 17 \\
+	-1\leqslant x^2-y \leqslant 17 
+\end{aligned}
+\]
+\end{minipage}
+
+
+$\dfrac{1}{4}>0$ donc $\dfrac{-1}{4} \leqslant \dfrac{x^2-y}{4} \leqslant
+\dfrac{17}{4}$
+
+
+\bigskip
+
+$\bullet$ Autre exemple : Soit $x$ et $y$ deux réels tesl que: $3\leqslant x
+\leqslant 5$ et $6\leqslant y \leqslant 7$. Encadrer $\dfrac{x}{y}+8$
+
+\fbox{Je ne peut pas faire la division directement.}
+
+J'écris donc $\dfrac{x}{y}=x\times\dfrac{1}{y}$ et j'encadre $x$ puis
+$\dfrac{1}{y}$. Je peux ensuite \fbox{multiplier} les encadrements de $x$ et
+$\dfrac{1}{y}$ \ul{CAR TOUS LES NOMBRES SONT POSITIFS}.
+
+
+\begin{minipage}{7cm}
+\begin{align*}
+3 & \leqslant x \leqslant 5 \\
+6 & \leqslant y \leqslant 7 \\
+\dfrac{1}{6} & \geqslant \dfrac{1}{y} \geqslant  \dfrac{1}{7} \\
+\dfrac{1}{7} & \leqslant \dfrac{1}{y} \leqslant  \dfrac{1}{6} \\
+\end{align*}
+\end{minipage}
+\begin{minipage}{7cm}
+\[ \times 
+\left.
+\begin{aligned} 
+	3\leqslant \ x\  \leqslant 5\\
+	\dfrac{1}{7}\leqslant \ \dfrac{1}{y}\  \leqslant \dfrac{1}{6}\\
+	\hline
+\end{aligned}
+\right. \]
+\[
+\begin{aligned}
+	\dfrac{3}{7}\leqslant \dfrac{x}{y} \leqslant \dfrac{5}{6}
+\end{aligned}
+\]
+\end{minipage}
+
+$\dfrac{3}{7}+8 \leqslant \dfrac{x}{y}+8 \leqslant \dfrac{5}{6}+8$.
+
+\subsection*{Exercice 5}
+1) $A=\dfrac{3+\pi}{3}$ \qquad  $B=\dfrac{4+\pi}{4}$ 
+
+\medskip
+
+
+J'utilise la méthode de la différence (je calcule $A-B$ et je regarde le
+signe, si $A-B>0$ alors $A>B$, si $A-B<0$ alors $A<B$).
+
+
+$A-B=\dfrac{3+\pi}{3}-\dfrac{4+\pi}{4}=\dfrac{(3+\pi)\times
+\color{red}{4}}{12}$$-\dfrac{(4+\pi)\times\color{red}{3}}{12}=\dfrac{\color{red}{12+4\pi
+-(12+3\pi)}}{12}=\begin{color}{red}\dfrac{\pi}{12}>\end{color}0$
+
+\smallskip 
+Donc $A \begin{color}{red}>\end{color} B$
+
+
+\medskip
+
+
+\ul{Autre méthode possible}: J'utilise la méthode du quotient et je compare
+à 1 : si $\dfrac{A}{B}<1$ alors $A \begin{color}{red}<\end{color} B$ et si 
+$\dfrac{A}{B}>1$ alors $A \begin{color}{red}>\end{color} B$.
+
+\medskip
+
+$\dfrac{A}{B} = \dfrac{\dfrac{3+\pi}{3}}{\dfrac{4+\pi}{4}} =
+\dfrac{3+\pi}{3} \times
+\begin{color}{red}\dfrac{4}{4+\pi} =
+\dfrac{12+4\pi}{12+3\pi} >\end{color}1$ \qquad donc $A \begin{color}{red}>\end{color} B$.
+\begin{color}{red}
+car $12+3\pi<12+4\pi$
+\end{color}
+
+
+\bigskip
+2) $C=\sqrt{4-2\sqrt{3}}$ et $D=\sqrt{3}-1$
+
+
+$C>0$ et $D>0$ donc je peux comparer leurs carrés.
+
+\smallskip
+$C^2=\begin{color}{red}4-2\sqrt{3}\end{color}$ \ \ $D^2=(\sqrt{3}-1)^2 =
+\begin{color}{red}3-2\sqrt{3}+1 = 4-2\sqrt{3}\end{color}$ \qquad donc $C^2
+\begin{color}{red}=\end{color} D^2$ et $C \begin{color}{red}=\end{color} D$
+
+
+\bigskip
+3)Soit $a>0$ et $b>0$; $E=\dfrac{a}{a+b}$ et $F=\dfrac{a-b}{a}$
+\smallskip
+
+J'utilise la méthode de la différence.
+\smallskip
+
+$E-F = \dfrac{a}{a+b}-\dfrac{a-b}{a}=\dfrac{a\times
+\begin{color}{red}a\end{color} -(a-b)
+\begin{color}{red}(a+b)\end{color}}{a(a+b)} =
+\dfrac{\color{red}{a^2-(a^2-b^2)}}{a(a+b)}\begin{color}{red}=\dfrac{b^2}{a(a+b)}\end{color}$
+\smallskip
+
+
+$a>0$ et $b>0$ donc $a+b \begin{color}{red}>\end{color} 0$ et
+$a(a+b)\begin{color}{red}>\end{color} 0$. Un carré est toujours positif ou nul
+donc $b^{2} \begin{color}{red}>\end{color} 0$
+
+
+J'en déduis $E-F = \dfrac{b^2}{a(a+b)}\ \begin{color}{red}>\end{color} 0$ d'où $E \begin{color}{red}>\end{color} F$
+
+
+\subsection*{Exercice 6}
+On note $\mathcal{A}$ l'aire du rectangle, $P$ son périmètre,
+$l$ sa largeur et $L$ sa longueur.
+
+
+On a: $51\leqslant \mathcal{A} \leqslant 52$ et $3\leqslant l
+\leqslant 6$.
+
+
+Or $\mathcal{A}=L\times l$ donc $L=\dfrac{\mathcal{A}}{\color{red}{l}} =
+\mathcal{A}\times\color{red}{\dfrac{1}{l}}$
+
+
+J'encadre donc $\dfrac{1}{l}$
+
+
+\begin{align*}
+3 & \leqslant l \leqslant 6 \\
+\color{red}{\dfrac{1}{3}} & \geqslant \dfrac{1}{l} \geqslant
+\color{red}{\dfrac{1}{6}} \\ \color{red}{\dfrac{1}{6}} & \leqslant \dfrac{1}{l} \leqslant \color{red}{\dfrac{1}{3}} \\
+\end{align*}
+
+
+\textbf{$0<51\leqslant\mathcal{A}\leqslant52$} donc
+$\begin{color}{red}51\times\dfrac{1}{6}\end{color}\leqslant
+\mathcal{A} \times \dfrac{1}{l} \leqslant \color{red}{52\times\dfrac{1}{3}}$
+
+d'où $\begin{color}{red}\dfrac{51}{6}\end{color}\leqslant L \leqslant
+\color{red}{\dfrac{52}{3}}$.
+
+\medskip
+
+
+La formule du périmètre est \fbox{$P=\color{red}{2(L+l)}$} d'où : \qquad
+$2\times(\begin{color}{red}\dfrac{51}{6}+3\end{color})\leqslant P\leqslant
+2\times(\begin{color}{red}\dfrac{52}{3}+6\end{color})$
+
+\medskip
+
+$\begin{color}{red}\dfrac{69}{6}\end{color}\leqslant
+P\leqslant \begin{color}{red}\dfrac{70}{3}\end{color}$
+\end{document}

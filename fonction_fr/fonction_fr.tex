@@ -1,0 +1,557 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=1cm, top=1cm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+\title{\ul{\textbf{Généralités sur les fonctions}}}
+\date{}
+\begin{document}
+\maketitle
+ 
+\section{Définitions et notations}
+
+\subsection{Fonctions}
+
+\ul{Définition}: Soit $\mathcal{D}$ un intervalle ou une réunion d'intervalles
+de $\mathbb{R}$. Définir une fonction $f$ sur $\mathcal{D}$, c'est associer à
+chaque réel $x$ de $\mathcal{D}$ un \textbf{unique} réel noté $f(x)$.
+
+\enskip
+
+\ul{Notation}: 
+\begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & \mathcal{D}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  f(x)
+\end{align*}
+\end{minipage}
+
+on lit: ``$f$ est la fonction de $\mathcal{D}$ vers $\mathbb{R}$ qui à $x$
+associe $f$ de $x$.''
+
+\enskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{8cm}
+\ul{\textbf{Attention}}: ne pas confondre $f$ et $f(x)$
+\begin{itemize}
+  \item [$\bullet$] $f$ désigne la fonction (c'est son nom)
+  \item [$\bullet$] $f(x)$ désigne un nombre réel.
+\end{itemize}
+\end{minipage}}
+\end{center}
+
+
+\enskip
+
+\ul{Définition}: Si $x$ est un réel de l'ensemble $\mathcal{D}$ et si $f(x)=y$
+alors:
+
+
+\begin{itemize}
+  \item [$\bullet$] $y$ est l'\textbf{image} de $x$ par $f$ (on peut dire aussi
+  : $x$ a pour image $y$ par $f$). 
+  \item [$\bullet$] $x$ est un \textbf{antécédent} de $y$ par $f$.
+  
+\end{itemize}
+
+\enskip
+
+\ul{Remarque}: L'image est unique (d'après la définition d'une fonction), par
+contre on peut avoir 0 ou plusieurs antécédents (cf graphe sur les
+températures).
+
+
+\enskip
+
+
+\ul{Exemple}: Un programme de calcul $f$: choisir un nombre, l'élever au carré
+puis multiplier le résultat par 4 et enfin lui ajouter 2. 
+
+\enskip
+
+2 $\mapsto$ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+
+-1  $\mapsto$ \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+\ldots 
+
+3 $\mapsto$ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+\ldots 
+
+$x$ $\mapsto$ \ldots \ldots \ldots \ldots \ldots \ldots \ldots
+\ldots \ldots
+
+\enskip
+
+$f$ est alors la fonction suivante:
+\begin{minipage}{3cm}
+
+\begin{align*}
+f: \ & \mathbb{R}\  \rightarrow \ \mathbb{R} \\
+& x \ \mapsto \  f(x)=\ldots \ldots \ldots \ldots
+\end{align*}
+\end{minipage}
+
+Le résultat obtenu en appliquant le programme de calcul $f$ à un nombre $x$ est
+$f(x)$. Remplir le tableau de valeurs de $f$ à l'aide de la calculatrice:
+
+\enskip
+
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$x$ & -1 \ & 1 \ & 2 \ & 3 \ \\
+\hline
+$f(x)$ &  & & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\fbox{
+\begin{minipage}{18cm}
+\textbf{A la calculatrice:} (les touches de la calculatrice sont représentées
+en gras)
+\begin{enumerate}
+  \item \textbf{f(x)}:  $Y_{1}=4X^{2}+2$ (cela permet de rentrer la fonction)
+  \item \textbf{déf table}: \textbf{début Tbl}: -2 (attention au choix du -,
+  cela permet de définir la valeur de départ)
+  
+       \qquad \qquad \qquad     \textbf{Pas}: 0.5 (cela
+       définit le pas entre deux valeurs)
+  \item \textbf{Table}: X est la variable, $Y_{1}$ son image. 
+\end{enumerate}
+\end{minipage}
+}
+
+\medskip
+
+$f(2)=18$ donc 18 est l'image de 2 par $f$. Il n'y a qu'un seul résultat pour le
+calcul de $f(2)$.
+
+\enskip
+
+$f(1)=6$ donc \ldots \ldots est l'image de \ldots \ldots par $f$. 
+
+On a aussi: 1 est un antécédent de 6 par $f$.
+
+
+Comme $f(-1)=6$, -1 est aussi un antécédent de 6 par $f$. 
+
+\enskip
+
+Recherchons un antécédent de 0 par $f$: on doit avoir $f(x)=0$, il faut
+trouver $x$. 
+ 
+$4x^{2}+2=0$
+
+$4x^{2}=-2$ impossible car $4x^{2}$ est toujours un nombre positif.
+
+Donc 0 n'a pas d'antécédent par $f$.
+
+
+
+
+\subsection{Ensemble de définition}
+
+
+\ul{Définition}: L'ensemble de définition (ou domaine de définition) de la
+fonction $f$ est l'ensemble des réels $x$ de $\mathbb{R}$ qui ont une image par
+$f$, c'est-à-dire l'ensemble des réels pour lesquels $f(x)$ est calculable. On
+le note $D_{f}$.
+
+\enskip
+
+\ul{Exemples}: 
+
+\begin{itemize}
+  \item [$\bullet$] Pour notre programme de calcul $f$, on peut calculer $f(x)$
+  quel que soit le nombre réel $x$ choisi. On a donc: $D_{f}=\mathbb{R}$.
+  \item [$\bullet$] Pour l'exemple des températures de Brest, on avait
+  $D_{f}=[0;24]$.
+\end{itemize}
+
+\enskip
+
+\fbox{
+\begin{minipage}{10cm}
+\ul{Propriétés}:
+\begin{itemize}
+ \item [$\bullet$] Le calcul de $\dfrac{A(x)}{B(x)}$ n'est possible que si $B(x)
+\neq 0$.
+
+\enskip
+
+\item  [$\bullet$] Le calcul de $\sqrt{A(x)}$ n'est possible que si $A(x)
+\geqslant 0$.
+\end{itemize}
+\end{minipage}
+}
+ 
+ \enskip
+ 
+\ul{Exemples}:
+\begin{itemize}
+  \item [$\bullet$] $g: \ x \ \mapsto \ \dfrac{2x+3}{x-2}$
+  
+  \enskip
+  
+  \item [$\bullet$] $h: \ x \ \mapsto \ \sqrt{x+3}$
+\end{itemize} 
+
+\section{Représentation graphique}
+
+
+\ul{Définition}: Un repère étant choisi, on appelle \textbf{courbe
+représentative} (ou \textbf{représentation graphique}) de la fonction $f$, et
+on note $\mathcal{C}_{f}$, l'ensemble des points de coordonnées $(x;y)$ avec $x \in
+D_{f}$ et $y=f(x)$.
+
+
+On dit aussi que $y=f(x)$ est l'\textbf{équation de la courbe}.
+
+\begin{tabular}{cc}
+\fbox{
+\begin{minipage}{11cm}
+\textbf{A la calculatrice:} (les touches de la calculatrice sont représentées
+en gras)
+\begin{enumerate}
+  \item \textbf{f(x)}:  $Y_{1}=4X^{2}+2$ (cela permet de rentrer la fonction)
+  \item \textbf{fenêtre}:  \textbf{Xmin}: -2,5 (donne l'abscisse mininmum)
+  
+  
+  \qquad \qquad \quad \textbf{Xmax}: 2,5 (donne l'abscisse maximum)
+  
+  
+  \qquad \qquad \quad \textbf{Xgrad}: 1 (donne le pas des graduations des
+  abscisses)
+  
+  
+  \qquad \qquad \quad \textbf{Ymin}: -2 (donne l'ordonnée minimum)
+  
+  
+  \qquad \qquad \quad \textbf{Ymax}: 20 (donne l'ordonnée maximum)
+  
+  
+  \qquad \qquad \quad \textbf{Ygrad}: 2 (donne le pas des graduations des
+  ordonnées)
+  \item  \textbf{graphe}: la courbe s'affiche! 
+\end{enumerate}
+\end{minipage}
+}
+& 
+\begin{minipage}{6cm}
+\includegraphics[width=5cm]{images/repere.png}
+\end{minipage}
+\end{tabular}
+
+\bigskip
+
+Déterminer graphiquement l'image de 0,5. \ldots \ldots \ldots \ldots \ldots
+\ldots \ldots \ldots \ldots \ldots
+
+Déterminer graphiquement le(s) antécédent(s) de 11 puis de 0. \ldots \ldots
+\ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots 
+
+\section{Sens de variation}
+
+\subsection{Fonction croissante}
+
+\ul{Définition}: Soit $f$ une fonction définie sur un intervalle $I$. On dit
+que $f$ est \textbf{croissante} sur $I$ lorsque les nombres de $I$ et leurs
+images sont rangés dans le même ordre.
+
+\medskip
+
+\fbox{
+\begin{minipage}{12cm}
+Quels que soient les réels $a$ et $b$ de $I$: si $a \geqslant b$ alors
+$f(a) \geqslant f(b)$.
+\end{minipage}
+}
+
+\enskip
+
+\ul{Exemple}: $f(x)=4x^{2}+2$ est croissante sur $\ldots \ldots \ldots$ (on
+peut le voir graphiquement) 
+
+On peut aussi le montrer par le calcul:
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip 
+
+\subsection{Fonction décroissante}
+
+\ul{Définition}: Soit $f$ une fonction définie sur un intervalle $I$. On dit
+que $f$ est \textbf{décroissante} sur $I$ lorsque les nombres de $I$ et leurs
+images sont rangés dans l'ordre contraire.
+
+\medskip
+
+\fbox{
+\begin{minipage}{12cm}
+Quels que soient les réels $a$ et $b$ de $I$: si $a \geqslant b$ alors
+$f(a) \leqslant f(b)$.
+\end{minipage}
+}
+
+\enskip
+
+\ul{Exemple}: $f(x)=4x^{2}+2$ est décroissante sur $\ldots \ldots \ldots$ (cela se
+voit graphiquement)
+
+On peut aussi le montrer par le calcul:
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+
+
+\subsection{Fonction constante}
+
+\ul{Définition}: Soit $f$ une fonction définie sur un intervalle $I$. On dit
+que $f$ est \textbf{constante} sur $I$ lorsque pour deux nombres différents de
+$I$ leurs images sont égales.
+
+\medskip
+
+\fbox{
+\begin{minipage}{12cm}
+Quels que soient les réels $a$ et $b$ de $I$ alors
+$f(a) = f(b)$.
+\end{minipage}
+}
+
+\enskip
+
+\ul{Exemple}:
+
+
+\includegraphics[width=5cm]{images/constante.png}
+
+
+\subsection{Tableau de variations}
+
+Représentons le tableau de variation de notre fonction $f$ (programme de
+calcul):
+
+ La flèche $\nearrow$ signifie que la fonction ``croît''. La flèche $\searrow$
+ signifie que la fonction ``décroît'' (on mettrait $\rightarrow$ pour une
+ fonction constante).
+
+ 
+\[\begin{tabvar}{|C|CCCCC|} 
+  \hline
+  x &-\infty & &2 & &+\infty \\ 
+  \hline
+  \niveau{2}{2}f(x)
+  & &\decroit
+  &0&\croit &
+ \\ \hline
+  \end{tabvar}\]
+
+Peut-on comparer grâce au tableau de variations les nombres suivants?
+
+$f(3)$ et $f(4)$:
+
+
+$f(-1)$ et $f(-25)$:
+
+$f(-2)$ et $f(6)$: 
+
+\section{Extrema}
+
+\ul{Définition}: Soit $f$ une fonction définie sur un intervalle $I$. On dit
+que $f$ admet un maximum en $a$ sur $I$ lorsque $f(a)$ est la plus grande
+valeur de $f(x)$ sur $I$.
+
+\enskip
+
+\fbox{Quel que soit $x$ sur $I$: $f(x) \leqslant f(a)$}
+
+\medskip
+
+\ul{Définition}:  Soit $f$ une fonction définie sur un intervalle $I$. On dit
+que $f$ admet un minimum en $a$ sur $I$ lorsque $f(a)$ est la plus petite
+valeur de $f(x)$ sur $I$.
+
+\enskip
+
+\fbox{Quel que soit $x$ sur $I$: $f(x) \geqslant f(a)$}
+
+\bigskip
+
+\ul{Exemple}:
+
+
+\begin{tabular}{cc}
+\begin{minipage}{8cm}
+\includegraphics[width=8cm]{images/extrema.png}
+\end{minipage}
+&
+\begin{minipage}{10cm}
+Soit $\mathcal{C}_{f}$ la courbe représentative d'une fonction $f$ définie sur
+$[-2;4]$.
+
+\enskip
+
+Le minimum de la fonction $f$ est \ldots \ldots \ldots (en effet, A est le
+point ``le plus bas'' de la courbe).
+
+Il est atteint pour $x=\ldots \ldots$.
+
+\enskip
+
+Le maximum de la fonction $f$ est \ldots \ldots \ldots (en effet, B est le
+point ``le plus haut'' de la courbe).
+
+Il est atteint pour $x=\ldots \ldots$.
+\end{minipage}
+\end{tabular}
+
+
+\section{Résolution graphique}
+
+Les exemples porteront sur la fonction définie sur $\mathbb{R}$ par
+$f(x)=4x^{2}+2$ et dont la représentation graphique $\mathcal{C}_{f}$ est
+représentée au paragraphe 2.
+
+\subsection{Equation $f(x)=k$}
+ 
+ Résoudre graphiquement $f(x)=k$, $k \in \mathbb{R}$, c'est chercher les points
+ d'intersection de la courbe $(\mathcal{C}_{f}):\ y=f(x)$ avec la droite
+ d'équation: $y=k$ parallèle à l'axe des abscisses; les solutions sont alors
+ les abscisses des point trouvés.
+ 
+ \enskip
+ 
+ Cas particulier: pour $f(x)=0$, la droite d'équation $y=0$ est l'axe des
+ \ldots \ldots \ldots \ldots
+ 
+ \enskip
+ 
+ \ul{Exemples}:
+ 
+ Résoudre graphiquement $f(x)=0$:
+ 
+ Résoudre graphiquement $f(x)=6$ :
+ 
+ \medskip
+ 
+ \fbox{
+\begin{minipage}{15cm}
+\textbf{A la calculatrice:} (les touches de la calculatrice sont représentées
+en gras)
+\begin{enumerate}
+  \item \textbf{f(x)}:  $Y_{1}=4X^{2}+2$ 
+  \item \textbf{f(x)}:  $Y_{2}=k$ (cela permet de tracer la droite d'équation
+  $y=k$)
+  \item  \textbf{Calculs}
+  \item  \textbf{intersect}
+  \item  le message \textit{courbe 1?} vous demande de préciser la première
+  courbe: à l'aide des \textbf{flèches de déplacement} mettez vous sur la
+  première courbe (n'importe où) et appuyez sur \textbf{entrée}.
+  \item le message \textit{courbe 2?} vous demande de préciser la deuxième
+  courbe: à l'aide des \textbf{flèches de déplacement} mettez vous sur la
+  deuxième courbe (n'importe où) et appuyez sur \textbf{entrée}.  
+  \item avec les \textbf{flèches de déplacement}, amener le pointeur près d'un
+  point d'intersection et appuyer sur \textbf{entrée}: la calculatrice affiche
+  les coordonnées d'un point d'intersection (il faut refaire la même
+  manipulation pour les autres points d'intersection) 
+\end{enumerate}
+\end{minipage}
+}
+\subsection{Inéquation $f(x)>k$}
+
+Résoudre graphiquement $f(x)>k$, $k \in \mathbb{R}$, c'est chercher les points
+de la courbe $(\mathcal{C}_{f}):\ y=f(x)$ situés \ul{au-dessus} de la droite
+d'équation: $y=k$ parallèle à l'axe des abscisses; les solutions sont alors les abscisses des point trouvés.
+
+\enskip
+
+\ul{Exemple}:
+
+Résoudre graphiquement $f(x)>0$:
+ 
+ Résoudre graphiquement $f(x)>6$ :
+ 
+ \medskip
+ 
+ \ul{Remarque}: Résoudre graphiquement $f(x)<k$, $k \in \mathbb{R}$, c'est
+ chercher les points de la courbe $(\mathcal{C}_{f}):\ y=f(x)$ situés
+ \ul{au-dessous} de la droite d'équation: $y=k$ parallèle à l'axe des abscisses;
+ les solutions sont alors les abscisses des point trouvés.
+ 
+ 
+\subsection{Equation $f(x)=g(x)$}
+
+Résoudre graphiquement $f(x)=g(x)$, c'est chercher les points
+ d'intersection de la courbe $(\mathcal{C}_{f}):\ y=f(x)$ avec la courbe
+ $(\mathcal{C}_{g}):\ y=g(x)$, les solutions sont alors les abscisses des
+ points trouvés.
+ 
+ \enskip
+ 
+ \ul{Exemple}: $f(x)=4x^{2}+2$ et $g(x)=4x-26$. Résoudre graphiquement
+ $f(x)=g(x)$.
+
+\bigskip
+
+\bigskip
+ 
+\bigskip
+
+
+\subsection{Inequation $f(x)>g(x)$}
+
+Résoudre graphiquement $f(x)>g(x)$, c'est chercher les
+points de la courbe $(\mathcal{C}_{f}):\ y=f(x)$ situés \ul{au-dessus} des
+points de la courbe  $(\mathcal{C}_{g}):\ y=g(x)$; les solutions sont alors les abscisses des point trouvés.
+
+\enskip
+ 
+ \ul{Exemple}: $f(x)=4x^{2}+2$ et $g(x)=4x-26$. Résoudre graphiquement
+ $f(x)>g(x)$.
+\end{document}
+
+
+
+
+
+
+
+
+
+
+

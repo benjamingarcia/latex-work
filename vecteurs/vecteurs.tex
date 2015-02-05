@@ -1,0 +1,678 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=7mm, right=7mm, top=7mm, bottom=7mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty} 
+
+\begin{document}
+
+\begin{center}
+\LARGE{\ul{\textbf{Vecteurs}}}
+\end{center}
+
+
+
+\section{Vecteurs du plan}
+
+\subsection{Vecteurs }
+
+\textit{Ex 1}
+
+\enskip
+
+\ul{Définitions}:
+\begin{itemize}
+  \item [$\bullet$]  Si $A$ et $B$ sont deux points distincts, le vecteur
+  $\overrightarrow{AB}$ est caractérisé par:
+  \begin{itemize}
+    \item sa \textbf{direction}: celle de $(AB)$ et de toutes les droites
+    parallèles à $(AB)$
+    \item son \textbf{sens}: celui de $A$ vers $B$
+    \item sa \textbf{longueur}: la distance $AB$.
+  \end{itemize}
+  
+ \item[$\bullet$] Si $A=B$, le vecteur  $\overrightarrow{AA}$ s'appelle
+ \textbf{vecteur nul} et est noté $\vec{0}$.
+ 
+ Le vecteur nul n'a ni direction, ni sens. Sa longueur est égale à 0.
+  
+\end{itemize}
+
+\enskip
+
+\ul{Remarque}: Au lieu de parler de la longueur d'un vecteur, on préfère parler
+de sa norme. 
+
+La norme de $\overrightarrow{AB}$ se note
+$||\overrightarrow{AB}||$. On a: $AB=||\overrightarrow{AB}||$.
+
+
+\subsection{Egalité de deux vecteurs}
+
+\ul{Définition}:
+
+\begin{tabular}{cc}
+\begin{minipage}{12cm}
+On dit que deux vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AB}$ sont
+égaux dans chacun des cas suivants:
+\begin{itemize}
+  \item [$\bullet$] Ils ont même direction, même sens et même longueur.
+  \item [$\bullet$] $ABCD$ est un parallélogramme (éventuellement aplati).
+  \item [$\bullet$] C'est la même translation qui transforme $A$ en $B$ et $C$
+  en $D$.
+\end{itemize}
+
+On note alors: $\overrightarrow{AB}$=$\overrightarrow{CD}=\vec{u}$
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\includegraphics[width=4cm]{images/ex12.png}
+\end{minipage}
+\end{tabular}
+
+\enskip
+
+
+\ul{Remarque}: Un vecteur n'est donc en aucun cas lié à un point origine ou
+extrémité. Il y a donc une infinité de représentants de $\vec{u}$.
+
+\enskip
+  
+\textit{Ex 2}
+
+
+\subsection{Addition de deux vecteurs}
+
+Soit $\vec{u}$ et $\vec{v}$ deux vecteurs quelconques, $A$ un point du plan, $B$
+et $C$ les points définis par $\overrightarrow{AB}=\vec{u}$ et
+$\overrightarrow{BC}=\vec{v}$. On appelle somme de $\vec{u}$ et $\vec{v}$,
+notée $\vec{u}+\vec{v}$, le vecteur qui peut-être représenté par l'une des deux
+règles suivantes:
+
+\enskip
+
+\ul{Relation de Chasles}: L'égalité
+$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$ s'appelle la \textbf{relation de Chasles}. $\vec{u}+\vec{v}=\overrightarrow{AC}$.
+
+Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{BC}$ sont ``mis bout à
+bout''.
+
+\begin{center}
+\includegraphics[width=18cm]{images/chasles.jpg}
+\end{center}
+ 
+\enskip
+
+\ul{Règle du parallélogramme}: $\vec{u}+\vec{v}$ représente la diagonale du
+parallélogramme;
+$\vec{u}+\vec{v}=\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AD}$
+où $D$ est tel que $ABCD$ est un parallélogramme (éventuellement aplati).
+
+\begin{center}
+\includegraphics[width=18cm]{images/regle_pgm.jpg}
+\end{center}
+
+
+\enskip
+
+\ul{Remarques}:
+
+\begin{tabular}{cc}
+\begin{minipage}{115mm}
+\begin{itemize}
+  \item [$\bullet$] $\vec{u}+\vec{v}=\vec{v}+\vec{u}$ et 
+  $(\vec{u}+\vec{v})+\vec{w}=\vec{u}+(\vec{v}+\vec{w})$
+  \item [$\bullet$] Si $\vec{u}=\overrightarrow{AB}$, l'opposé est le vecteur
+  $\overrightarrow{BA}$ noté $-\vec{u}$. 
+  
+  On a
+  $-\vec{u}=\overrightarrow{BA}=-\overrightarrow{AB}=\overrightarrow{AB'}$.
+  \item [$\bullet$] $\vec{u}+(-\vec{u})=\vec{0}$
+  \item [$\bullet$] La différence de deux vecteurs est la somme du premier avec
+  l'opposé du second: $\vec{u}-\vec{v}=\vec{u}+(-\vec{v})$
+  \item [$\bullet$] La relation de Chasles sera utile pour décomposer un
+  vecteur: pour tout point $M$, on a
+  $\overrightarrow{AC}=\overrightarrow{AM}+\overrightarrow{MC}$
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{7cm}
+\includegraphics[width=7cm]{images/ex13.png}
+\end{minipage}
+\end{tabular} 
+
+\enskip
+
+\textit{Ex 3, 4}
+
+\section{Multiplication par un réel, colinéarité}
+
+\subsection{Multiplication par un réel}
+
+\ul{Exemple}: $\overrightarrow{AB}=\vec{u}$;
+$\overrightarrow{AC}=\vec{u}+\vec{u}+\vec{u}=3\vec{u}$ et
+$\overrightarrow{CD}=2\vec{u}$; $\overrightarrow{DA}=-5\vec{u}$.
+
+\includegraphics[width=7cm]{images/ex21.png}
+
+
+
+
+\enskip
+
+\ul{Définition}: Le produit du vecteur $\vec{u}$ par le nombre réel $k$ est le
+\textbf{vecteur} noté $k\vec{u}$ tel que:
+
+\begin{tabular}{cc}
+\begin{minipage}{12cm}
+\begin{itemize}
+  \item [$\bullet$] si $k>0$ et $\vec{u} \neq \vec{0}$, $k\vec{u}$ a la même
+  direction et le même sens que $\vec{u}$ et a pour norme $k||\vec{u}||$
+  \item [$\bullet$] si $k<0$ et $\vec{u} \neq \vec{0}$, $k\vec{u}$ a la même
+  direction et sens contraire de $\vec{u}$ et a pour norme $-k||\vec{u}||$ 
+  \item [$\bullet$] si $k=0$ ou $\vec{u}=\vec{0}$, alors $k\vec{u}=\vec{0}$
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\includegraphics[width=3cm]{images/ex22.png}
+\end{minipage}
+\end{tabular} 
+
+
+
+
+\subsection{Règles de calcul}
+
+Pour tous vecteurs $\vec{u}$ et $\vec{v}$ et pour tous réels $k$ et $k'$, on a:
+
+\begin{itemize}
+  \item [$\bullet$] $k(\vec{u}+\vec{v})=k\vec{u}+k\vec{v}$
+  \item [$\bullet$] $(k+k')\vec{u}=k\vec{u}+k'\vec{u}$
+  \item [$\bullet$] $k(k'\vec{u})=(k \times k')\vec{u}$
+  \item [$\bullet$] $k\vec{u}=\vec{o}$ si et seulement si $k=0$ ou
+  $\vec{u}=\vec{0}$
+\end{itemize}
+
+\enskip
+
+\textit{Ex 5, 6 et 7} 
+
+\subsection{Colinéarité}
+
+\ul{Définition}: On dit que deux vecteurs $\vec{u}$ et
+$\vec{v}$ sont \textbf{colinéaires} lorsqu'il existe un réel $k$  tel que
+$\vec{u}=k\vec{v}$.
+
+\enskip
+
+\ul{Remarque}: Le vecteur nul est colinéaire à tout vecteur $\vec{u}$ car
+$\vec{0}=0\vec{u}$.
+
+\enskip
+
+\ul{Propriété}: Deux vecteurs non nuls $\vec{u}$ et $\vec{v}$ colinéaires ont
+même direction.
+
+\subsection{Applications géométriques}
+
+\subsubsection{Milieu}
+
+
+\begin{tabular}{cc}
+\begin{minipage}{12cm}
+\ul{Théorème}: Le milieu $I$ d'un segment $[AB]$ est caractérisé par l'une ou
+l'autre des quatre propositions suivantes:
+\begin{enumerate}
+  \item $\overrightarrow{AI}=\overrightarrow{IB}$
+  \item $\overrightarrow{AI}=\dfrac{1}{2}\overrightarrow{AB}$
+  \item $\overrightarrow{IA}+\overrightarrow{IB}=\vec{0}$
+  \item Quel que soit le point $M$:
+  $\overrightarrow{MI}=\dfrac{1}{2}(\overrightarrow{MA}+\overrightarrow{MB})$
+\end{enumerate}
+\end{minipage}
+& 
+\begin{minipage}{6cm}
+\includegraphics[width=5cm]{images/milieu.png}
+\end{minipage}
+\end{tabular}
+ 
+\subsubsection{Parallélisme}
+
+\begin{tabular}{cc}
+\begin{minipage}{14cm}
+\ul{Théorème}: Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ non
+nuls sont colinéaires si et seulement si les droites $(AB)$ et $(CD)$ sont
+parallèles.
+\end{minipage}
+&
+\begin{minipage}{4cm}
+\includegraphics[width=3cm]{images/para.png}
+\end{minipage}
+\end{tabular}
+
+\enskip
+
+\textit{Ex 8}
+ 
+ 
+\subsubsection{Alignement}
+
+\begin{tabular}{cc}
+\begin{minipage}{11cm}
+\ul{Théorème}: Les points $A$, $B$ et $C$ sont alignés si et seulement si les
+vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires.
+\end{minipage}
+&
+\begin{minipage}{7cm}
+\includegraphics[width=6cm]{images/aligne.png} 
+\end{minipage}
+\end{tabular}
+  
+\enskip
+
+\textit{Ex 9}
+ 
+\pagebreak 
+
+\section{Repérage dans le plan}
+
+
+\subsection{Repère du plan}
+
+\ul{Rappels}: Trois points $O$, $I$ et $J$ non-alignés forment un repère. Cela
+revient au même de se donner $O$ et deux vecteurs $\vec{i}$ et $\vec{j}$
+\textbf{non colinéaires} tels que: $\overrightarrow{OI}=\vec{i}$ et
+$\overrightarrow{OJ}=\vec{j}$. Un repère du plan est donc indifféremment la
+donnée des triplets $(O, I, J)$ ou $(O, \vec{i}, \vec{j})$. $O$ est l'origine
+du repère.
+
+\enskip
+
+\ul{Définition}: On dit que le couple $(\vec{i},\vec{j})$ est une \textbf{base}
+ du plan.
+
+\enskip
+
+\begin{tabular}{c|c|c}
+
+\begin{minipage}{68mm}
+ Si les directions de $\vec{i}$ et $\vec{j}$ sont perpendiculaires
+ (c'est-à-dire $(OI)\perp (OJ)$), le repère $(O, \vec{i}, \vec{j})$ est
+ \textbf{orthogonal}.
+
+\enskip
+
+\begin{center}
+\includegraphics[width=3cm]{images/01.jpg}
+\end{center}
+\end{minipage}
+&
+\begin{minipage}{65mm}
+Si le repère $(O, \vec{i}, \vec{j})$ est
+orthogonal
+et si de plus $||\vec{i}||=||\vec{j}||=1$ (c'est-à-dire 
+$OI=OJ=1$), le 
+repère
+$(O, \vec{i}, \vec{j})$ est \textbf{orthonormal}.
+
+
+\enskip
+
+\begin{center}
+\includegraphics[width=3cm]{images/02.jpg}
+\end{center}
+\end{minipage}
+&
+ \begin{minipage}{52mm}
+On utilise parfois des repères quelconques.
+
+\begin{center}
+\includegraphics[width=4cm]{images/03.jpg} 
+ \end{center}
+ 
+ \end{minipage}
+\end{tabular}
+
+
+
+
+\subsection{Coordonnées dans un repère}
+
+
+
+
+\begin{tabular}{cc}
+
+\begin{minipage}{135mm}
+\ul{Définitions}:
+\begin{itemize}
+ 
+  \item [$\bullet$] Pour tout vecteur $\vec{u}$ du plan, il existe un couple
+  unique de réels $x$ et $y$ tels que $\vec{u}=x\vec{i}+y\vec{j}$. Les réels
+  $x$ et $y$ sont les coordonnées de $\vec{u}$ dans la base
+  $(\vec{i},\vec{j})$. On note $\vec{u}(x;y)$ ou $\vec{u} \begin{pmatrix} x\\ y
+  \end{pmatrix}$
+ 
+ \item [$\bullet$] Dans le repère $(O, \vec{i}, \vec{j})$, les coordonnées du
+ point $M$ sont l'unique couple de réels $(x;y)$ tel que
+ $\overrightarrow{OM}=x\vec{i}+y\vec{j}$. Les réels $x$ et $y$ sont les
+ coordonnées de $\vec{u}$ dans la base $(\vec{i},\vec{j})$. On note
+ $\overrightarrow{OM}\begin{pmatrix} x\\ y \end{pmatrix}$
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{5cm}
+\begin{center}
+\includegraphics[width=4cm]{images/04.jpg}
+\end{center}
+\end{minipage}
+\end{tabular}
+
+
+\enskip
+
+\ul{Exemple}: 
+
+\begin{tabular}{cc}
+\begin{minipage}{12cm}
+Sur la figure ci-contre:
+
+$\vec{u}$ \ldots \ldots \ldots \ldots car 
+
+
+et $M$ a pour coordonnées \ldots \ldots \ldots \ldots car 
+\end{minipage}
+&
+\begin{minipage}{6cm}
+\begin{center}
+\includegraphics[width=4cm]{images/05.jpg}
+\end{center}
+\end{minipage}
+\end{tabular}
+
+\enskip
+
+\ul{Remarque}: Le vecteur $\vec{0}$ a pour coordonnées \ldots \ldots \ldots
+
+\enskip
+
+\ul{Propriété}: Dans le plan muni d'un repère $(O, \vec{i}, \vec{j})$, deux
+vecteurs sont égaux si et seulement si \ldots \ldots \ldots \ldots \ldots
+
+\ldots \ldots \ldots \ldots.
+
+\subsection{Calculs de coordonnées}
+
+\ul{Propriétés}: Soient $\vec{u} \begin{pmatrix} x\\ y \end{pmatrix}$ et
+$\vec{v} \begin{pmatrix} x'\\ y' \end{pmatrix}$ deux vecteurs quelconques du
+plan, $(\vec{i}, \vec{j})$ une base et $k$ un réel quelconque. Alors:
+
+$\bullet$ $\vec{u} + \vec{v} \begin{pmatrix} x+x'\\ y+y' \end{pmatrix}$
+
+
+$\bullet$ $k\vec{u} \begin{pmatrix} kx\\ ky \end{pmatrix}$
+
+\enskip
+
+\ul{Exemple}: Si $\vec{u}\begin{pmatrix} -3\\2 \end{pmatrix}$ et $\vec{v}
+\begin{pmatrix} 1\\2 \end{pmatrix}$ alors
+$2\vec{u} \begin{pmatrix} \ldots \ldots \\ \ldots \ldots \end{pmatrix}$ et
+$2\vec{u}+\vec{v} \begin{pmatrix} \ldots \ldots \\ \ldots \ldots \end{pmatrix}$
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{13cm}
+\ul{Propriétés}: Soient $A(x_A;y_A)$ et $B(x_B;y_B)$ deux points quelconques du
+plan  et $(O, \vec{i}, \vec{j})$ un repère.
+
+
+\begin{itemize}
+  \item [$\bullet$] $\overrightarrow{AB}$ a pour coordonnées  \ldots \ldots
+  \ldots \ldots
+  
+  \enskip
+  
+  \item [$\bullet$] $I$ le milieu de $[AB]$ a pour coordonnées \ldots \ldots
+  \ldots \ldots
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{5cm}
+\begin{center}
+\includegraphics[width=5cm]{images/06.jpg}
+\end{center}
+\end{minipage}
+\end{tabular}
+
+\enskip
+
+\textit{Ex 11, 12}
+
+
+\subsection{Colinéarité}
+
+
+
+\ul{Propriété}: $\vec{u} \begin{pmatrix} x\\ y \end{pmatrix}$ et $\vec{v}
+\begin{pmatrix} x' \\ y' \end{pmatrix}$ sont colinéiares si et seulement si:
+
+\begin{itemize}
+  \item [$\bullet$] il existe un réel $k$ tel que $x=kx'$ et $y=ky'$ (les
+  coordonnées sont proportionnelles)
+  \item [$\bullet$] $xy'=x'y$ (ou encore $xy'-x'y=0$) c'est-à-dire:
+  \begin{tabular}{|c|c|}
+  \hline
+  $x$ & $x'$ \\
+  \hline 
+  $y$ & $y'$\\
+  \hline
+  \end{tabular}  est un tableau de proportionnalité. 
+\end{itemize} 
+
+\enskip
+
+\ul{Exemple}: $\vec{u} \begin{pmatrix} 15\\-10 \end{pmatrix}$ et $\vec{v}
+\begin{pmatrix} -21\\ 14 \end{pmatrix}$ sont-ils colinéaires?
+
+\medskip
+
+\textit{Ex 13, 14}
+
+\subsection{Norme et distance entre deux points}
+
+
+\ul{Propriété}: Soient $A(x_A;y_A)$ et $B(x_B;y_B)$ deux points quelconques du
+plan  et $(O, \vec{i}, \vec{j})$ un repère \textbf{orthonormal}. La distance de
+$A$ à $B$ est donnée par $AB= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$. 
+
+\enskip
+
+\ul{Conséquence}: Dans une base \textbf{orthonormale} $(\vec{i}, \vec{j})$, la
+norme d'un vecteur $\vec{u} \begin{pmatrix} x\\ y \end{pmatrix}$ est donnée par
+                            
+                            
+$||\vec{u}||=\sqrt{x^2+y^2}$.
+
+
+\pagebreak
+
+
+\section{Equations de droites}
+
+Soit un repère $(O, \vec{i}, \vec{j})$.
+
+\subsection{Equations réduites, équations cartésiennes}
+
+\ul{Définition}: Soit $A$ un point du plan et $\vec{u}$ un vecteur non nul.
+L'ensemble de tous les points $M$ du plan tel que $\vec{u}$ et
+$\overrightarrow{AM}$ sont colinéaires est une droite. $\vec{u}$ est appelé
+\textbf{vecteur directeur}.
+
+\enskip
+
+\ul{Remarques}: Pour tous points distincts $A$ et $B$, $\overrightarrow{AB}$ est
+un vecteur directeur de la droite $(AB)$.
+
+\enskip
+
+
+\ul{Propriété (Rappel)}: Toute droite du plan a une équation de la forme:
+\begin{itemize}
+  \item [$\bullet$] $x=c$ si la droite est parallèle à l'axe des ordonnées
+  \item [$\bullet$] $y=ax+b$ sinon.
+\end{itemize}
+
+
+\enskip
+
+\ul{Démonstration}: Soit $A \begin{pmatrix} x_A\\ y_A \end{pmatrix}$ et $B
+\begin{pmatrix} x_B\\ y_B \end{pmatrix}$ deux points distincts. Un point $M
+\begin{pmatrix} x\\ y \end{pmatrix}$ appartient à la droite $(AB)$ si et
+seulement si $\overrightarrow{AB}$ et $\overrightarrow{AM}$ sont colinéaires.
+
+
+$\overrightarrow{AB} \begin{pmatrix} \ldots \ldots \ldots\\ \ldots \ldots \ldots
+\end{pmatrix}$ et $\overrightarrow{AM} \begin{pmatrix} \ldots \ldots \ldots\\
+\ldots \ldots \ldots \end{pmatrix}$ 
+
+Donc Un point $M \begin{pmatrix} x\\ y \end{pmatrix}$ appartient à la droite
+$(AB)$ si et seulement si $(.. \ldots \ldots)(.. \ldots \ldots)=(..
+\ldots \ldots)(\ldots \ldots ..)$
+
+c'est-à-dire si et seulement si: $(x-x_A)(y_B-y_A)-(y-y_A)(x_B-x_A)=0$.
+
+
+\enskip
+
+\textbf{Cas 1:} Si $x_B-x_A=0$
+
+On a alors $(AB)$ parallèle à l'axe des ordonnées.
+
+Donc: $(x-x_A)(y_B-y_A)=0$ c'est-à-dire \ldots \ldots \ldots \ldots ou \ldots
+\ldots \ldots \ldots
+
+\begin{center}
+      \fbox{$x=x_A$}
+      \end{center}
+
+
+\textbf{Cas 2:} Si $x_B-x_A \neq 0$
+
+
+$(y-y_A)(x_B-x_A)=(x-x_A)(y_B-y_A)$
+
+$y=\dfrac{y_B-y_A}{x_B-x_A} (x-x_A)+y_A$
+
+$y=\dfrac{y_B-y_A}{x_B-x_A} x + \dfrac{x_By_A-x_Ay_B}{x_B-x_A}$
+
+\begin{center}
+      \fbox{$y=ax+b$}
+      \end{center}
+
+\enskip
+
+\ul{Propriété}: Toute équation de droites peut se mettre sous la forme $\alpha
+x+ \beta y+ \gamma=0$ appelée \textbf{équation cartésienne} (avec $\alpha$ et
+$\beta$ non nuls simultanément).
+
+
+\enskip
+
+
+\ul{Démonstration}:
+\begin{itemize}
+  \item [$\bullet$] $y=ax+b$ peut s'écrire \ldots \ldots \ldots \ldots \ldots
+  
+  et $x=c$ peut s'écrire \ldots \ldots \ldots \ldots \ldots
+  \item [$\bullet$] Réciproquement si l'équation est de la forme: $\alpha
+x+ \beta y+ \gamma=0$  alors:
+
+si $\beta=0$, $\alpha x + \gamma=0$ donc $x=\dfrac{- \gamma}{\alpha}$
+(car $\alpha$ et $\beta$ non nuls simultanément).
+
+ 
+  si $\beta \neq 0$, $\beta y= -\alpha x -\gamma$ donc
+  $y=\ldots\ldots\ldots\ldots\ldots$
+\end{itemize}
+
+
+
+
+\subsection{Vecteurs directeurs}
+
+\ul{Exemples}:
+
+\begin{tabular}{cc}
+\begin{minipage}{11cm}
+\begin{enumerate}
+  \item Construire la droite $(d_1)$ passant par le point $A_1$ de coordonnées
+  $(1;2)$ et de vecteur directeur $\vec{u_1}=^-2\vec{j}$ puis en donner une
+  équation réduite.
+  \item Même question pour $(d_2)$ passant par $A_2$ de coordonnées $(-2;3)$ et
+  de vecteur directeur $\vec{u_2}=\dfrac{3}{4}\vec{i}+\dfrac{5}{4}\vec{j}$.
+\end{enumerate}
+\end{minipage}
+&
+\begin{minipage}{7cm}
+\includegraphics[width=7cm]{images/vecdirec.png}
+\end{minipage}
+\end{tabular} 
+
+
+\enskip
+
+\ul{Théorème}: Soit $\vec{u}$ un vecteur directeur d'une droite $(d)$ de
+coordonnées $\begin{pmatrix} \alpha\\ \beta \end{pmatrix}$ dans une base
+$(\vec{i},\vec{j})$, c'est-à-dire tel que $\vec{u}=\alpha \vec{i}+\beta
+\vec{j}$ avec $\alpha$ et $\beta$ non nuls à la fois.
+
+\begin{itemize}
+  \item [$\bullet$] Si $\alpha =0$, alors $\vec{u}=\beta \vec{j}$ avec $\beta
+  \neq 0$ et donc $(d)$ est parallèle à l'axe des ordonnées.
+  \item [$\bullet$] Si $\alpha \neq 0$, alors $(d)$ est sécante à l'axe des
+  ordonnées et son coefficient directeur est $a=\dfrac{\beta}{\alpha}$.
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=6cm]{images/vecdirec2.png} 
+\end{center}
+
+\enskip
+
+\ul{Conséquence}: Soit $(d)$ une droite de coefficient directeur $a$ alors le
+vecteur $\vec{u} \begin{pmatrix} 1 \\ a \end{pmatrix}$ est un vecteur directeur
+de $(d)$.
+
+
+\enskip
+
+\ul{Exercice}: Compléter le tableau ci-dessous: ($a$ désigne \textbf{LE}
+coefficient directeur d'une droite $(d)$ et $\vec{u}$ \textbf{UN} vecteur
+directeur de cette droite.)
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{le} coefficient directeur $a$ & $a=-\dfrac{3}{7}$ & & & $a=1,75$ \\
+\hline
+\textbf{un} vecteur directeur $\vec{u}$ &  & $\vec{u}= 2\vec{i}-5\vec{j}$ &
+$\vec{u} \begin{pmatrix} -3\\ 4 \end{pmatrix}$ & \\
+         \hline
+     
+\end{tabular}
+\end{center}
+\end{document}

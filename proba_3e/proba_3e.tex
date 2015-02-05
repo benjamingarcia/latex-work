@@ -1,0 +1,262 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[left=5mm, right=5mm, top=5mm, bottom=5mm]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathrsfs} 
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{eurosym}
+ \usepackage{variations}
+\usepackage{tabvar}
+ 
+\pagestyle{empty}
+
+
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large{\ul{Probabilités}}}
+\end{center}
+
+
+\bigskip
+
+
+\section{Vocabulaire}
+
+\ul{Définition:} Une \textbf{expérience} est dite \textbf{aléatoire} lorqu'elle
+a plusieurs résultats possibles (appelés \textbf{issues}) et que l'on ne peut
+pas prévoir avec certitude quel résultat se produira.
+
+\bigskip
+
+\ul{Définitions:}
+
+$\bullet$ Un \textbf{évènement}  est constitué par des issues d'une expérience
+aléatoire.
+
+$\bullet$ L'évènement \textbf{contraire} d'un évènement A est celui qui se
+réalise lorsque A ne se réalise pas. On le note \textbf{non A} ou
+$\overline{A}$.
+
+
+$\bullet$ Deux évènements sont dits \textbf{incompatibles} lorsqu'ils ne
+peuvent pas réaliser en même temps.
+
+\bigskip
+
+
+\ul{Exemples:}
+
+
+\enskip
+
+\begin{enumerate}
+  \item \textit{Expérience 1:} Lancer d'une pièce
+  
+  
+  C'est une expérience aléatoire. Il y a \ldots \ldots issues: \ldots \ldots ou
+  \ldots \ldots. 
+  
+  ``Obtenir pile'' et ``obtenir face'' sont deux événements  \ldots \ldots \ldots
+  
+  \enskip
+  
+  \item \textit{Expérience 2:} Lancer d'un dé à six faces
+  
+  C'est une expéricence aléatoire. Il y a \ldots \ldots issues: \ldots \ldots
+   
+  ``Obtenir un nombre pair'' est un évènement qui regroupe les issues \ldots
+  \ldots \ldots
+  
+  L'évènement contraire de ``obtenir un nombre pair'' est \ldots \ldots \ldots
+  
+  Les évènements ``obtenir 2'' et ``obtenir 1'' sont deux évènements \ldots \ldots
+  
+  
+  Les événements ``obtenir un nombre pair'' et ``obtenir un multiple de 3''
+  sont-ils incompatibles?
+  
+  
+  \enskip
+  
+  
+  \item \textit{Expérience 3:} Une urne contient deux boules bleues, une rouge
+  et une verte (indiscernables au toucher). On pioche une boule et on regarde
+  sa couleur.
+  
+  C'est une expérience aléatoire.  Il y a \ldots \ldots issues: 
+  
+  Les évènements ``tirer une boule verte'' et ``tirer une boule rouge'' sont
+  \ldots \ldots
+  
+  \enskip
+  
+  \item \textit{Expérience 4:} Une unrne contient que des boules bleues.
+  On pioche une boule et on regarde sa couleur.
+  
+  Cette expérience n'est pas aléatoire car on est certain de tirer une boule
+  bleue!
+\end{enumerate}
+
+
+\section{Probabilités}
+
+\subsection{Notion de probabilités}
+
+Si on répète une expérience aléatoire un très grand nombre de fois, la
+fréquence de n'importe quel évènement finit par se stabiliser autour d'un
+nombre appelé probabilité de cet évènement. Cette probabilité permet de
+déterminer la ``chance'' qu'un évènement a de se produire.
+
+
+\bigskip
+
+\ul{Exemples:}
+
+$\bullet$ \textit{Expérience 1:} Si on lance la pièce un très grand nombre de
+fois, on aurait ``pile'' environ une fois sur deux.
+
+$\bullet$ \textit{Expérience 2:} Si on lance le dé un très grand nombre de fois,
+on aurait un ``3'' environ une fois sur six.
+
+
+$\bullet$ \textit{Expérience 3:} Si on tire une boule un très grand nombe de
+fois, on aurait une boule bleue environ deux fois sur quatre c'est-à-dire une fois sur
+deux.
+
+
+\subsection{Propriétés}
+
+\ul{Propriété:} Quand les issues d'une expérience aléatoire ont toutes la même
+probabilité (situation d' \textbf{équiprobabilité}) alors la probabilité d'un
+évènement est: 
+
+\begin{center}
+ $\dfrac{\text{nombre d'issues correspondants à l'évènement}}{\text{nombre
+ d'issues possibles}}$
+ \end{center}
+
+\bigskip
+
+\ul{Exemples:}
+
+$\bullet$ \textit{Expérience 1:} chacune des deux issues a la même probabilité
+(on a autant de chance d'obtenir ``pile'' que ``face''). C'est une situtation
+d'équiprobabilité. 
+donc P(pile)=P(face)=\ldots = \ldots
+
+\enskip
+
+$\bullet$ \textit{Expérience 2:} chacune des issues a la même probabilité
+(\ldots). C'est une situation d'équiprobabilité.
+
+Considérons l'évènement I ``obtenir un nombre impair'' alors P(I)=\ldots \ldots
+
+\enskip
+
+
+$\bullet$ \textit{Expérience 3:} ce n'est pas une situtaion d'équiprobabilité
+car il y a deux fois plus de chance de tirer une boule bleue qu'une rouge ou
+verte.
+
+P(bleue)=
+
+P(rouge)=
+
+P(verte)=
+
+\bigskip
+
+\ul{Propriétés:}
+
+$\bullet$ Une probabilité est un nombre compris entre 0 et 1.
+
+$\bullet$ La somme de toutes les probabilités des issues possibles est toujours
+égale à 1.
+
+$\bullet$ P(A ou B)=P(A) + P(B) si les évènements sont incompatibles.
+
+$\bullet$ La somme des probabilités d'un évènement A et de son contraire
+$\overline{A}$ est égale à 1. P(A)+P($\overline{A}$)=1
+
+\bigskip
+
+\ul{Remarques:} Si un évènement ne peut pas se produire, on dit qu'il est
+\textbf{impossible} et sa probabilité est 0.
+
+Si un évènement se produit nécessairement, on dit qu'il est \textbf{certain} et
+sa probabilité est 1.
+
+\bigskip
+
+\ul{Exemple:} \textit{expérience 2}
+
+$\bullet$ L'évènement S ``obtenir un 7'' est impossible donc P(S)=\ldots
+
+$\bullet$ L' évènement IE ``obtenir un nombre inférieur ou égal à 6'' est
+\ldots \ldots \ldots donc P(IE)=\ldots
+
+
+$\bullet$ $P(1)+P(2)+P(3)+P(4)+P(5)+P(6)=$
+
+
+$\bullet$  On note O l'évènement ``obtenir un 3 ou un 5''. 
+
+Les évènements
+``obtenir un 3'' et ``obtenir un 5'' sont  \ldots \ldots \ldots \ldots donc
+P(O)=
+
+$\bullet$ $P(\overline{O})= 1-P(O)=1- \dfrac{1}{3}=\dfrac{2}{3}$ donc la
+probabilité d'obtenir un \ldots \ldots \ldots \ldots \ldots \ldots \ldots est
+de $\dfrac{2}{3}$.
+
+
+\section{Expérience à deux épreuves}
+
+
+\ul{Propriété:} Avec un arbre, la probabilité de l'issue à laquelle conduit un
+chemin est égale au produit des probabilités rencontrées sur ce chemin.
+
+\bigskip
+
+
+\textit{Expérience 5:} On lance une pièce de monnaie et on note le résultat obtenu (pile ouface) et on tire ensuite au hasard une boule dans un sac
+contenant 2 rouges, 3 noires et 1 jaune et on note sa couleur.
+
+
+\enskip
+
+\begin{tabular}{cc}
+\begin{minipage}{9cm}
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad
+\end{minipage}
+&
+\begin{minipage}{10cm}
+Il y a 6 issues possibles: PR; PN; PJ; FR; FN et FJ
+
+\enskip
+
+P(PN)=
+
+\enskip
+
+P(FJ)=
+
+\enskip
+
+On note R l'évènement ``obtenir une rouge''.
+
+P(R)=
+\end{minipage}
+\end{tabular}
+
+
+\end{document}
